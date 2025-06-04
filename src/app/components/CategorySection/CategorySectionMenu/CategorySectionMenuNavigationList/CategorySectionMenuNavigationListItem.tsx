@@ -1,8 +1,4 @@
-import { getFontSize } from "@/app/helpers/getFontSize"
 import { Text } from "@/app/components/Text";
-import { getFontFamily } from "@/app/helpers/getFontFamily";
-import { getFontWeight } from "@/app/helpers/getFontWeight";
-import { getColor } from "@/app/helpers/getColor";
 
 type CategorySectionMenuNavigationListItem = {
     text: string;
@@ -15,15 +11,10 @@ export const CategorySectionMenuNavigationListItem = ({
     ref,
     isHighlighted = false
 }: CategorySectionMenuNavigationListItem) => {
-    const fontSize3Xl = getFontSize('3xl');
-    const fontFamilyRoboto = getFontFamily('roboto');
-    const fontWeightNormal = getFontWeight('normal');
-    const colorLapis = getColor('lapis');
-
     return (
         <li>
             <a href={ref}>
-                <Text fontSize={fontSize3Xl} fontFamily={fontFamilyRoboto} color={colorLapis} fontWeight={fontWeightNormal} content={text}
+                <Text fontSize='3xl' fontFamily='roboto' color='lapis' fontWeight='normal' content={text}
                     className={`navigation-list__item ${isHighlighted ? 'navigation-list__item--highlighted' : ''}`}
                 />
             </a>
