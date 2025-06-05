@@ -2,7 +2,10 @@ import { JSX } from "react";
 import { IconFillColor, IconProps, IconSize, IconType } from "../../components/types";
 import { AccountIcon, ArrowDownIcon, ArrowLeftIcon, ArrowRightIcon, ArrowUpIcon, BasketballIcon, FacebookIcon, HamburgerMenuIcon, InstagramIcon, LinkedInIcon, SearchIcon, SearchSmallIcon, SeeMoreIcon, ShoppingCartIcon, TwitterIcon, ZoomIcon, ZoomOutIcon } from "../../components/icons";
 
-const iconMap: Record<IconType, (props: IconProps) => JSX.Element> = {
+const iconMap: Record<IconType, ({
+    color,
+    size
+}: IconProps) => JSX.Element> = {
     account: AccountIcon,
     "shopping-cart": ShoppingCartIcon,
     search: SearchIcon,
@@ -22,7 +25,7 @@ const iconMap: Record<IconType, (props: IconProps) => JSX.Element> = {
     facebook: FacebookIcon,
 }
 
-export const getIcon = (
+export const getIconComponent = (
     icon: IconType,
     iconFill: IconFillColor,
     iconSize: IconSize

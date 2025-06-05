@@ -1,4 +1,4 @@
-import { getIcon } from "@/app/helpers/iconHelpers/getIcon";
+import { getIconComponent } from "@/app/helpers/iconHelpers/getIcon";
 import { IconFillColor, IconSize, IconType } from "../types"
 import { ButtonBase } from "./ButtonBase"
 
@@ -17,7 +17,7 @@ export const IconButton = ({
     className = '',
     onClick
 }: IconButtonProps) => {
-    const iconComponent = getIcon(iconType, iconFillColor, iconSize);
+    const iconComponent = getIconComponent(iconType, iconFillColor, iconSize);
 
     return (
         <ButtonBase className={className} onClick={onClick}>

@@ -14,7 +14,7 @@ export const HeaderDesktopNavigationListItem = ({
     return (
         <li>
             <a href={ref}>
-                <Text fontSize='xl' fontFamily='playfair' color='lapis' fontWeight='normal' content={text}
+                <Text fontSize='xl' fontFamily='playfair' color='lapis' content={text}
                     className={`navigation-list__item ${isHighlighted ? 'navigation-list__item--highlighted' : ''}`}
                 />
             </a>

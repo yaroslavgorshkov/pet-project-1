@@ -3,10 +3,11 @@ import { BorderRadius, ButtonBackgroundColor, IconFillColor, IconSize, IconType,
 import { ButtonBase } from "./ButtonBase"
 import { getButtonVariant } from "@/app/helpers/getButtonVariant";
 import { getPaddingInlineSize } from "@/app/helpers/getPaddingSize/getPaddingInlineSize";
-import { getIcon } from "@/app/helpers/iconHelpers/getIcon";
+import { getIconComponent } from "@/app/helpers/iconHelpers/getIcon";
 import { getBorderRadius } from "@/app/helpers/getBorderRadius";
 import { getPaddingBlockSize } from "@/app/helpers/getPaddingSize/getPaddingBlockSize";
 import { getBackgroundColor } from "@/app/helpers/getBackgroundColor";
+import { twMerge } from "tailwind-merge";
 
 type EndIconType = {
     iconType: IconType;
@@ -52,29 +53,28 @@ export const Button = ({
     const paddingBlockClass = getPaddingBlockSize(paddingBlock);
     const borderRadiusClass = getBorderRadius(borderRadius);
 
-    const endIconComponent = endIcon ? getIcon(endIcon.iconType, endIcon.iconFillColor, endIcon.iconSize) : '';
+    const endIconComponent = endIcon ? getIconComponent(endIcon.iconType, endIcon.iconFillColor, endIcon.iconSize) : undefined;
     const backgroundColorClass = backgroundColor ? getBackgroundColor(backgroundColor) : '';
 
-    const combinedClassName = `${variantClass} ${paddingInlineClass} ${paddingBlockClass} 
-    ${backgroundColorClass} ${borderRadiusClass} ${className}`;
+    const combinedClassName = twMerge(variantClass, paddingInlineClass, paddingBlockClass,
+        backgroundColorClass, borderRadiusClass, className)
 
-    let children;
     if (endIcon) {
-        children = (
-            <div className="flex gap-[18px]">
-                {text}
-                <div className="flex justify-center items-center">
-                    {endIconComponent}
+        return (
+            <ButtonBase className={combinedClassName} onClick={onClick}>
+                <div className="flex gap-[18px]">
+                    {text}
+                    <div className="flex justify-center items-center">
+                        {endIconComponent}
+                    </div>
                 </div>
-            </div>
+            </ButtonBase>
         )
-    } else {
-        children = text
     }
 
     return (
         <ButtonBase className={combinedClassName} onClick={onClick}>
-            {children}
+            {text}
         </ButtonBase>
     )
 }

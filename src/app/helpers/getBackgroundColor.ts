@@ -6,4 +6,4 @@ const backgroundColorMap: Record<ButtonBackgroundColor, string> = {
     "white-blue": "bg-white-blue"
 }
 
-export const getBackgroundColor = (bgc: ButtonBackgroundColor) => backgroundColorMap[bgc];
+export const getBackgroundColor = (backgroundColor: ButtonBackgroundColor) => backgroundColorMap[backgroundColor];

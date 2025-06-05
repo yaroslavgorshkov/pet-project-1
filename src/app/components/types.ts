@@ -10,8 +10,6 @@ export type TextAlign = 'center' | 'left';
 export type ButtonBackgroundColor = 'mint' | 'white' | 'white-blue';
 export type BorderRadius = 'md' | 'sm';
 
-export type ButtonVariantTypes = "contained" | "secondary";
-
 export type IconFillColor = 'lapis' | 'gray' | 'white' | 'absolute-white';
 export type IconSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl' | '9xl';
 export type IconType = 'account' | 'shopping-cart' | 'search' | 'search-small' | 'hamburger-menu' 

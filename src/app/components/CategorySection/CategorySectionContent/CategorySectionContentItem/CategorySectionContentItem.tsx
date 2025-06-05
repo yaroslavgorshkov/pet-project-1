@@ -19,8 +19,7 @@ export const CategorySectionContentItem = ({
     isHighlighted = false
 }: CategorySectionContentItemProps) => {
     const categorySectionContentItemButtonText = (
-        <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} fontWeight={"normal"}
-            content={"Explore"} />
+        <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />
     )
 
     return (

@@ -1,4 +1,4 @@
-import { ButtonVariantTypes } from "../components/types";
+export type ButtonVariantTypes = "contained" | "secondary";
 
 const buttonVariantMap: Record<ButtonVariantTypes, string> = {
     secondary: "bg-transparent",

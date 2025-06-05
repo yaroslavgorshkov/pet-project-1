@@ -1,3 +1,4 @@
+import { twMerge } from "tailwind-merge";
 import { getColor } from "../helpers/getColor";
 import { getFontFamily } from "../helpers/getFontFamily";
 import { getFontSize } from "../helpers/getFontSize";
@@ -8,7 +9,7 @@ type TextProps = {
     fontSize: FontSize;
     fontFamily: FontFamily;
     color: Color;
-    fontWeight: FontWeight;
+    fontWeight?: FontWeight;
     content: string;
     className?: string
 }
@@ -17,7 +18,7 @@ export const Text = ({
     fontSize,
     fontFamily,
     color,
-    fontWeight,
+    fontWeight = 'normal',
     content,
     className = ""
 }: TextProps) => {
@@ -26,7 +27,7 @@ export const Text = ({
     const colorClass = getColor(color);
     const fontWeightClass = getFontWeight(fontWeight);
 
-    const combinedClassName = `${fontSizeClass} ${fontFamilyClass} ${colorClass} ${fontWeightClass} ${className}`
+    const combinedClassName = twMerge(fontSizeClass, fontFamilyClass, colorClass, fontWeightClass, className);
 
     return (
         <span className={combinedClassName}>
