@@ -20,7 +20,7 @@ type CommonButtonProps = {
     paddingBlock: PaddingBlockSize;
     endIcon?: EndIconType;
     borderRadius: BorderRadius;
-    text: ReactNode;
+    textConponent: ReactNode;
     className?: string;
     onClick: () => void
 }
@@ -44,7 +44,7 @@ export const Button = ({
     paddingBlock,
     endIcon,
     borderRadius,
-    text,
+    textConponent,
     className = '',
     onClick
 }: ButtonProps) => {
@@ -63,7 +63,7 @@ export const Button = ({
         return (
             <ButtonBase className={combinedClassName} onClick={onClick}>
                 <div className="flex gap-[18px]">
-                    {text}
+                    {textConponent}
                     <div className="flex justify-center items-center">
                         {endIconComponent}
                     </div>
@@ -74,7 +74,7 @@ export const Button = ({
 
     return (
         <ButtonBase className={combinedClassName} onClick={onClick}>
-            {text}
+            {textConponent}
         </ButtonBase>
     )
 }
