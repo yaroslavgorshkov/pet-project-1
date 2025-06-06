@@ -1,4 +1,4 @@
-import { popularProductsSectionContent } from "../mockPopularProductsData";
+import { popularProductsSectionContent } from "../popularProductsSectionMockData";
 import { PopularProductsSectionContentItem } from "./PopularProductsSectionContentItem";
 
 export const PopularProductsSectionContent = () => {

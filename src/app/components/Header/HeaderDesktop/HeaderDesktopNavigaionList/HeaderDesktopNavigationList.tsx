@@ -1,4 +1,4 @@
-import { navigationListContent } from "../../mockHeaderData";
+import { navigationListContent } from "../../headerMockData";
 import { HeaderDesktopNavigationListItem } from "./HeaderDesktopNavigationListItem";
 
 export const HeaderDesktopNavigationList = () => {

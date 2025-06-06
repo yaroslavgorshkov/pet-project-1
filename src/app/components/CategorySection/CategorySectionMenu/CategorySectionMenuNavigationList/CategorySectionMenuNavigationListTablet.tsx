@@ -1,4 +1,4 @@
-import { categorySectionMenuNavigationListContent } from "../mockCategorySectionData";
+import { categorySectionMenuNavigationListContent } from "../categorySectionMockData";
 import { CategorySectionMenuNavigationListItem } from "./CategorySectionMenuNavigationListItem";
 
 export const CategorySectionMenuNavigationListTablet = () => {

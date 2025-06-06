@@ -1,5 +1,5 @@
 import { CategorySectionMenu } from "../CategorySectionMenu/CategorySectionMenu";
-import { categorySectionContent } from "../CategorySectionMenu/mockCategorySectionData";
+import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData";
 import { CategorySectionContentItem } from "./CategorySectionContentItem/CategorySectionContentItem";
 
 export const CategorySectionContentDesktop = () => {

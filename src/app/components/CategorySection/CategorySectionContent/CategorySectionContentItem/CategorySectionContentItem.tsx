@@ -18,10 +18,6 @@ export const CategorySectionContentItem = ({
     alt,
     isHighlighted = false
 }: CategorySectionContentItemProps) => {
-    const categorySectionContentItemButtonTextComponent = (
-        <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />
-    )
-
     return (
         <article className={`category-section__content-item rounded-[10px] relative h-[211px] md:h-[277px] xl:h-auto ${isHighlighted ? 'category-section__content-item--highlighted' : ''}`}>
             <div className="category-section__content-item-text-wrapper">
@@ -29,7 +25,9 @@ export const CategorySectionContentItem = ({
             </div>
             <a href={ref} className="category-section__content-item-button">
                 <Button variant={"contained"} backgroundColor={"white-blue"} paddingInline={"xl"} paddingBlock={"sm"}
-                    borderRadius={"sm"} textConponent={categorySectionContentItemButtonTextComponent} onClick={() => 1} />
+                    borderRadius={"sm"} onClick={() => 1} >
+                    <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />
+                </Button>
             </a>
             <div className="category-section__content-item-image absolute inset-0">
                 <Image src={imgRef} alt={alt} fill className="rounded-[10px] brightness-[0.6]" objectFit="cover" />

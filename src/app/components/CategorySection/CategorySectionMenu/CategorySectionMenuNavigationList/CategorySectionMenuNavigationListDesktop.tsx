@@ -1,4 +1,4 @@
-import { categorySectionMenuNavigationListContent } from "../mockCategorySectionData";
+import { categorySectionMenuNavigationListContent } from "../categorySectionMockData";
 import { CategorySectionMenuNavigationListDesktopSliderArrowsWrapper } from "./CategorySectionMenuNavigationListDesktopSliderArrowsWrapper/CategorySectionMenuNavigationListDesktopSliderArrowsWrapper";
 import { CategorySectionMenuNavigationListItem } from "./CategorySectionMenuNavigationListItem";
 
