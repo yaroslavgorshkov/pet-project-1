@@ -24,7 +24,8 @@ export default {
         'clay': '#C4C4C4',
         'rose': '#F9D9DA',
         'bg-gray': '#888',
-        'header': '#7070703e'
+        'header': '#7070703e',
+        'svg-gray': '#6E757E'
       },
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],

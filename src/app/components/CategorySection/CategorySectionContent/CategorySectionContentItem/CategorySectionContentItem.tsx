@@ -1,15 +1,7 @@
-import { getFontSize } from "@/app/helpers/getFontSize"
 import { Text } from "../../../Text"
-import { getFontFamily } from "@/app/helpers/getFontFamily";
-import { getColor } from "@/app/helpers/getColor";
-import { getFontWeight } from "@/app/helpers/getFontWeight";
-import { TextButton } from "../../../TextButton";
-import { getPaddingInlineSize } from "@/app/helpers/getPaddingSize/getPaddingInlineSize";
-import { getPaddingBlockSize } from "@/app/helpers/getPaddingSize/getPaddingBlockSize";
-import { getBackgroundColor } from "@/app/helpers/getBackgroundColor";
-import { getBorderRadius } from "@/app/helpers/getBorderRadius";
 import Image from "next/image";
 import { CategorySectionContentItemText } from "./CategorySectionContentItemText";
+import { Button } from "@/app/components/Button/Button";
 
 type CategorySectionContentItemProps = {
     text: string;
@@ -26,15 +18,9 @@ export const CategorySectionContentItem = ({
     alt,
     isHighlighted = false
 }: CategorySectionContentItemProps) => {
-    const fontSizeLg = getFontSize('lg');
-    const fontFamilyOpensans = getFontFamily('opensans');
-    const colorLapis = getColor('lapis');
-    const fontWeightNormal = getFontWeight('normal');
-
-    const pxXl = getPaddingInlineSize('xl');
-    const pySm = getPaddingBlockSize('sm');
-    const bgcWhiteBlue = getBackgroundColor('white-blue');
-    const roundedSm = getBorderRadius('sm');
+    const categorySectionContentItemButtonTextComponent = (
+        <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />
+    )
 
     return (
         <article className={`category-section__content-item rounded-[10px] relative h-[211px] md:h-[277px] xl:h-auto ${isHighlighted ? 'category-section__content-item--highlighted' : ''}`}>
@@ -42,10 +28,8 @@ export const CategorySectionContentItem = ({
                 <CategorySectionContentItemText text={text} />
             </div>
             <a href={ref} className="category-section__content-item-button">
-                <TextButton text={
-                    <Text fontSize={fontSizeLg} fontFamily={fontFamilyOpensans} color={colorLapis}
-                        fontWeight={fontWeightNormal} content={"Explore"} />
-                } px={pxXl} py={pySm} bgc={bgcWhiteBlue} rounded={roundedSm} />
+                <Button variant={"contained"} backgroundColor={"white-blue"} paddingInline={"xl"} paddingBlock={"sm"}
+                    borderRadius={"sm"} textConponent={categorySectionContentItemButtonTextComponent} onClick={() => 1} />
             </a>
             <div className="category-section__content-item-image absolute inset-0">
                 <Image src={imgRef} alt={alt} fill className="rounded-[10px] brightness-[0.6]" objectFit="cover" />
