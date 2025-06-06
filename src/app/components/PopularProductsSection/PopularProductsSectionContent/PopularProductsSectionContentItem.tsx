@@ -3,7 +3,7 @@ import { PopularProductsSectionContentItemImageContainer } from "./PopularProduc
 import { PopularProductsSectionContentItemName } from "./PopularProductsSectionContentItemName";
 
 type PopularProductsSectionContentItemProps = {
-    ref: string;
+    href: string;
     imgRef: string;
     name: string;
     description: string;
@@ -13,7 +13,7 @@ type PopularProductsSectionContentItemProps = {
 }
 
 export const PopularProductsSectionContentItem = ({
-    ref,
+    href,
     imgRef,
     name,
     description,
@@ -22,7 +22,7 @@ export const PopularProductsSectionContentItem = ({
     alt
 }: PopularProductsSectionContentItemProps) => {
     return (
-        <a href={ref} className={`flex flex-col gap-[40px] px-5 pt-[49px] pb-5 rounded-[16px] md:pt-[84px] md:px-10 md:pb-[60px] ${backgroundColor}`}>
+        <a href={href} className={`flex flex-col gap-[40px] px-5 pt-[49px] pb-5 rounded-[16px] md:pt-[84px] md:px-10 md:pb-[60px] ${backgroundColor}`}>
             <PopularProductsSectionContentItemImageContainer imgRef={imgRef} alt={alt} />
             <div className="flex flex-col">
                 <PopularProductsSectionContentItemName name={name} />

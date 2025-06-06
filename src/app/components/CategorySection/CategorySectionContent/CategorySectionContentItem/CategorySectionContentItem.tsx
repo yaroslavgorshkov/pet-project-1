@@ -5,7 +5,7 @@ import { Button } from "@/app/components/Button/Button";
 
 type CategorySectionContentItemProps = {
     text: string;
-    ref: string;
+    href: string;
     imgRef: string;
     alt: string;
     isHighlighted?: boolean
@@ -13,7 +13,7 @@ type CategorySectionContentItemProps = {
 
 export const CategorySectionContentItem = ({
     text,
-    ref,
+    href,
     imgRef,
     alt,
     isHighlighted = false
@@ -23,7 +23,7 @@ export const CategorySectionContentItem = ({
             <div className="category-section__content-item-text-wrapper">
                 <CategorySectionContentItemText text={text} />
             </div>
-            <a href={ref} className="category-section__content-item-button">
+            <a href={href} className="category-section__content-item-button">
                 <Button variant={"contained"} backgroundColor={"white-blue"} paddingInline={"xl"} paddingBlock={"sm"}
                     borderRadius={"sm"} onClick={() => 1} >
                     <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />

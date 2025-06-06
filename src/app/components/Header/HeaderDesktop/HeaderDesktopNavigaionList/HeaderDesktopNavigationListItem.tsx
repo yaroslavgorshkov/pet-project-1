@@ -2,18 +2,18 @@ import { Text } from "@/app/components/Text"
 
 type HeaderDesktopNavigationListItemProps = {
     text: string;
-    ref: string;
+    href: string;
     isHighlighted?: boolean;
 }
 
 export const HeaderDesktopNavigationListItem = ({
     text,
-    ref,
+    href,
     isHighlighted = false
 }: HeaderDesktopNavigationListItemProps) => {
     return (
         <li>
-            <a href={ref}>
+            <a href={href}>
                 <Text fontSize='xl' fontFamily='playfair' color='lapis' content={text}
                     className={`navigation-list__item ${isHighlighted ? 'navigation-list__item--highlighted' : ''}`}
                 />

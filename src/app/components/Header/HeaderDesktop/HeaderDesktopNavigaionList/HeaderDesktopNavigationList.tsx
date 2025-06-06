@@ -9,14 +9,14 @@ export const HeaderDesktopNavigationList = () => {
             return <HeaderDesktopNavigationListItem
                 key={item.id}
                 text={item.text}
-                ref={item.ref}
+                href={item.ref}
                 isHighlighted={true}
             />
         } else {
             return <HeaderDesktopNavigationListItem
                 key={item.id}
                 text={item.text}
-                ref={item.ref}
+                href={item.ref}
             />
         }
     })

@@ -9,7 +9,7 @@ export const CategorySectionContentMobile = () => {
             return <CategorySectionContentItem
                 key={item.id}
                 text={item.text}
-                ref={item.ref}
+                href={item.ref}
                 isHighlighted={true}
                 imgRef={item.imgRef}
                 alt={item.alt} />
@@ -17,7 +17,7 @@ export const CategorySectionContentMobile = () => {
             return <CategorySectionContentItem
                 key={item.id}
                 text={item.text}
-                ref={item.ref}
+                href={item.ref}
                 imgRef={item.imgRef}
                 alt={item.alt} />
         }

@@ -9,14 +9,14 @@ export const CategorySectionMenuNavigationListTablet = () => {
             return <CategorySectionMenuNavigationListItem
                 key={item.id}
                 text={item.text}
-                ref={item.ref}
+                href={item.ref}
                 isHighlighted={true}
             />
         } else {
             return <CategorySectionMenuNavigationListItem
                 key={item.id}
                 text={item.text}
-                ref={item.ref}
+                href={item.ref}
             />
         }
     })
