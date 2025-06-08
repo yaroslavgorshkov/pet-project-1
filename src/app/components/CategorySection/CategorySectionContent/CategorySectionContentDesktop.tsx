@@ -5,24 +5,15 @@ import { CategorySectionContentItem } from "./CategorySectionContentItem/Categor
 export const CategorySectionContentDesktop = () => {
     const content = categorySectionContent;
 
-    const categorySectionContentList = content.map(item => {
-        if (item.id === 0) {
-            return <CategorySectionContentItem
-                key={item.id}
-                text={item.text}
-                href={item.ref}
-                isHighlighted={true}
-                imgRef={item.imgRef}
-                alt={item.alt} />
-        } else {
-            return <CategorySectionContentItem
-                key={item.id}
-                text={item.text}
-                href={item.ref}
-                imgRef={item.imgRef}
-                alt={item.alt} />
-        }
-    })
+    const categorySectionContentList = content.map(({ id, text, href, imgRef, alt }) =>
+    (<CategorySectionContentItem
+        key={id}
+        text={text}
+        href={href}
+        isHighlighted={id === 0}
+        imgRef={imgRef}
+        alt={alt} />)
+    )
 
     return (
         <div className="hidden gap-[60px] w-full xl:flex">

@@ -1,6 +1,6 @@
 type PopularProductsSectionItem = {
     id: number;
-    ref: string;
+    href: string;
     imgRef: string;
     name: string;
     description: string;
@@ -12,7 +12,7 @@ type PopularProductsSectionItem = {
 export const popularProductsSectionContent: PopularProductsSectionItem[] = [
     {
         id: 0,
-        ref: "#popular-products-armchair",
+        href: "#popular-products-armchair",
         imgRef: "/img/popular-products-1-item.png",
         name: "Armchair",
         description: "Light single chair",
@@ -22,7 +22,7 @@ export const popularProductsSectionContent: PopularProductsSectionItem[] = [
     }, 
     {
         id: 1,
-        ref: "#popular-products-premium-sofa",
+        href: "#popular-products-premium-sofa",
         imgRef: "/img/popular-products-2-item.png",
         name: "Premium Sofa",
         description: "Light single chair",
@@ -32,7 +32,7 @@ export const popularProductsSectionContent: PopularProductsSectionItem[] = [
     },
     {
         id: 2,
-        ref: "#popular-products-minimal-sofa",
+        href: "#popular-products-minimal-sofa",
         imgRef: "/img/popular-products-3-item.png",
         name: "Minimal Sofa",
         description: "Light single chair",
@@ -42,7 +42,7 @@ export const popularProductsSectionContent: PopularProductsSectionItem[] = [
     },
     {
         id: 3,
-        ref: "#popular-products-dining-chair",
+        href: "#popular-products-dining-chair",
         imgRef: "/img/popular-products-4-item.png",
         name: "Dining Chair",
         description: "Light single chair",

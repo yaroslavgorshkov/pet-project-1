@@ -1,3 +1,4 @@
+import { twMerge } from "tailwind-merge";
 import { Text } from "../../Text";
 import { PopularProductsSectionContentItemImageContainer } from "./PopularProductsSectionContentItemImageContainer";
 import { PopularProductsSectionContentItemName } from "./PopularProductsSectionContentItemName";
@@ -21,8 +22,10 @@ export const PopularProductsSectionContentItem = ({
     backgroundColor,
     alt
 }: PopularProductsSectionContentItemProps) => {
+    const combinedClassName = twMerge(`flex flex-col gap-[40px] px-5 pt-[49px] pb-5 rounded-[16px] md:pt-[84px] md:px-10 md:pb-[60px] ${backgroundColor}`);
+
     return (
-        <a href={href} className={`flex flex-col gap-[40px] px-5 pt-[49px] pb-5 rounded-[16px] md:pt-[84px] md:px-10 md:pb-[60px] ${backgroundColor}`}>
+        <a href={href} className={combinedClassName}>
             <PopularProductsSectionContentItemImageContainer imgRef={imgRef} alt={alt} />
             <div className="flex flex-col">
                 <PopularProductsSectionContentItemName name={name} />

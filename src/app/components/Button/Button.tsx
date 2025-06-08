@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BorderRadius, ButtonBackgroundColor, IconFillColor, IconSize, IconType, PaddingBlockSize, PaddingInlineSize } from "../types";
+import { BorderRadius, ButtonBackgroundColor, EndIconType, PaddingBlockSize, PaddingInlineSize } from "../types";
 import { ButtonBase } from "./ButtonBase"
 import { getButtonVariant } from "@/app/helpers/getButtonVariant";
 import { getPaddingInlineSize } from "@/app/helpers/getPaddingSize/getPaddingInlineSize";
@@ -9,11 +9,7 @@ import { getPaddingBlockSize } from "@/app/helpers/getPaddingSize/getPaddingBloc
 import { getBackgroundColor } from "@/app/helpers/getBackgroundColor";
 import { twMerge } from "tailwind-merge";
 
-type EndIconType = {
-    iconType: IconType;
-    iconSize: IconSize;
-    iconFillColor: IconFillColor;
-}
+
 
 type CommonButtonProps = {
     paddingInline: PaddingInlineSize;

@@ -1,5 +1,5 @@
-export type NavigationListContentItem = {id: number, text: string, ref: string};
-export type CategorySectionItem = {id: number, text: string, ref: string, imgRef: string, alt: string};
+export type NavigationListContentItem = {id: number, text: string, href: string};
+export type CategorySectionItem = {id: number, text: string, href: string, imgRef: string, alt: string};
 export type FontSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl';
 export type PaddingInlineSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl';
 export type PaddingBlockSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
@@ -18,6 +18,12 @@ export type IconType = 'account' | 'shopping-cart' | 'search' | 'search-small' |
 export type IconProps = {
     color: IconFillColor;
     size: IconSize;
+}
+
+export type EndIconType = {
+    iconType: IconType;
+    iconSize: IconSize;
+    iconFillColor: IconFillColor;
 }
 
 

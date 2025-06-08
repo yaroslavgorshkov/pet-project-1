@@ -2,16 +2,18 @@ import { popularProductsSectionContent } from "../popularProductsSectionMockData
 import { PopularProductsSectionContentItem } from "./PopularProductsSectionContentItem";
 
 export const PopularProductsSectionContent = () => {
-    const popularProductsList = popularProductsSectionContent.map(item => {
+    const popularProductsList = popularProductsSectionContent.map((
+        { href, imgRef, name, description, price, backgroundColor, alt, id }) => {
         return (
-            <PopularProductsSectionContentItem href={item.ref} imgRef={item.imgRef} name={item.name}
-                description={item.description} price={item.price} backgroundColor={item.backgroundColor}
-                alt={item.alt} key={item.id} />
+            <PopularProductsSectionContentItem href={href} imgRef={imgRef} name={name}
+                description={description} price={price}
+                backgroundColor={backgroundColor} alt={alt} key={id} />
         )
     })
 
     return (
-        <div className="popular-products-section-content flex gap-8 overflow-x-scroll w-full px-9 md:px-10 lg:px-[60px] xl:px-[196px]">
+        <div className="popular-products-section-content flex gap-8 overflow-x-scroll 
+        w-full px-9 md:px-10 lg:px-[60px] xl:px-[196px]">
             {popularProductsList}
         </div>
     )
