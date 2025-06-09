@@ -1,8 +1,8 @@
 import { IconButton } from "../../Button/IconButton"
 
 export const PopularProductsSectionSliderDesktop = () => {
-    const handleLeftClick = () => {
-        // TODO: add left click function
+    const handlePopularProductsSectionSliderArrowButtonClick = () => {
+        // TODO: add PopularProductsSectionSliderArrowButton click function
     }
 
     return (
@@ -13,10 +13,12 @@ export const PopularProductsSectionSliderDesktop = () => {
             </div>
             <div className="self-end flex gap-[24px]">
                 <div className="rounded-[20px] bg-white-blue w-[40px] h-[40px] flex items-center justify-center">
-                    <IconButton iconType={"arrow-left"} iconFillColor={"lapis"} iconSize={"sm"} onClick={handleLeftClick} />
+                    <IconButton iconType={"arrow-left"} iconFillColor={"lapis"} iconSize={"sm"}
+                        onClick={handlePopularProductsSectionSliderArrowButtonClick} />
                 </div>
                 <div className="rounded-[20px] bg-rose w-[40px] h-[40px] flex items-center justify-center">
-                    <IconButton iconType={"arrow-right"} iconFillColor={"lapis"} iconSize={"sm"} onClick={handleLeftClick} />
+                    <IconButton iconType={"arrow-right"} iconFillColor={"lapis"} iconSize={"sm"}
+                        onClick={handlePopularProductsSectionSliderArrowButtonClick} />
                 </div>
             </div>
         </div>

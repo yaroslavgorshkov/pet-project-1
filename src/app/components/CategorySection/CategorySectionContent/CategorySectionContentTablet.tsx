@@ -4,23 +4,15 @@ import { CategorySectionContentItem } from "./CategorySectionContentItem/Categor
 export const CategorySectionContentTablet = () => {
     const content = categorySectionContent;
 
-    const categorySectionContentList = content.map(item => {
-        if (item.id === 0) {
-            return <CategorySectionContentItem
-                key={item.id}
-                text={item.text}
-                href={item.ref}
-                isHighlighted={true}
-                imgRef={item.imgRef}
-                alt={item.alt} />
-        } else {
-            return <CategorySectionContentItem
-                key={item.id}
-                text={item.text}
-                href={item.ref}
-                imgRef={item.imgRef}
-                alt={item.alt} />
-        }
+    const categorySectionContentList = content.map(({ id, text, href, imgRef, alt }) => {
+        const isFirstItem = id === 0;
+        return <CategorySectionContentItem
+            key={id}
+            text={text}
+            href={href}
+            isHighlighted={isFirstItem}
+            imgRef={imgRef}
+            alt={alt} />
     })
 
     return (

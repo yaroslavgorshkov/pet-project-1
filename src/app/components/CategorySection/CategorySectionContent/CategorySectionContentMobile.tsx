@@ -4,15 +4,17 @@ import { CategorySectionContentItem } from "./CategorySectionContentItem/Categor
 export const CategorySectionContentMobile = () => {
     const content = categorySectionContent;
 
-    const categorySectionContentList = content.map(({ id, text, href, imgRef, alt }) =>
-    (<CategorySectionContentItem
-        key={id}
-        text={text}
-        href={href}
-        isHighlighted={id === 0}
-        imgRef={imgRef}
-        alt={alt} />
-    ))
+    const categorySectionContentList = content.map(({ id, text, href, imgRef, alt }) => {
+        const isFirstItem = id === 0;
+        return (<CategorySectionContentItem
+            key={id}
+            text={text}
+            href={href}
+            isHighlighted={isFirstItem}
+            imgRef={imgRef}
+            alt={alt} />
+        )
+    })
 
     return (
         <div className="flex flex-col gap-[26px] w-full md:hidden">

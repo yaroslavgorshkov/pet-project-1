@@ -1,8 +1,8 @@
-import { popularProductsSectionContent } from "../popularProductsSectionMockData";
+import { popularProductsSectionMockData } from "../popularProductsSectionMockData";
 import { PopularProductsSectionContentItem } from "./PopularProductsSectionContentItem";
 
 export const PopularProductsSectionContent = () => {
-    const popularProductsList = popularProductsSectionContent.map((
+    const popularProductsList = popularProductsSectionMockData.map((
         { href, imgRef, name, description, price, backgroundColor, alt, id }) => {
         return (
             <PopularProductsSectionContentItem href={href} imgRef={imgRef} name={name}

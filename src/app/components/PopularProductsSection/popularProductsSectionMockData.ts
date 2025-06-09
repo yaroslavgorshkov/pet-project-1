@@ -9,7 +9,7 @@ type PopularProductsSectionItem = {
     alt: string
 }
 
-export const popularProductsSectionContent: PopularProductsSectionItem[] = [
+export const popularProductsSectionMockData: PopularProductsSectionItem[] = [
     {
         id: 0,
         href: "#popular-products-armchair",

@@ -10,6 +10,6 @@ export const CategorySectionMenuNavigationListTablet = () => {
             highlightedElementNumber={0}
             ulClassName="flex flex-wrap gap-[44px] justify-center"
             navClassName="xl:hidden"
-            sliceTo={7} />
+        />
     )
 }

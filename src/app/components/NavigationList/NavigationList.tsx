@@ -7,7 +7,6 @@ type NavigationListProps = {
     NavigationListItem: React.FC<NavigationListItemProps>;
     highlightedElementNumber?: number;
     navigationListContent: NavigationListContentItem[];
-    sliceTo?: number;
     navClassName?: string;
     ulClassName?: string;
 }
@@ -16,20 +15,20 @@ export const NavigationList = ({
     NavigationListItem,
     highlightedElementNumber,
     navigationListContent,
-    sliceTo,
     navClassName = '',
     ulClassName = ''
 }: NavigationListProps) => {
-    const slicedListContent = sliceTo ? navigationListContent.slice(0, sliceTo) : navigationListContent;
-    const slicedList = slicedListContent.map(({ id, text, href }) =>
-    (<NavigationListItem
-        key={id}
-        text={text}
-        href={href}
-        isHighlighted={id === highlightedElementNumber}
-    />))
+    const slicedList = navigationListContent.map(({ id, text, href }) => {
+        const isNavigationListItemHighlighted = (id === highlightedElementNumber);
+        return (<NavigationListItem
+            key={id}
+            text={text}
+            href={href}
+            isHighlighted={isNavigationListItemHighlighted}
+        />)
+    })
 
-    const combinedUlClassName = twMerge(`list-none p-0 m-0 ${ulClassName}`);
+    const combinedUlClassName = twMerge('list-none p-0 m-0', ulClassName);
 
     return (
         <nav className={navClassName}>

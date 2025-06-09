@@ -31,7 +31,7 @@ type SecondarybuttonProps = CommonButtonProps & {
     backgroundColor?: never;
 }
 
-type ButtonProps = ContainedButtonProps | SecondarybuttonProps;
+export type ButtonProps = ContainedButtonProps | SecondarybuttonProps;
 
 export const Button = ({
     variant,

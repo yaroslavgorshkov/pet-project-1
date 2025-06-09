@@ -18,8 +18,8 @@ export const CategorySectionContentItem = ({
     alt,
     isHighlighted = false
 }: CategorySectionContentItemProps) => {
-    const handleLeftClick = () => {
-        // TODO: add left click function
+    const handleCategorySectionContentItemButtonClick = () => {
+        // TODO: add CategorySectionContentItem button click function
     }
 
     return (
@@ -29,7 +29,7 @@ export const CategorySectionContentItem = ({
             </div>
             <a href={href} className="category-section__content-item-button">
                 <Button variant={"contained"} backgroundColor={"white-blue"} paddingInline={"xl"} paddingBlock={"sm"}
-                    borderRadius={"sm"} onClick={handleLeftClick} >
+                    borderRadius={"sm"} onClick={handleCategorySectionContentItemButtonClick} >
                     <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />
                 </Button>
             </a>
