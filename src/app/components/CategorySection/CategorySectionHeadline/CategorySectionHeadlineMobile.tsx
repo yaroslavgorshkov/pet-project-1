@@ -5,7 +5,8 @@ import { CategorySectionContentFallback } from "../CategorySectionContent/Catego
 
 export const CategorySectionHeadlineMobile = () => {
     const content = categorySectionContent;
-    if (!content || content.length === 0) {
+    const isCategorySectionContentEmpty = !content || content.length === 0;
+    if (isCategorySectionContentEmpty) {
         return (
             <div className="flex flex-col gap-9 items-center w-full md:max-w-[791px] xl:hidden">
                 <CategorySectionHeadlineTitle />
