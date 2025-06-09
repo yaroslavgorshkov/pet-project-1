@@ -5,7 +5,8 @@ import { categorySectionContent } from "../CategorySectionMenu/categorySectionMo
 
 export const CategorySectionContent = () => {
     const content = categorySectionContent;
-    if (!content || content.length === 0) {
+    const isCategorySectionContentEmpty = !content || content.length === 0;
+    if (isCategorySectionContentEmpty) {
         return
     }
 
