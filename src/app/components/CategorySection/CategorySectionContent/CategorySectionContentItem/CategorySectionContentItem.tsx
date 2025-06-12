@@ -1,7 +1,8 @@
-import { Text } from "../../../Text"
 import Image from "next/image";
 import { CategorySectionContentItemText } from "./CategorySectionContentItemText";
 import { Button } from "@/app/components/Button/Button";
+import { ButtonProps } from "@/app/components/Button/buttonTypes";
+import { Text } from "@/app/components/Text/Text";
 
 type CategorySectionContentItemProps = {
     text: string;
@@ -22,14 +23,21 @@ export const CategorySectionContentItem = ({
         // TODO: add CategorySectionContentItem button click function
     }
 
+    const categorySectionContentItemButtonSmProps: Omit<ButtonProps, "children"> = {
+        buttonSize: "sm",
+        borderRadius: "sm",
+        variant: "contained",
+        backgroundColor: "white-blue",
+        onClick: handleCategorySectionContentItemButtonClick
+    }
+
     return (
         <article className={`category-section__content-item rounded-[10px] relative h-[211px] md:h-[277px] xl:h-auto ${isHighlighted ? 'category-section__content-item--highlighted' : ''}`}>
             <div className="category-section__content-item-text-wrapper">
                 <CategorySectionContentItemText text={text} />
             </div>
             <a href={href} className="category-section__content-item-button">
-                <Button variant={"contained"} backgroundColor={"white-blue"} paddingInline={"xl"} paddingBlock={"sm"}
-                    borderRadius={"sm"} onClick={handleCategorySectionContentItemButtonClick} >
+                <Button {...categorySectionContentItemButtonSmProps}>
                     <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={"Explore"} />
                 </Button>
             </a>

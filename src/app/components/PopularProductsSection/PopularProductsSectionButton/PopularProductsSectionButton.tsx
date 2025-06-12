@@ -1,19 +1,22 @@
-import { Button, ContainedButtonProps } from "../../Button/Button"
-import { Text } from "../../Text"
+import { Button } from "../../Button/Button"
+import { ButtonProps } from "../../Button/buttonTypes"
+import { Text } from "../../Text/Text"
+import { EndIconType } from "../../types"
 
 export const PopularProductsSectionButton = () => {
     const handlePopularProductsSectionButtonClick = () => {
         // TODO: add PopularProductsSectionButton click function
     }
 
-    const popularProductsSectionButtonProps: Omit<ContainedButtonProps, "children"> = {
+    const popularProductsSectionButtonIcon: EndIconType = { iconType: "arrow-right", iconFillColor: "absolute-white", iconSize: "2xl" };
+
+    const popularProductsSectionButtonProps: Omit<ButtonProps, "children"> = {
+        buttonSize: "lg",
         variant: "contained",
         backgroundColor: "mint",
-        paddingInline: "md",
-        paddingBlock: "xl",
         borderRadius: "md",
-        endIcon: { iconType: "arrow-right", iconFillColor: "absolute-white", iconSize: "2xl" },
-        onClick: handlePopularProductsSectionButtonClick
+        endIcon: popularProductsSectionButtonIcon,
+        onClick: handlePopularProductsSectionButtonClick,
     }
 
     return (

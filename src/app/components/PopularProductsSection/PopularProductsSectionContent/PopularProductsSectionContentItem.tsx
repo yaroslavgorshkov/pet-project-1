@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import { Text } from "../../Text";
+import { Text } from "../../Text/Text";
 import { PopularProductsSectionContentItemImageContainer } from "./PopularProductsSectionContentItemImageContainer";
 import { PopularProductsSectionContentItemName } from "./PopularProductsSectionContentItemName";
 

@@ -1,4 +1,4 @@
-import { Color } from "../components/types";
+import { Color } from "../textTypes";
 
 const colorMap: Record<Color, string> = {
     lapis: "text-lapis",

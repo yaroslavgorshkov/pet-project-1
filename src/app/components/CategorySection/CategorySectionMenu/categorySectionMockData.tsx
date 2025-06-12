@@ -1,4 +1,7 @@
-import { CategorySectionItem, NavigationListContentItem } from "../../types";
+import { NavigationListContentItem } from "../../types";
+
+type CategorySectionItem = { id: number, text: string, href: string, imgRef: string, alt: string };
+
 
 export const categorySectionContent: CategorySectionItem[] = [
     { id: 0, href: "#bedroom", text: "Bedroom", imgRef: "/img/categories-bedroom.jpg", alt: "Bedroom" },
