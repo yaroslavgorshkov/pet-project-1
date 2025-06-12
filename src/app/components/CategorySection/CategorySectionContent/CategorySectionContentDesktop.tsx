@@ -1,27 +1,19 @@
 import { CategorySectionMenu } from "../CategorySectionMenu/CategorySectionMenu";
-import { categorySectionContent } from "../CategorySectionMenu/mockCategorySectionData";
+import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData";
 import { CategorySectionContentItem } from "./CategorySectionContentItem/CategorySectionContentItem";
 
 export const CategorySectionContentDesktop = () => {
     const content = categorySectionContent;
 
-    const categorySectionContentList = content.map(item => {
-        if (item.id === 0) {
-            return <CategorySectionContentItem
-                key={item.id}
-                text={item.text}
-                ref={item.ref}
-                isHighlighted={true}
-                imgRef={item.imgRef}
-                alt={item.alt} />
-        } else {
-            return <CategorySectionContentItem
-                key={item.id}
-                text={item.text}
-                ref={item.ref}
-                imgRef={item.imgRef}
-                alt={item.alt} />
-        }
+    const categorySectionContentList = content.map(({ id, text, href, imgRef, alt }) => {
+        const isFirstItem = id === 0;
+        return (<CategorySectionContentItem
+            key={id}
+            text={text}
+            href={href}
+            isHighlighted={isFirstItem}
+            imgRef={imgRef}
+            alt={alt} />)
     })
 
     return (

@@ -1,21 +1,25 @@
-import { Text } from "@/app/components/Text";
+import { Text } from "@/app/components/Text/Text";
+import { twMerge } from "tailwind-merge";
 
 type CategorySectionMenuNavigationListItem = {
     text: string;
-    ref: string;
+    href: string;
     isHighlighted?: boolean;
 }
 
 export const CategorySectionMenuNavigationListItem = ({
     text,
-    ref,
+    href,
     isHighlighted = false
 }: CategorySectionMenuNavigationListItem) => {
+    const highlightedClass = isHighlighted ? 'navigation-list__item--highlighted' : '';
+    const combinedClassName = twMerge('navigation-list__item', highlightedClass);
+
     return (
         <li>
-            <a href={ref}>
+            <a href={href}>
                 <Text fontSize='3xl' fontFamily='roboto' color='lapis' content={text}
-                    className={`navigation-list__item ${isHighlighted ? 'navigation-list__item--highlighted' : ''}`}
+                    className={combinedClassName}
                 />
             </a>
         </li>

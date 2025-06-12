@@ -1,4 +1,4 @@
-import { FontWeight } from "../components/types";
+import { FontWeight } from "../textTypes";
 
 const fontWeightMap: Record<FontWeight, string> = {
     normal: "font-normal",

@@ -1,4 +1,4 @@
-import { BorderRadius } from "../components/types";
+import { BorderRadius } from "../buttonTypes";
 
 const borderRadiusMap: Record<BorderRadius, string> = {
     md: "rounded-[10px]",

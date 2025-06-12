@@ -1,4 +1,4 @@
-import { FontSize } from "../components/types";
+import { FontSize } from "../textTypes";
 
 const fontSizeMap: Record<FontSize, string> = {
     sm: "text-[14px] leading-[16px]",

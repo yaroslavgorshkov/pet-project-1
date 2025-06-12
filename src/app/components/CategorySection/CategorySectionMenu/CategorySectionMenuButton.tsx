@@ -1,13 +1,28 @@
-import { Text } from "../../Text"
 import { Button } from "../../Button/Button";
+import { EndIconType } from "../../types";
+import { ButtonProps } from "../../Button/buttonTypes";
+import { Text } from "../../Text/Text";
 
 export const CategorySectionMenuButton = () => {
-    const categorySectionMenuButtonTextComponent = <Text fontSize='lg' fontFamily='opensans' color='white' fontWeight='bold'
-        content={"All Categories"} />
+    const handleCategorySectionMenuButtonClick = () => {
+        // TODO: add CategorySectionMenuButton click function
+    }
+
+    const categorySectionMenuButtonEndIcon: EndIconType =
+        { iconType: "arrow-right", iconFillColor: "absolute-white", iconSize: "2xl" };
+
+    const categorySectionMenuButtonLgProps: Omit<ButtonProps, "children"> = {
+        buttonSize: "lg",
+        borderRadius: "md",
+        variant: "contained",
+        backgroundColor: "mint",
+        onClick: handleCategorySectionMenuButtonClick,
+        endIcon: categorySectionMenuButtonEndIcon
+    }
 
     return (
-        <Button variant={"contained"} backgroundColor={"mint"} paddingInline={"2xl"} paddingBlock={"2xl"}
-            borderRadius={"md"} textConponent={categorySectionMenuButtonTextComponent} onClick={() => 1}
-            endIcon={{ iconType: "arrow-right", iconFillColor: "absolute-white", iconSize: "2xl" }} />
+        <Button {...categorySectionMenuButtonLgProps}>
+            <Text fontSize={"lg"} fontFamily={"opensans"} color={"white"} content={"All Categories"} fontWeight={"bold"} />
+        </Button>
     )
 }

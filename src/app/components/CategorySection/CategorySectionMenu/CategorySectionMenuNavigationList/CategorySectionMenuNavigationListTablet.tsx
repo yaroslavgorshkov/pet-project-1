@@ -1,31 +1,16 @@
-import { categorySectionMenuNavigationListContent } from "../mockCategorySectionData";
+import { NavigationList } from "@/app/components/NavigationList/NavigationList";
+import { categorySectionMenuNavigationListContent } from "../categorySectionMockData";
 import { CategorySectionMenuNavigationListItem } from "./CategorySectionMenuNavigationListItem";
 
 export const CategorySectionMenuNavigationListTablet = () => {
-    const navigationListContent = categorySectionMenuNavigationListContent.slice(0, 7);
-
-    const categorySectionMenuNavigationList = navigationListContent.map(item => {
-        if (item.id === 0) {
-            return <CategorySectionMenuNavigationListItem
-                key={item.id}
-                text={item.text}
-                ref={item.ref}
-                isHighlighted={true}
-            />
-        } else {
-            return <CategorySectionMenuNavigationListItem
-                key={item.id}
-                text={item.text}
-                ref={item.ref}
-            />
-        }
-    })
-
     return (
-        <nav className="xl:hidden">
-            <ul className="list-none m-0 p-0 flex flex-wrap gap-[44px] justify-center">
-                {categorySectionMenuNavigationList}
-            </ul>
-        </nav>
+        <NavigationList
+            renderListItem={({ href, text, isHighlighted }) =>
+                <CategorySectionMenuNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
+            navigationListContent={categorySectionMenuNavigationListContent}
+            highlightedElementNumber={0}
+            ulClassName="flex flex-wrap gap-[44px] justify-center"
+            navClassName="xl:hidden"
+        />
     )
 }

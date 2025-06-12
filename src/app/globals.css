@@ -107,3 +107,7 @@ html, body {
 .category-section__menu-navigation-list-desktop {
     scrollbar-width: none;
 }
+
+.popular-products-section-content {
+    scrollbar-width: none;
+}

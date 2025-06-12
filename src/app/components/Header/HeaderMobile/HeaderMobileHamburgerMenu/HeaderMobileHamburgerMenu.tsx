@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { navigationListContent } from "../../mockHeaderData";
+import { navigationListContent } from "../../headerMockData";
 import { HeaderMobileHamburgerMenuButton } from "./HeaderMobileHamburgerMenuButton";
 
 

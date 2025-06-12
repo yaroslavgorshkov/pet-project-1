@@ -1,25 +1,39 @@
-import { Text } from "../Text"
 import { Button } from "../Button/Button";
+import { ButtonProps } from "../Button/buttonTypes";
+import { Text } from "../Text/Text";
 
 export const HeroSectionButton = () => {
-    const heroSectionButtonComponentSm = (
-        <Text fontSize={"lg"} fontFamily={"opensans"} color={"white"} fontWeight={"bold"}
-            content={"Shop Now"} />
-    )
+    const handleHeroSectionButtonClick = () => {
+        // TODO: add HeroSectionButton click function
+    }
 
-    const heroSectionButtonComponentMd = (
-        <Text fontSize={"3xl"} fontFamily={"opensans"} color={"white"} fontWeight={"bold"}
-            content={"Shop Now"} />
-    )
+    const heroSectionButtonSmProps: Omit<ButtonProps, "children"> = {
+        buttonSize: "sm",
+        borderRadius: "md",
+        variant: "contained",
+        backgroundColor: "mint",
+        onClick: handleHeroSectionButtonClick
+    }
+
+    const heroSectionButtonMdProps: Omit<ButtonProps, "children"> = {
+        buttonSize: "md",
+        borderRadius: "md",
+        variant: "contained",
+        backgroundColor: "mint",
+        onClick: handleHeroSectionButtonClick
+    }
+
     return (
         <>
             <div className="md:hidden">
-                <Button variant={"contained"} backgroundColor={"mint"} paddingInline={"lg"} paddingBlock={"md"} borderRadius={"md"}
-                    textConponent={heroSectionButtonComponentSm} onClick={() => 1} />
+                <Button {...heroSectionButtonSmProps} >
+                    <Text fontSize={"lg"} fontFamily={"opensans"} color={"white"} content={"Shop Now"} fontWeight={"bold"} />
+                </Button>
             </div>
             <div className="hidden md:block">
-                <Button variant={"contained"} backgroundColor={"mint"} paddingInline={"3xl"} paddingBlock={"xl"} borderRadius={"md"}
-                    textConponent={heroSectionButtonComponentMd} onClick={() => 1} />
+                <Button {...heroSectionButtonMdProps} >
+                    <Text fontSize={"3xl"} fontFamily={"opensans"} color={"white"} content={"Shop Now"} fontWeight={"bold"} />
+                </Button>
             </div>
         </>
     )
