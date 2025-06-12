@@ -5,7 +5,8 @@ import { CategorySectionMenuNavigationListItem } from "./CategorySectionMenuNavi
 export const CategorySectionMenuNavigationListTablet = () => {
     return (
         <NavigationList
-            NavigationListItem={CategorySectionMenuNavigationListItem}
+            renderListItem={({ href, text, isHighlighted }) =>
+                <CategorySectionMenuNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
             navigationListContent={categorySectionMenuNavigationListContent}
             highlightedElementNumber={0}
             ulClassName="flex flex-wrap gap-[44px] justify-center"

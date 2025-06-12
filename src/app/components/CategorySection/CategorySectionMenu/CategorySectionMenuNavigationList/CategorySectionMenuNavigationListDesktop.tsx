@@ -7,7 +7,8 @@ export const CategorySectionMenuNavigationListDesktop = () => {
     return (
         <div className="hidden w-full xl:flex">
             <NavigationList
-                NavigationListItem={CategorySectionMenuNavigationListItem}
+                renderListItem={({ href, text, isHighlighted }) =>
+                    <CategorySectionMenuNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
                 navigationListContent={categorySectionMenuNavigationListContent}
                 highlightedElementNumber={0}
                 ulClassName="category-section__menu-navigation-list-desktop flex flex-col gap-[78px] h-[694px] overflow-scroll pl-6"

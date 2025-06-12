@@ -9,8 +9,6 @@ import { getPaddingBlockSize } from "@/app/helpers/getPaddingSize/getPaddingBloc
 import { getBackgroundColor } from "@/app/helpers/getBackgroundColor";
 import { twMerge } from "tailwind-merge";
 
-
-
 type CommonButtonProps = {
     paddingInline: PaddingInlineSize;
     paddingBlock: PaddingBlockSize;
@@ -21,7 +19,7 @@ type CommonButtonProps = {
     onClick: () => void
 }
 
-type ContainedButtonProps = CommonButtonProps & {
+export type ContainedButtonProps = CommonButtonProps & {
     variant: "contained";
     backgroundColor: ButtonBackgroundColor;
 };

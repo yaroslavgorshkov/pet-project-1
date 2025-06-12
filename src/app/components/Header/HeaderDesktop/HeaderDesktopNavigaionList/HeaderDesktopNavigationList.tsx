@@ -7,7 +7,8 @@ export const HeaderDesktopNavigationList = () => {
 
     return (
         <NavigationList
-            NavigationListItem={HeaderDesktopNavigationListItem}
+            renderListItem={({ href, text, isHighlighted }) =>
+                <HeaderDesktopNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
             navigationListContent={headerDesktopNavigationListContent}
             highlightedElementNumber={0}
             ulClassName="flex gap-[50px]" />

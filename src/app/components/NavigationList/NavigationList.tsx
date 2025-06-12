@@ -1,10 +1,12 @@
 import { twMerge } from "tailwind-merge";
 import { NavigationListContentItem } from "../types";
+import { Fragment, ReactNode } from "react";
+import React from "react";
 
-type NavigationListItemProps = { text: string; href: string; isHighlighted: boolean }
+type RenderListItemProps = { text: string; href: string; isHighlighted: boolean }
 
 type NavigationListProps = {
-    NavigationListItem: React.FC<NavigationListItemProps>;
+    renderListItem: ({ text, href, isHighlighted }: RenderListItemProps) => ReactNode;
     highlightedElementNumber?: number;
     navigationListContent: NavigationListContentItem[];
     navClassName?: string;
@@ -12,20 +14,20 @@ type NavigationListProps = {
 }
 
 export const NavigationList = ({
-    NavigationListItem,
+    renderListItem,
     highlightedElementNumber,
     navigationListContent,
     navClassName = '',
     ulClassName = ''
 }: NavigationListProps) => {
-    const slicedList = navigationListContent.map(({ id, text, href }) => {
+    const renderList = navigationListContent.map(({ id, text, href }) => {
         const isNavigationListItemHighlighted = (id === highlightedElementNumber);
-        return (<NavigationListItem
-            key={id}
-            text={text}
-            href={href}
-            isHighlighted={isNavigationListItemHighlighted}
-        />)
+        const renderContent = renderListItem(({ text, href, isHighlighted: isNavigationListItemHighlighted }));
+        return (
+            <Fragment key={id}>
+                {renderContent}
+            </Fragment>
+        )
     })
 
     const combinedUlClassName = twMerge('list-none p-0 m-0', ulClassName);
@@ -33,7 +35,7 @@ export const NavigationList = ({
     return (
         <nav className={navClassName}>
             <ul className={combinedUlClassName}>
-                {slicedList}
+                {renderList}
             </ul>
         </nav>
     )

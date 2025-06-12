@@ -12,7 +12,8 @@ export const CategorySectionMenuNavigationListItem = ({
     href,
     isHighlighted = false
 }: CategorySectionMenuNavigationListItem) => {
-    const combinedClassName = twMerge(`navigation-list__item ${isHighlighted ? 'navigation-list__item--highlighted' : ''}`);
+    const highlightedClass = isHighlighted ? 'navigation-list__item--highlighted' : '';
+    const combinedClassName = twMerge('navigation-list__item', highlightedClass);
 
     return (
         <li>

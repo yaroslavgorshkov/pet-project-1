@@ -1,4 +1,5 @@
 import { Text } from "@/app/components/Text"
+import { twMerge } from "tailwind-merge";
 
 type HeaderDesktopNavigationListItemProps = {
     text: string;
@@ -11,11 +12,14 @@ export const HeaderDesktopNavigationListItem = ({
     href,
     isHighlighted = false
 }: HeaderDesktopNavigationListItemProps) => {
+    const highlightedClass = isHighlighted ? 'navigation-list__item--highlighted' : '';
+    const combinedClassName = twMerge('navigation-list__item', highlightedClass)
+
     return (
         <li>
             <a href={href}>
                 <Text fontSize='xl' fontFamily='playfair' color='lapis' content={text}
-                    className={`navigation-list__item ${isHighlighted ? 'navigation-list__item--highlighted' : ''}`}
+                    className={combinedClassName}
                 />
             </a>
         </li>
