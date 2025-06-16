@@ -1,29 +1,36 @@
-import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 import { BenefitsSectionContentItemDescription } from "./BenefitsSectionContentItemDescription";
 import { BenefitsSectionContentItemText } from "./BenefitsSectionContentItemText";
+import { getStaticIconComponent } from "@/app/helpers/iconHelpers/getIconComponent";
+import { BenefitsSectionContentItemIconBackgroundColor, BenefitsSectionContentItemIconType } from "../../benefitsSectionMockData";
+import { getBenefitsSectionContentItemIconBackgroundColor } from "../../helpers/getBenefitsSectionContentItemIconBackgroundColor";
 
 type BenefitsSectionContentItemProps = {
     text: string;
-    descriptionTop: string;
-    descriptionBottom: string;
-    svgBackgroundColor: string;
-    svg: ReactNode;
+    descriptionTopText: string;
+    descriptionBottomText: string;
+    iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor;
+    iconName: BenefitsSectionContentItemIconType;
 }
 
 export const BenefitsSectionContentItem = ({
     text,
-    descriptionTop,
-    descriptionBottom,
-    svgBackgroundColor,
-    svg
+    descriptionTopText,
+    descriptionBottomText,
+    iconBackgroundColor,
+    iconName
 }: BenefitsSectionContentItemProps) => {
+    const iconComponent = getStaticIconComponent(iconName);
+    const iconBackgroundColorClass = getBenefitsSectionContentItemIconBackgroundColor(iconBackgroundColor);
+    const benefitsSectionContentItemIconCombinedClassName = twMerge("flex justify-center items-center rounded-[24px] p-[20px]", iconBackgroundColorClass);
+
     return (
         <div className="flex flex-col gap-[32px] items-center w-full">
-            <div className={`flex justify-center items-center rounded-[24px] p-[20px] ${svgBackgroundColor}`} >
-                {svg}
+            <div className={benefitsSectionContentItemIconCombinedClassName} >
+                {iconComponent}
             </div>
             <BenefitsSectionContentItemText text={text} />
-            <BenefitsSectionContentItemDescription descriptionTop={descriptionTop} descriptionBottom={descriptionBottom} />
+            <BenefitsSectionContentItemDescription descriptionTop={descriptionTopText} descriptionBottom={descriptionBottomText} />
         </div>
     )
 }

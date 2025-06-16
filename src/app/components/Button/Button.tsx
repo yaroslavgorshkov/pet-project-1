@@ -1,6 +1,6 @@
 import { ButtonBase } from "./ButtonBase"
 import { getButtonVariant } from "@/app/components/Button/helpers/getButtonVariant";
-import { getIconComponent } from "@/app/helpers/iconHelpers/getIcon";
+import { getDynamicIconComponent } from "@/app/helpers/iconHelpers/getIconComponent";
 import { getBorderRadius } from "@/app/components/Button/helpers/getBorderRadius";
 import { getBackgroundColor } from "@/app/components/Button/helpers/getBackgroundColor";
 import { twMerge } from "tailwind-merge";
@@ -21,7 +21,7 @@ export const Button = ({
     const buttonSizeClass = getButtonSize(buttonSize);
     const borderRadiusClass = getBorderRadius(borderRadius);
 
-    const endIconComponent = endIcon ? getIconComponent(endIcon.iconType, endIcon.iconFillColor, endIcon.iconSize) : undefined;
+    const endIconComponent = endIcon ? getDynamicIconComponent(endIcon.iconType, endIcon.iconFillColor, endIcon.iconSize) : undefined;
     const backgroundColorClass = backgroundColor ? getBackgroundColor(backgroundColor) : '';
 
     const combinedButtonClassName = twMerge(variantClass, buttonSizeClass,
