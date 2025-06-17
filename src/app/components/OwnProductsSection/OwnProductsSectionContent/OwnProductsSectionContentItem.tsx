@@ -18,7 +18,7 @@ export const OwnProductsSectionContentItem = ({
     }
 
     return (
-        <article className="own-products-section__content-item group relative w-[231px] h-[324px] rounded-[16px] shadow-lg md:w-[360px] md:h-[507px]">
+        <article className="own-products-section__content-item group relative w-[231px] h-[324px] rounded-2xl shadow-lg md:w-[360px] md:h-[507px]">
             <div className="blur-[0] contrast-[1] absolute inset-0 -z-10 group-hover:blur-[5px] group-hover:contrast-[0.8] transition-filter duration-200">
                 <Image src={imgRef} alt={alt} fill objectFit="cover" className="rounded-[16px] brightness-[0.6]" />
             </div>

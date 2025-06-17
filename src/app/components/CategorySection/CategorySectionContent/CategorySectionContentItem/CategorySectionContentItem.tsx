@@ -32,20 +32,20 @@ export const CategorySectionContentItem = ({
         onClick: handleCategorySectionContentItemButtonClick
     }
 
-    const isHighlightedCategorySectionContentItemTextClass = isHighlighted ? "top-[33%] [text-shadow:none]" : "top-[50%] [text-shadow:2px_2px_4px_rgba(0,0,0,0.7)] transition-all duration-200 group-hover:top-[33%] group-hover:[text-shadow:none]";
+    const highlightedCategorySectionContentItemTextClass = isHighlighted ? "top-[33%] [text-shadow:none]" : "top-[50%] [text-shadow:2px_2px_4px_rgba(0,0,0,0.7)] transition-all duration-200 group-hover:top-[33%] group-hover:[text-shadow:none]";
     const combinedClassNameCategorySectionContentItemText =
         twMerge("absolute left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 whitespace-nowrap",
-            isHighlightedCategorySectionContentItemTextClass);
+            highlightedCategorySectionContentItemTextClass);
 
-    const isHighlightedCategorySectionContentItemButtonClass = isHighlighted ? "block" : "hidden group-hover:block";
+    const highlightedCategorySectionContentItemButtonClass = isHighlighted ? "block" : "hidden group-hover:block";
     const combinedClassNameCategorySectionContentItemButton =
         twMerge("absolute top-[70%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10",
-            isHighlightedCategorySectionContentItemButtonClass);
+            highlightedCategorySectionContentItemButtonClass);
 
-    const isHighlightedCategorySectionContentItemImageClass = isHighlighted ? "blur-[5px] contrast-[0.8]" : "blur-0 contrast-1 transition-all duration-200 group-hover:blur-[5px] group-hover:contrast-[0.8]";
+    const highlightedCategorySectionContentItemImageClass = isHighlighted ? "blur-[5px] contrast-[0.8]" : "blur-0 contrast-1 transition-all duration-200 group-hover:blur-[5px] group-hover:contrast-[0.8]";
     const combinedClassNameCategorySectionContentItemImage =
         twMerge("absolute inset-0",
-            isHighlightedCategorySectionContentItemImageClass);
+            highlightedCategorySectionContentItemImageClass);
 
     return (
         <article className="group rounded-[10px] relative h-[211px] md:h-[277px] xl:h-auto">
