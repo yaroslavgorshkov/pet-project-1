@@ -1,6 +1,6 @@
 import { ButtonBase } from "./ButtonBase"
 import { getButtonVariant } from "@/app/components/Button/helpers/getButtonVariant";
-import { getDynamicIconComponent } from "@/app/helpers/iconHelpers/getIconComponent";
+import { getDynamicIconComponent } from "@/app/components/Icons/helpers/getIconComponent";
 import { getBorderRadius } from "@/app/components/Button/helpers/getBorderRadius";
 import { getBackgroundColor } from "@/app/components/Button/helpers/getBackgroundColor";
 import { twMerge } from "tailwind-merge";

@@ -1,13 +1,10 @@
+import { BenefitsSectionContentItemProps } from "./BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItem";
+
 export type BenefitsSectionContentItemIconType = "payment-method" | "return-policy" | "customer-support";
 export type BenefitsSectionContentItemIconBackgroundColor = "purple" | "skin" | "lazuli-green";
 
-type BenefitsSectionContentItem = {
+type BenefitsSectionContentItem = BenefitsSectionContentItemProps & {
     id: number;
-    text: string;
-    descriptionTopText: string;
-    descriptionBottomText: string;
-    iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor;
-    iconName: BenefitsSectionContentItemIconType;
 }
 
 export const benefitsSectionContent: BenefitsSectionContentItem[] = [

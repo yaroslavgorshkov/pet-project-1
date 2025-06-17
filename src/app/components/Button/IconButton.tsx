@@ -1,4 +1,4 @@
-import { getDynamicIconComponent } from "@/app/helpers/iconHelpers/getIconComponent";
+import { getDynamicIconComponent } from "@/app/components/Icons/helpers/getIconComponent";
 import { IconFillColor, IconSize, DynamicIconType } from "../types"
 import { ButtonBase } from "./ButtonBase"
 
