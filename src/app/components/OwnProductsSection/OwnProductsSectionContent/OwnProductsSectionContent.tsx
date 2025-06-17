@@ -3,8 +3,8 @@ import { OwnProductsSectionContentItem } from "./OwnProductsSectionContentItem";
 import { OwnProductsSectionContentItemHighlighted } from "./OwnProductsSectionContentItemHighlighted";
 
 export const OwnProductsSectionContent = () => {
-    const ownProductsSectionContentList = ownProductsSectionContentMockData.map(({ id, href, imgRef, alt }) => {
-        return <OwnProductsSectionContentItem key={id} href={href} imgRef={imgRef} alt={alt} />
+    const ownProductsSectionContentList = ownProductsSectionContentMockData.map(({ id, href, imgSrc, alt }) => {
+        return <OwnProductsSectionContentItem key={id} href={href} imgSrc={imgSrc} alt={alt} />
     })
 
     return (
