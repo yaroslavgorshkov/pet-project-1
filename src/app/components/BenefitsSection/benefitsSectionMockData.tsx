@@ -1,6 +1,6 @@
 import { BenefitsSectionContentItemProps } from "./BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItem";
 
-export type BenefitsSectionContentItemIconType = "payment-method" | "return-policy" | "customer-support";
+export type BenefitsSectionContentItemIconName = "payment-method" | "return-policy" | "customer-support";
 export type BenefitsSectionContentItemIconBackgroundColor = "purple" | "skin" | "lazuli-green";
 
 type BenefitsSectionContentItem = BenefitsSectionContentItemProps & {

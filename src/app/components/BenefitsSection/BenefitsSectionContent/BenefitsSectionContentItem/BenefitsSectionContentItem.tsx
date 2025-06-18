@@ -1,6 +1,6 @@
 import { BenefitsSectionContentItemDescription } from "./BenefitsSectionContentItemDescription";
 import { BenefitsSectionContentItemText } from "./BenefitsSectionContentItemText";
-import { BenefitsSectionContentItemIconBackgroundColor, BenefitsSectionContentItemIconType } from "../../benefitsSectionMockData";
+import { BenefitsSectionContentItemIconBackgroundColor, BenefitsSectionContentItemIconName } from "../../benefitsSectionMockData";
 import { BenefitsSectionContentItemIcon } from "./BenefitsSectionContentItemIcon";
 
 export type BenefitsSectionContentItemProps = {
@@ -8,7 +8,7 @@ export type BenefitsSectionContentItemProps = {
     descriptionTopText: string;
     descriptionBottomText: string;
     iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor;
-    iconName: BenefitsSectionContentItemIconType;
+    iconName: BenefitsSectionContentItemIconName;
 }
 
 export const BenefitsSectionContentItem = ({

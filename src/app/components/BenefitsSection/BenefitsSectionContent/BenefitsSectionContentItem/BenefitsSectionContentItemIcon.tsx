@@ -1,10 +1,10 @@
 import { getStaticIconComponent } from "@/app/components/Icons/helpers/getIconComponent";
-import { BenefitsSectionContentItemIconBackgroundColor, BenefitsSectionContentItemIconType } from "../../benefitsSectionMockData";
+import { BenefitsSectionContentItemIconBackgroundColor, BenefitsSectionContentItemIconName } from "../../benefitsSectionMockData";
 import { getBenefitsSectionContentItemIconBackgroundColor } from "../../helpers/getBenefitsSectionContentItemIconBackgroundColor";
 import { twMerge } from "tailwind-merge";
 
 type BenefitsSectionContentItemIconProps = {
-    iconName: BenefitsSectionContentItemIconType;
+    iconName: BenefitsSectionContentItemIconName;
     iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor;
 }
 
