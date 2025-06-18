@@ -42,7 +42,7 @@ export const CategorySectionContentItem = ({
         twMerge("absolute top-[70%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10",
             highlightedCategorySectionContentItemButtonClass);
 
-    const highlightedCategorySectionContentItemImageClass = isHighlighted ? "blur-[5px] contrast-[0.8]" : "blur-0 contrast-1 transition-all duration-200 group-hover:blur-[5px] group-hover:contrast-[0.8]";
+    const highlightedCategorySectionContentItemImageClass = isHighlighted ? "blur-sm contrast-[0.8]" : "transition-all duration-200 group-hover:blur-sm group-hover:contrast-[0.8]";
     const combinedClassNameCategorySectionContentItemImage =
         twMerge("absolute inset-0",
             highlightedCategorySectionContentItemImageClass);

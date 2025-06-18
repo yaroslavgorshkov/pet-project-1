@@ -19,7 +19,7 @@ export const OwnProductsSectionContentItemHighlighted = ({
 
     return (
         <article className="relative w-[288px] h-[343px] md:w-[382px] md:h-[537px]">
-            <div className="blur-[5px] contrast-[0.8] absolute inset-0 -z-10">
+            <div className="blur-sm contrast-[0.8] absolute inset-0 -z-10">
                 <Image src={imgRef} alt={alt} fill objectFit="cover" className="rounded-[10px] brightness-[0.6]" />
             </div>
             <a href={href} className="absolute bottom-[40px] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 whitespace-nowrap">
