@@ -18,11 +18,11 @@ export const OwnProductsSectionContentItem = ({
     }
 
     return (
-        <article className="own-products-section__content-item group relative w-[231px] h-[324px] rounded-2xl shadow-lg md:w-[360px] md:h-[507px]">
+        <article className="group relative w-auto min-w-md h-auto min-h-lg rounded-2xl shadow-lg md:min-w-2xl md:min-h-2xl">
             <div className="absolute inset-0 -z-10 group-hover:blur-sm group-hover:contrast-[0.8] transition-filter duration-200">
-                <Image src={imgSrc} alt={alt} fill objectFit="cover" className="rounded-[16px] brightness-[0.6]" />
+                <Image src={imgSrc} alt={alt} fill objectFit="cover" className="rounded-lg brightness-[0.6]" />
             </div>
-            <a href={href} className="absolute bottom-[40px] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 whitespace-nowrap hidden group-hover:block">
+            <a href={href} className="absolute bottom-el-xl left-half -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap hidden group-hover:block">
                 <Button buttonSize={"sm"} borderRadius={"sm"} backgroundColor={"white"}
                     onClick={handleOwnProductsSectionContentItemButtonClick} variant={"contained"} >
                     <Text fontSize={"lg"} fontFamily={"roboto"} color={"absolute-black"} content={"Explore All Rooms"} />

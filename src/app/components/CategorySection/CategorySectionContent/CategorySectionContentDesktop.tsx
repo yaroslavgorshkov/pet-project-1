@@ -17,9 +17,9 @@ export const CategorySectionContentDesktop = () => {
     })
 
     return (
-        <div className="hidden gap-[60px] w-full xl:flex">
+        <div className="hidden gap-10xl w-full xl:flex">
             <CategorySectionMenu />
-            <div className="grid grid-cols-2 gap-[26px] w-full">
+            <div className="grid grid-cols-2 gap-xl w-full">
                 {categorySectionContentList}
             </div>
         </div>

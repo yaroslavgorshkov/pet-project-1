@@ -11,7 +11,7 @@ export const HeaderIconsBarAccount = () => {
     return (
         <div>
             <HeaderIconsBarAccountButton handleClick={handleAccountDialogClick} />
-            {/* <div className={`icons-bar__account-content fixed w-[70%] h-[70%] rounded-[20px] shadow-lg border bg-darken-white
+            {/* <div className={`icons-bar__account-content fixed shadow-lg border bg-darken-white
                     ${isAccountDialogVisible ? 'custom-icons-bar__account-content-visible' : 'custom-icons-bar__account-content-hidden'}`}>
                 <div className="">
                     <Image

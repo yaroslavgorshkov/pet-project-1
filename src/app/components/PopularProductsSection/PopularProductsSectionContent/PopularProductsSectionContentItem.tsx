@@ -22,7 +22,7 @@ export const PopularProductsSectionContentItem = ({
     backgroundColor,
     alt
 }: PopularProductsSectionContentItemProps) => {
-    const combinedClassName = twMerge('flex flex-col gap-[40px] px-5 pt-[49px] pb-5 rounded-[16px] md:pt-[84px] md:px-10 md:pb-[60px]', backgroundColor);
+    const combinedClassName = twMerge('flex flex-col gap-3xl px-el-md pt-el-5xl pb-el-md rounded-lg md:pt-el-8xl md:px-el-3xl md:pb-el-6xl', backgroundColor);
     const popularProductsSectionContentItemPrice = `$${price}`;
 
     return (

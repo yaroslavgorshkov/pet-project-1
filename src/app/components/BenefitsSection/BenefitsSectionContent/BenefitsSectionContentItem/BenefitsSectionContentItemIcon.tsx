@@ -14,7 +14,7 @@ export const BenefitsSectionContentItemIcon = ({
 }: BenefitsSectionContentItemIconProps) => {
     const iconComponent = getStaticIconComponent(iconName);
     const iconBackgroundColorClass = getBenefitsSectionContentItemIconBackgroundColor(iconBackgroundColor);
-    const benefitsSectionContentItemIconCombinedClassName = twMerge("flex justify-center items-center rounded-[24px] p-[20px]", iconBackgroundColorClass);
+    const benefitsSectionContentItemIconCombinedClassName = twMerge("flex justify-center items-center rounded-2xl p-el-md", iconBackgroundColorClass);
 
     return (
         <div className={benefitsSectionContentItemIconCombinedClassName} >

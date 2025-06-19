@@ -18,11 +18,11 @@ export const OwnProductsSectionContentItemHighlighted = ({
     }
 
     return (
-        <article className="relative w-[288px] h-[343px] md:w-[382px] md:h-[537px]">
+        <article className="relative w-auto min-w-xl h-auto min-h-xl md:min-w-3xl md:min-h-3xl">
             <div className="blur-sm contrast-[0.8] absolute inset-0 -z-10">
-                <Image src={imgRef} alt={alt} fill objectFit="cover" className="rounded-[10px] brightness-[0.6]" />
+                <Image src={imgRef} alt={alt} fill objectFit="cover" className="rounded-md brightness-[0.6]" />
             </div>
-            <a href={href} className="absolute bottom-[40px] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 whitespace-nowrap">
+            <a href={href} className="absolute bottom-el-xl left-half -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap">
                 <Button buttonSize={"sm"} borderRadius={"sm"} backgroundColor={"white"}
                     onClick={handleOwnProductsSectionContentItemHighlightedButtonClick} variant={"contained"} >
                     <Text fontSize={"lg"} fontFamily={"roboto"} color={"absolute-black"} content={"Explore All Rooms"} />

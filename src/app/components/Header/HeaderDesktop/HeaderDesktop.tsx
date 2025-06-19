@@ -4,7 +4,7 @@ import { HeaderDesktopNavigationList } from "./HeaderDesktopNavigaionList/Header
 
 export const HeaderDesktop = () => {
     return (
-        <div className="hidden px-[150px] py-[26px] backdrop-blur-md bg-header shadow-lg justify-between xl:flex">
+        <div className="hidden px-section-7xl py-section-lg backdrop-blur-md bg-header shadow-lg justify-between xl:flex">
             <HeaderLogo />
             <HeaderDesktopNavigationList />
             <HeaderIconsBar />

@@ -9,7 +9,7 @@ export const CategorySectionMenuNavigationListTablet = () => {
                 <CategorySectionMenuNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
             navigationListContent={categorySectionMenuNavigationListContent}
             highlightedElementNumber={0}
-            ulClassName="flex flex-wrap gap-[44px] justify-center"
+            ulClassName="flex flex-wrap gap-5xl justify-center"
             navClassName="xl:hidden"
         />
     )

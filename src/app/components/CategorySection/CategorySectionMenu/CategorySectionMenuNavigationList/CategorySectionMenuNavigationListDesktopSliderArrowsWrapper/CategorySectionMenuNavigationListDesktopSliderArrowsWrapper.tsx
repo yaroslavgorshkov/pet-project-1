@@ -3,7 +3,7 @@ import { CategorySectionMenuNavigationListDesktopSlider } from "./CategorySectio
 
 export const CategorySectionMenuNavigationListDesktopSliderArrowsWrapper = () => {
     return (
-        <div className="flex flex-col gap-[10px] items-center">
+        <div className="flex flex-col gap-sm items-center">
             <CategorySectionMenuNavigationListDesktopSlider />
             <CategorySectionMenuNavigationListDesktopArrows />
         </div>

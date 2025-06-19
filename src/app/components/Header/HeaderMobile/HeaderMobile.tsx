@@ -4,7 +4,7 @@ import { HeaderMobileHamburgerMenu } from "./HeaderMobileHamburgerMenu/HeaderMob
 
 export const HeaderMobile = () => {
     return (
-        <div className="flex px-4 py-[26px] backdrop-blur-md bg-header shadow-lg justify-between md:px-5 lg:px-10 xl:hidden">
+        <div className="flex px-section-sm py-section-lg backdrop-blur-md bg-header shadow-lg justify-between md:px-section-md lg:px-section-xl xl:hidden">
             <HeaderMobileHamburgerMenu />
             <HeaderLogo />
             <HeaderIconsBar />

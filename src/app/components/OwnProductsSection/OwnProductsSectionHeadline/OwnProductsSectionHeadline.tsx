@@ -4,8 +4,8 @@ import { OwnProductsSectionHeadlineText } from "./OwnProductsSectionHeadlineText
 
 export const OwnProductsSectionHeadline = () => {
     return (
-        <div className="flex flex-col flex-shrink-0 gap-[32px] w-full max-w-[195px] px-[16px] py-[50px] rounded-r-[16px] bg-mint
-            md:px-[20px] md:py-[122px] md:max-w-[400px] xl:pl-[150px] xl:pr-[100px] xl:w-full xl:max-w-[577px]">
+        <div className="flex flex-col flex-shrink-0 gap-2xl w-full max-w-sm px-el-sm py-el-5xl rounded-r-lg bg-mint
+            md:px-el-md md:py-el-9xl md:max-w-md xl:pl-el-10xl xl:pr-el-8xl xl:w-full xl:max-w-lg">
             <OwnProductsSectionHeadlineText />
             <OwnProductsSectionHeadlineDescription />
             <OwnProductsSectionHeadlineMenu />

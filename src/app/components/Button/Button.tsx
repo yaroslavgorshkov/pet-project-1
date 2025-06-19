@@ -30,7 +30,7 @@ export const Button = ({
     if (endIcon) {
         return (
             <ButtonBase className={combinedButtonClassName} onClick={onClick}>
-                <div className="flex justify-center gap-[18px]">
+                <div className="flex justify-center gap-md">
                     {children}
                     <div className="flex justify-center items-center">
                         {endIconComponent}

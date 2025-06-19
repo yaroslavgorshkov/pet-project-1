@@ -20,7 +20,7 @@ export const BenefitsSectionContentItem = ({
 }: BenefitsSectionContentItemProps) => {
 
     return (
-        <div className="flex flex-col gap-[32px] items-center w-full">
+        <div className="flex flex-col gap-2xl items-center w-full">
             <BenefitsSectionContentItemIcon iconName={iconName} iconBackgroundColor={iconBackgroundColor} />
             <BenefitsSectionContentItemText text={text} />
             <BenefitsSectionContentItemDescription descriptionTop={descriptionTopText} descriptionBottom={descriptionBottomText} />

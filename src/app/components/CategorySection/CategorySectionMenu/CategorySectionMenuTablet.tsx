@@ -4,7 +4,7 @@ import { CategorySectionMenuSearch } from "./CategorySectionMenuSearch"
 
 export const CategorySectionMenuTablet = () => {
     return (
-        <div className="hidden flex-col gap-9 items-center md:flex xl:items-start xl:gap-20">
+        <div className="hidden flex-col gap-3xl items-center md:flex xl:items-start xl:gap-11xl">
             <CategorySectionMenuSearch />
             <CategorySectionMenuNavigationList />
             <CategorySectionMenuButton />

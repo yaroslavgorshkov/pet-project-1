@@ -12,8 +12,8 @@ export const PopularProductsSectionContent = () => {
     })
 
     return (
-        <div className="popular-products-section-content flex gap-8 overflow-x-scroll 
-        w-full px-9 md:px-10 lg:px-[60px] xl:px-[196px]">
+        <div className="popular-products-section-content flex gap-2xl overflow-x-scroll 
+        w-full px-el-2xl md:px-el-3xl lg:px-el-6xl xl:px-el-11xl">
             {popularProductsList}
         </div>
     )

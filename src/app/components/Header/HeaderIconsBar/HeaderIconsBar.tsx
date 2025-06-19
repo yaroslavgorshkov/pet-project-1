@@ -6,7 +6,7 @@ import { HeaderIconsBarShoppingCart } from "./HeaderIconsBarShoppingCart"
 export const HeaderIconsBar = () => {
 
     return (
-        <div className="gap-3 flex order-2 items-center md:gap-[58px]">
+        <div className="gap-md flex order-2 items-center md:gap-9xl">
             <HeaderIconsBarSearch />
             <HeaderIconsBarShoppingCart />
             <HeaderIconsBarAccount />

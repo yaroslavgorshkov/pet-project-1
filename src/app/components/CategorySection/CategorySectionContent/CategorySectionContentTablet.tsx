@@ -16,7 +16,7 @@ export const CategorySectionContentTablet = () => {
     })
 
     return (
-        <div className="hidden grid-cols-2 gap-[26px] w-full md:grid xl:hidden">
+        <div className="hidden grid-cols-2 gap-xl w-full md:grid xl:hidden">
             {categorySectionContentList}
         </div>
     )

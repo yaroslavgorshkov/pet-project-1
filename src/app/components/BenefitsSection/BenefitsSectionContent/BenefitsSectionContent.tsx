@@ -15,7 +15,7 @@ export const BenefitsSectionContent = () => {
         });
 
     return (
-        <div className="flex flex-col md:flex-row gap-[60px] md:gap-0">
+        <div className="flex flex-col md:flex-row gap-10xl md:gap-0">
             {benefitsSectionContentList}
         </div>
     )

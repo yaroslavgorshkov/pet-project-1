@@ -10,8 +10,8 @@ export const PopularProductsSectionContentItemImageContainer = ({
     alt
 }: PopularProductsSectionContentItemImageContainerProps) => {
     return (
-        <div className="px-[54px] md:px-[66px] xl:px-[73px]">
-            <div className="relative w-[89px] h-[117px] md:w-[204px] md:h-[268px]">
+        <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
+            <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
                 <Image src={imgRef} alt={alt} fill />
             </div>
         </div>

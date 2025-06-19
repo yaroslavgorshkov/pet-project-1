@@ -7,7 +7,7 @@ export const CategorySectionMenuSearch = () => {
     }
 
     return (
-        <div className="flex gap-[18px] rounded-[10px] pl-5 xl:pl-8 bg-darken-white w-full md:w-[463px] xl:w-[349px]">
+        <div className="flex gap-md rounded-md pl-el-md xl:pl-el-xl bg-darken-white w-full md:w-el-2xl xl:w-el-xl">
             <IconButton iconType={"search-small"} iconFillColor={"gray"} iconSize={"2xl"}
                 onClick={handleCategorySectionMenuSearchButtonClick} />
             <CategorySectionMenuSearchInput />

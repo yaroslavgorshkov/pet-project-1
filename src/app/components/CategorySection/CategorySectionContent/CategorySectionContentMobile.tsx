@@ -17,7 +17,7 @@ export const CategorySectionContentMobile = () => {
     })
 
     return (
-        <div className="flex flex-col gap-[26px] w-full md:hidden">
+        <div className="flex flex-col gap-xl w-full md:hidden">
             {categorySectionContentList}
         </div>
     )

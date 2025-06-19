@@ -11,7 +11,7 @@ export const CategorySectionMenuNavigationListDesktop = () => {
                     <CategorySectionMenuNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
                 navigationListContent={categorySectionMenuNavigationListContent}
                 highlightedElementNumber={0}
-                ulClassName="category-section__menu-navigation-list-desktop flex flex-col gap-[78px] h-[694px] overflow-scroll pl-6"
+                ulClassName="category-section__menu-navigation-list-desktop flex flex-col gap-11xl max-h-sm overflow-scroll pl-el-lg"
                 navClassName="w-full" />
             <CategorySectionMenuNavigationListDesktopSliderArrowsWrapper />
         </div>

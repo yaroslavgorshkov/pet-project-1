@@ -4,8 +4,8 @@ import { CategorySectionMenuSearch } from "./CategorySectionMenuSearch"
 
 export const CategorySectionMenuMobile = () => {
     return (
-        <div className="flex flex-col gap-9 w-full md:hidden">
-            <div className="flex gap-9">
+        <div className="flex flex-col gap-3xl w-full md:hidden">
+            <div className="flex gap-3xl">
                 <CategorySectionMenuSearch />
                 <CategorySectionMenuHamburgerButton />
             </div>

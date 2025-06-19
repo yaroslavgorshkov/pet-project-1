@@ -6,12 +6,12 @@ export const CategorySectionMenuNavigationListDesktopArrows = () => {
     }
 
     return (
-        <div className="flex flex-col gap-[24px]">
-            <div className="rounded-[20px] bg-white-blue w-[40px] h-[40px] flex items-center justify-center">
+        <div className="flex flex-col gap-lg">
+            <div className="rounded-xl bg-white-blue w-el-sm h-el-sm flex items-center justify-center">
                 <IconButton iconType={"arrow-up"} iconFillColor={"lapis"} iconSize={"sm"}
                     onClick={handleCategorySectionMenuNavigationListDesktopArrowsButtonClick} />
             </div>
-            <div className="rounded-[20px] bg-rose w-[40px] h-[40px] flex items-center justify-center">
+            <div className="rounded-xl bg-rose w-el-sm h-el-sm flex items-center justify-center">
                 <IconButton iconType={"arrow-down"} iconFillColor={"lapis"} iconSize={"sm"}
                     onClick={handleCategorySectionMenuNavigationListDesktopArrowsButtonClick} />
             </div>

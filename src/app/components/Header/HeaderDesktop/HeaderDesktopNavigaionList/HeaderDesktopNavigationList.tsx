@@ -11,6 +11,6 @@ export const HeaderDesktopNavigationList = () => {
                 <HeaderDesktopNavigationListItem text={text} href={href} isHighlighted={isHighlighted} />}
             navigationListContent={headerDesktopNavigationListContent}
             highlightedElementNumber={0}
-            ulClassName="flex gap-[50px]" />
+            ulClassName="flex gap-6xl" />
     )
 }

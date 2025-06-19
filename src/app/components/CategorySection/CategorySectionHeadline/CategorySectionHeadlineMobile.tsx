@@ -8,7 +8,7 @@ export const CategorySectionHeadlineMobile = () => {
     const isCategorySectionContentEmpty = !content || content.length === 0;
     if (isCategorySectionContentEmpty) {
         return (
-            <div className="flex flex-col gap-9 items-center w-full md:max-w-[791px] xl:hidden">
+            <div className="flex flex-col gap-3xl items-center w-full md:max-w-xl xl:hidden">
                 <CategorySectionHeadlineTitle />
                 <CategorySectionContentFallback />
             </div>
@@ -16,7 +16,7 @@ export const CategorySectionHeadlineMobile = () => {
     }
 
     return (
-        <div className="flex flex-col gap-9 items-center w-full md:max-w-[791px] xl:hidden">
+        <div className="flex flex-col gap-3xl items-center w-full md:max-w-xl xl:hidden">
             <CategorySectionHeadlineTitle />
             <CategorySectionMenu />
         </div>

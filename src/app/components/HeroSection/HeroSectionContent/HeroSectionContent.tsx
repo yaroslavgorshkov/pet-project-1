@@ -3,7 +3,7 @@ import { HeroSectionTitle } from "./HeroSectionTitle"
 
 export const HeroSectionContent = () => {
     return (
-        <div className="flex w-full flex-col gap-[52px] items-center md:items-start xl:gap-[54px]">
+        <div className="flex w-full flex-col gap-7xl items-center md:items-start xl:gap-8xl">
             <HeroSectionTitle />
             <HeroSectionButton />
         </div>
