@@ -1,0 +1,24 @@
+import { getStaticIconComponent } from "@/app/components/Icons/helpers/getIconComponent";
+import { BenefitsSectionContentItemIconBackgroundColor, BenefitsSectionContentItemIconName } from "../../benefitsSectionMockData";
+import { getBenefitsSectionContentItemIconBackgroundColor } from "../../helpers/getBenefitsSectionContentItemIconBackgroundColor";
+import { twMerge } from "tailwind-merge";
+
+type BenefitsSectionContentItemIconProps = {
+    iconName: BenefitsSectionContentItemIconName;
+    iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor;
+}
+
+export const BenefitsSectionContentItemIcon = ({
+    iconName,
+    iconBackgroundColor
+}: BenefitsSectionContentItemIconProps) => {
+    const iconComponent = getStaticIconComponent(iconName);
+    const iconBackgroundColorClass = getBenefitsSectionContentItemIconBackgroundColor(iconBackgroundColor);
+    const benefitsSectionContentItemIconCombinedClassName = twMerge("flex justify-center items-center rounded-[24px] p-[20px]", iconBackgroundColorClass);
+
+    return (
+        <div className={benefitsSectionContentItemIconCombinedClassName} >
+            {iconComponent}
+        </div>
+    )
+}
