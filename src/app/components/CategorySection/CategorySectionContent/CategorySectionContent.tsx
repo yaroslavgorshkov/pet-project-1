@@ -1,7 +1,7 @@
 import { CategorySectionContentDesktop } from "./CategorySectionContentDesktop"
 import { CategorySectionContentMobile } from "./CategorySectionContentMobile"
 import { CategorySectionContentTablet } from "./CategorySectionContentTablet"
-import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData"
+import { categorySectionContent } from "../categorySectionMockData"
 
 export const CategorySectionContent = () => {
     const content = categorySectionContent;

@@ -1,5 +1,5 @@
 import { NavigationList } from "@/app/components/NavigationList/NavigationList";
-import { categorySectionMenuNavigationListContent } from "../categorySectionMockData";
+import { categorySectionMenuNavigationListContent } from "../../categorySectionMockData";
 import { CategorySectionMenuNavigationListItem } from "./CategorySectionMenuNavigationListItem";
 
 export const CategorySectionMenuNavigationListTablet = () => {

@@ -1,5 +1,5 @@
 import { NavigationList } from "@/app/components/NavigationList/NavigationList";
-import { categorySectionMenuNavigationListContent } from "../categorySectionMockData";
+import { categorySectionMenuNavigationListContent } from "../../categorySectionMockData";
 import { CategorySectionMenuNavigationListDesktopSliderArrowsWrapper } from "./CategorySectionMenuNavigationListDesktopSliderArrowsWrapper/CategorySectionMenuNavigationListDesktopSliderArrowsWrapper";
 import { CategorySectionMenuNavigationListItem } from "./CategorySectionMenuNavigationListItem";
 

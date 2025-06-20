@@ -1,5 +1,5 @@
 import { CategorySectionContentFallback } from "../CategorySectionContent/CategorySectionContentFallback";
-import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData";
+import { categorySectionContent } from "../categorySectionMockData";
 import { CategorySectionHeadlineTitle } from "./CategorySectionHeadlineTitle"
 
 export const CategorySectionHeadlineDesktop = () => {

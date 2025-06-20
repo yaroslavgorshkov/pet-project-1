@@ -1,6 +1,6 @@
 import { CategorySectionHeadlineTitle } from "./CategorySectionHeadlineTitle"
 import { CategorySectionMenu } from "../CategorySectionMenu/CategorySectionMenu"
-import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData";
+import { categorySectionContent } from "../categorySectionMockData";
 import { CategorySectionContentFallback } from "../CategorySectionContent/CategorySectionContentFallback";
 
 export const CategorySectionHeadlineMobile = () => {

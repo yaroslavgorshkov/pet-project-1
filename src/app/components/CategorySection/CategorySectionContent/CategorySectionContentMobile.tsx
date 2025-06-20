@@ -1,4 +1,4 @@
-import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData";
+import { categorySectionContent } from "../categorySectionMockData";
 import { CategorySectionContentItem } from "./CategorySectionContentItem/CategorySectionContentItem";
 
 export const CategorySectionContentMobile = () => {
