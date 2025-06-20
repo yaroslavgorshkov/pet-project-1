@@ -8,8 +8,8 @@ export const PopularProductsSectionSliderDesktop = () => {
     return (
         <div className="hidden xl:flex w-responsive-sm flex-col gap-md">
             <div className="relative w-full flex justify-center">
-                <div className="w-full h-slider-sm bg-lapis"></div>
-                <div className="absolute top-slider left-0 w-slider-xl h-slider-md bg-mint"></div>
+                <div className="w-full h-slider-sm bg-lapis" />
+                <div className="absolute top-slider left-0 w-slider-xl h-slider-md bg-mint" />
             </div>
             <div className="self-end flex gap-lg">
                 <div className="rounded-xl bg-white-blue w-el-sm h-el-sm flex items-center justify-center">
