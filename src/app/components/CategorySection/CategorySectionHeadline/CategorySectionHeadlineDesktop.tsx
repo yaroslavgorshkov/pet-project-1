@@ -7,7 +7,7 @@ export const CategorySectionHeadlineDesktop = () => {
     const isCategorySectionContentEmpty = !content || content.length === 0;
     if (isCategorySectionContentEmpty) {
         return (
-            <div className="hidden xl:block">
+            <div className="hidden xl:flex flex-col gap-3xl items-center w-full">
                 <CategorySectionHeadlineTitle />
                 <CategorySectionContentFallback />
             </div>
