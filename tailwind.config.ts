@@ -37,7 +37,8 @@ export default {
         'md': '10px',
         'lg': '16px',
         'xl': '20px',
-        '2xl': '24px'
+        '2xl': '24px',
+        '3xl': '50px'
       },
       minWidth: {
         'sm': '170px',
@@ -159,6 +160,12 @@ export default {
       'el-9xl': '122px',
       'el-10xl': '150px',
       'el-11xl': '196px',
+    },
+    contrast: {
+      'md': '0.8'
+    },
+    brightness: {
+      'md': '0.6'
     }
   
   },

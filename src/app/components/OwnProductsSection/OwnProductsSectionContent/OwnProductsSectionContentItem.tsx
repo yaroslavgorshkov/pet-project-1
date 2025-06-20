@@ -19,8 +19,8 @@ export const OwnProductsSectionContentItem = ({
 
     return (
         <article className="group relative w-auto min-w-md h-auto min-h-lg rounded-2xl shadow-lg md:min-w-2xl md:min-h-2xl">
-            <div className="absolute inset-0 -z-10 group-hover:blur-sm group-hover:contrast-[0.8] transition-filter duration-200">
-                <Image src={imgSrc} alt={alt} fill objectFit="cover" className="rounded-lg brightness-[0.6]" />
+            <div className="absolute inset-0 -z-10 group-hover:blur-sm group-hover:contrast-md transition-filter duration-200">
+                <Image src={imgSrc} alt={alt} fill objectFit="cover" className="rounded-lg brightness-md" />
             </div>
             <a href={href} className="absolute bottom-el-xl left-half -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap hidden group-hover:block">
                 <Button buttonSize={"sm"} borderRadius={"sm"} backgroundColor={"white"}

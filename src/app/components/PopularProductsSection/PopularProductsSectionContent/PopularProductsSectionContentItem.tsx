@@ -30,10 +30,10 @@ export const PopularProductsSectionContentItem = ({
             <PopularProductsSectionContentItemImageContainer imgRef={imgRef} alt={alt} />
             <div className="flex flex-col">
                 <PopularProductsSectionContentItemName name={name} />
-                <div className="mt-[14px] md:mt-[23px]">
+                <div className="mt-4 md:mt-6">
                     <Text fontSize={"lg"} fontFamily={"opensans"} color={"mint"} content={description} />
                 </div>
-                <div className="mt-[20px] md:mt-[22px]">
+                <div className="mt-5 md:mt-6">
                     <Text fontSize={"3xl"} fontFamily={"opensans"} color={"mint"}
                         content={popularProductsSectionContentItemPrice} fontWeight={"bold"} />
                 </div>

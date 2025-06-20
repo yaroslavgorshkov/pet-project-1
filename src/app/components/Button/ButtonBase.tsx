@@ -12,7 +12,7 @@ export const ButtonBase = ({
     onClick
 }: ButtonBaseProps) => {
     return (
-        <button className={`cursor-pointer border-[0] ${className}`} onClick={onClick}>
+        <button className={`cursor-pointer border-0 ${className}`} onClick={onClick}>
             {children}
         </button>
     )
