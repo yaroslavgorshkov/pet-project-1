@@ -1,5 +1,5 @@
-import { HeroSectionContent } from "./HeroSectionContent/HeroSectionContent"
-import { HeroSectionImage } from "./HeroSectionImage"
+import { HeroSectionContent } from './HeroSectionContent/HeroSectionContent';
+import { HeroSectionImage } from './HeroSectionImage';
 
 export const HeroSection = () => {
     return (
@@ -7,5 +7,5 @@ export const HeroSection = () => {
             <HeroSectionContent />
             <HeroSectionImage />
         </section>
-    )
-}
+    );
+};

@@ -1,5 +1,5 @@
-import { OwnProductsSectionHeadlineMenuMobile } from "./OwnProductsSectionHeadlineMenuMobile"
-import { OwnProductsSectionHeadlineMenuTablet } from "./OwnProductsSectionHeadlineMenuTablet"
+import { OwnProductsSectionHeadlineMenuMobile } from './OwnProductsSectionHeadlineMenuMobile';
+import { OwnProductsSectionHeadlineMenuTablet } from './OwnProductsSectionHeadlineMenuTablet';
 
 export const OwnProductsSectionHeadlineMenu = () => {
     return (
@@ -7,5 +7,5 @@ export const OwnProductsSectionHeadlineMenu = () => {
             <OwnProductsSectionHeadlineMenuMobile />
             <OwnProductsSectionHeadlineMenuTablet />
         </>
-    )
-}
+    );
+};

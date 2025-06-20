@@ -1,5 +1,5 @@
-import { HeaderDesktop } from "./HeaderDesktop/HeaderDesktop";
-import { HeaderMobile } from "./HeaderMobile/HeaderMobile";
+import { HeaderDesktop } from './HeaderDesktop/HeaderDesktop';
+import { HeaderMobile } from './HeaderMobile/HeaderMobile';
 
 export const Header = () => {
     return (
@@ -7,5 +7,5 @@ export const Header = () => {
             <HeaderMobile />
             <HeaderDesktop />
         </header>
-    )
+    );
 };

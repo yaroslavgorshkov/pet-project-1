@@ -1,6 +1,6 @@
-import { CategorySectionMenuHamburgerButton } from "./CategorySectionMenuHamburger/CategorySectionMenuHamburgerButton"
+import { CategorySectionMenuHamburgerButton } from './CategorySectionMenuHamburger/CategorySectionMenuHamburgerButton';
 // import { CategorySectionMenuHamburgerMenuContent } from "./CategorySectionMenuHamburger/CategorySectionMenuHamburgerMenuContent"
-import { CategorySectionMenuSearch } from "./CategorySectionMenuSearch"
+import { CategorySectionMenuSearch } from './CategorySectionMenuSearch';
 
 export const CategorySectionMenuMobile = () => {
     return (
@@ -11,5 +11,5 @@ export const CategorySectionMenuMobile = () => {
             </div>
             {/* <CategorySectionMenuHamburgerMenuContent /> */}
         </div>
-    )
-}
+    );
+};

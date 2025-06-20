@@ -1,9 +1,9 @@
-import { IconButton } from "@/app/components/Button/IconButton"
+import { IconButton } from '@/app/components/Button/IconButton';
 
 export const OwnProductsSectionHeadlineMenuSlider = () => {
     const handleOwnProductsSectionHeadlineMenuSliderArrowButtonClick = () => {
         // TODO: add OwnProductsSectionHeadlineMenuSlider button click function
-    }
+    };
 
     return (
         <div className="flex gap-4xl items-center">
@@ -13,14 +13,26 @@ export const OwnProductsSectionHeadlineMenuSlider = () => {
             </div>
             <div className="flex gap-lg">
                 <div className="rounded-xl bg-white-blue w-el-sm h-el-sm flex items-center justify-center">
-                    <IconButton iconType={"arrow-left"} iconFillColor={"lapis"} iconSize={"sm"}
-                        onClick={handleOwnProductsSectionHeadlineMenuSliderArrowButtonClick} />
+                    <IconButton
+                        iconType={'arrow-left'}
+                        iconFillColor={'lapis'}
+                        iconSize={'sm'}
+                        onClick={
+                            handleOwnProductsSectionHeadlineMenuSliderArrowButtonClick
+                        }
+                    />
                 </div>
                 <div className="rounded-xl bg-rose w-el-sm h-el-sm flex items-center justify-center">
-                    <IconButton iconType={"arrow-right"} iconFillColor={"lapis"} iconSize={"sm"}
-                        onClick={handleOwnProductsSectionHeadlineMenuSliderArrowButtonClick} />
+                    <IconButton
+                        iconType={'arrow-right'}
+                        iconFillColor={'lapis'}
+                        iconSize={'sm'}
+                        onClick={
+                            handleOwnProductsSectionHeadlineMenuSliderArrowButtonClick
+                        }
+                    />
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};

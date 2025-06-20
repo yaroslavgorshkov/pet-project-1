@@ -1,5 +1,5 @@
-import { CategorySectionMenuMobile } from "./CategorySectionMenuMobile"
-import { CategorySectionMenuTablet } from "./CategorySectionMenuTablet"
+import { CategorySectionMenuMobile } from './CategorySectionMenuMobile';
+import { CategorySectionMenuTablet } from './CategorySectionMenuTablet';
 
 export const CategorySectionMenu = () => {
     return (
@@ -7,5 +7,5 @@ export const CategorySectionMenu = () => {
             <CategorySectionMenuMobile />
             <CategorySectionMenuTablet />
         </>
-    )
-}
+    );
+};

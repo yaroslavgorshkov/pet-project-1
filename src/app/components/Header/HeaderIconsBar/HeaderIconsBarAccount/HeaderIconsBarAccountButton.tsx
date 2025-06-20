@@ -1,21 +1,30 @@
-import { IconButton } from "@/app/components/Button/IconButton"
-
+import { IconButton } from '@/app/components/Button/IconButton';
 
 type HeaderIconsBarAccountButtonProps = {
-    onClick: () => void
-}
+    onClick: () => void;
+};
 
 export const HeaderIconsBarAccountButton = ({
-    onClick
+    onClick,
 }: HeaderIconsBarAccountButtonProps) => {
     return (
         <>
             <div className="md:hidden">
-                <IconButton iconType={"account"} iconFillColor={"lapis"} iconSize={"3xl"} onClick={onClick} />
+                <IconButton
+                    iconType={'account'}
+                    iconFillColor={'lapis'}
+                    iconSize={'3xl'}
+                    onClick={onClick}
+                />
             </div>
             <div className="hidden md:block">
-                <IconButton iconType={"account"} iconFillColor={"lapis"} iconSize={"5xl"} onClick={onClick} />
+                <IconButton
+                    iconType={'account'}
+                    iconFillColor={'lapis'}
+                    iconSize={'5xl'}
+                    onClick={onClick}
+                />
             </div>
         </>
-    )
-}
+    );
+};

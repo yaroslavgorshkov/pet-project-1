@@ -1,5 +1,5 @@
-import { CategorySectionMenuNavigationListDesktop } from "./CategorySectionMenuNavigationListDesktop"
-import { CategorySectionMenuNavigationListTablet } from "./CategorySectionMenuNavigationListTablet"
+import { CategorySectionMenuNavigationListDesktop } from './CategorySectionMenuNavigationListDesktop';
+import { CategorySectionMenuNavigationListTablet } from './CategorySectionMenuNavigationListTablet';
 
 export const CategorySectionMenuNavigationList = () => {
     return (
@@ -7,5 +7,5 @@ export const CategorySectionMenuNavigationList = () => {
             <CategorySectionMenuNavigationListTablet />
             <CategorySectionMenuNavigationListDesktop />
         </>
-    )
-}
+    );
+};

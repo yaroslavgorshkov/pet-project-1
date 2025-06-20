@@ -1,5 +1,5 @@
-import { HeroSectionButton } from "../HeroSectionButton"
-import { HeroSectionTitle } from "./HeroSectionTitle"
+import { HeroSectionButton } from '../HeroSectionButton';
+import { HeroSectionTitle } from './HeroSectionTitle';
 
 export const HeroSectionContent = () => {
     return (
@@ -7,5 +7,5 @@ export const HeroSectionContent = () => {
             <HeroSectionTitle />
             <HeroSectionButton />
         </div>
-    )
-}
+    );
+};

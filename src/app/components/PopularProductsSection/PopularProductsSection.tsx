@@ -1,14 +1,15 @@
-import { PopularProductsSectionButton } from "./PopularProductsSectionButton/PopularProductsSectionButton"
-import { PopularProductsSectionContent } from "./PopularProductsSectionContent/PopularProductsSectionContent"
-import { PopularProductsSectionContentFallback } from "./PopularProductsSectionContentFallback"
-import { PopularProductsSectionHeadline } from "./PopularProductsSectionHeadline/PopularProductsSectionHeadline"
-import { PopularProductsSectionImage } from "./PopularProductsSectionImage/PopularProductsSectionImage"
-import { popularProductsSectionMockData } from "./popularProductsSectionMockData"
-import { PopularProductsSectionSlider } from "./PopularProductsSectionSlider/PopularProductsSectionSlider"
+import { PopularProductsSectionButton } from './PopularProductsSectionButton/PopularProductsSectionButton';
+import { PopularProductsSectionContent } from './PopularProductsSectionContent/PopularProductsSectionContent';
+import { PopularProductsSectionContentFallback } from './PopularProductsSectionContentFallback';
+import { PopularProductsSectionHeadline } from './PopularProductsSectionHeadline/PopularProductsSectionHeadline';
+import { PopularProductsSectionImage } from './PopularProductsSectionImage/PopularProductsSectionImage';
+import { popularProductsSectionMockData } from './popularProductsSectionMockData';
+import { PopularProductsSectionSlider } from './PopularProductsSectionSlider/PopularProductsSectionSlider';
 
 export const PopularProductsSection = () => {
     const content = popularProductsSectionMockData;
-    const isPopularProductsSectionMockDataEmpty = !content || content.length === 0;
+    const isPopularProductsSectionMockDataEmpty =
+        !content || content.length === 0;
     if (isPopularProductsSectionMockDataEmpty) {
         return (
             <section className="py-section-3xl md:py-section-5xl">
@@ -17,7 +18,7 @@ export const PopularProductsSection = () => {
                     <PopularProductsSectionContentFallback />
                 </div>
             </section>
-        )
+        );
     }
 
     return (
@@ -30,5 +31,5 @@ export const PopularProductsSection = () => {
                 <PopularProductsSectionImage />
             </div>
         </section>
-    )
-}
+    );
+};

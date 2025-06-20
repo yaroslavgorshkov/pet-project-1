@@ -1,6 +1,6 @@
-import { HeaderIconsBar } from "../HeaderIconsBar/HeaderIconsBar";
-import { HeaderLogo } from "../HeaderLogo";
-import { HeaderMobileHamburgerMenu } from "./HeaderMobileHamburgerMenu/HeaderMobileHamburgerMenu";
+import { HeaderIconsBar } from '../HeaderIconsBar/HeaderIconsBar';
+import { HeaderLogo } from '../HeaderLogo';
+import { HeaderMobileHamburgerMenu } from './HeaderMobileHamburgerMenu/HeaderMobileHamburgerMenu';
 
 export const HeaderMobile = () => {
     return (

@@ -1,20 +1,25 @@
-import { CategorySectionMenu } from "../CategorySectionMenu/CategorySectionMenu";
-import { categorySectionContent } from "../categorySectionMockData";
-import { CategorySectionContentItem } from "./CategorySectionContentItem/CategorySectionContentItem";
+import { CategorySectionMenu } from '../CategorySectionMenu/CategorySectionMenu';
+import { categorySectionContent } from '../categorySectionMockData';
+import { CategorySectionContentItem } from './CategorySectionContentItem/CategorySectionContentItem';
 
 export const CategorySectionContentDesktop = () => {
     const content = categorySectionContent;
 
-    const categorySectionContentList = content.map(({ id, text, href, imgRef, alt }) => {
-        const isFirstItem = id === 0;
-        return (<CategorySectionContentItem
-            key={id}
-            text={text}
-            href={href}
-            isHighlighted={isFirstItem}
-            imgRef={imgRef}
-            alt={alt} />)
-    })
+    const categorySectionContentList = content.map(
+        ({ id, text, href, imgRef, alt }) => {
+            const isFirstItem = id === 0;
+            return (
+                <CategorySectionContentItem
+                    key={id}
+                    text={text}
+                    href={href}
+                    isHighlighted={isFirstItem}
+                    imgRef={imgRef}
+                    alt={alt}
+                />
+            );
+        }
+    );
 
     return (
         <div className="hidden gap-10xl w-full xl:flex">
@@ -23,5 +28,5 @@ export const CategorySectionContentDesktop = () => {
                 {categorySectionContentList}
             </div>
         </div>
-    )
-}
+    );
+};

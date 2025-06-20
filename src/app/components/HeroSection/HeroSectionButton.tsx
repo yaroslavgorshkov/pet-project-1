@@ -1,40 +1,52 @@
-import { Button } from "../Button/Button";
-import { ButtonProps } from "../Button/buttonTypes";
-import { Text } from "../Text/Text";
+import { Button } from '../Button/Button';
+import { ButtonProps } from '../Button/buttonTypes';
+import { Text } from '../Text/Text';
 
 export const HeroSectionButton = () => {
     const handleHeroSectionButtonClick = () => {
         // TODO: add HeroSectionButton click function
-    }
+    };
 
-    const heroSectionButtonSmProps: Omit<ButtonProps, "children"> = {
-        buttonSize: "sm",
-        borderRadius: "md",
-        variant: "contained",
-        backgroundColor: "mint",
-        onClick: handleHeroSectionButtonClick
-    }
+    const heroSectionButtonSmProps: Omit<ButtonProps, 'children'> = {
+        buttonSize: 'sm',
+        borderRadius: 'md',
+        variant: 'contained',
+        backgroundColor: 'mint',
+        onClick: handleHeroSectionButtonClick,
+    };
 
-    const heroSectionButtonMdProps: Omit<ButtonProps, "children"> = {
-        buttonSize: "md",
-        borderRadius: "md",
-        variant: "contained",
-        backgroundColor: "mint",
-        onClick: handleHeroSectionButtonClick
-    }
+    const heroSectionButtonMdProps: Omit<ButtonProps, 'children'> = {
+        buttonSize: 'md',
+        borderRadius: 'md',
+        variant: 'contained',
+        backgroundColor: 'mint',
+        onClick: handleHeroSectionButtonClick,
+    };
 
     return (
         <>
             <div className="md:hidden">
-                <Button {...heroSectionButtonSmProps} >
-                    <Text fontSize={"lg"} fontFamily={"opensans"} color={"white"} content={"Shop Now"} fontWeight={"bold"} />
+                <Button {...heroSectionButtonSmProps}>
+                    <Text
+                        fontSize={'lg'}
+                        fontFamily={'opensans'}
+                        color={'white'}
+                        content={'Shop Now'}
+                        fontWeight={'bold'}
+                    />
                 </Button>
             </div>
             <div className="hidden md:block">
-                <Button {...heroSectionButtonMdProps} >
-                    <Text fontSize={"3xl"} fontFamily={"opensans"} color={"white"} content={"Shop Now"} fontWeight={"bold"} />
+                <Button {...heroSectionButtonMdProps}>
+                    <Text
+                        fontSize={'3xl'}
+                        fontFamily={'opensans'}
+                        color={'white'}
+                        content={'Shop Now'}
+                        fontWeight={'bold'}
+                    />
                 </Button>
             </div>
         </>
-    )
-}
+    );
+};

@@ -1,6 +1,6 @@
-import { CategorySectionContentFallback } from "../CategorySectionContent/CategorySectionContentFallback";
-import { categorySectionContent } from "../categorySectionMockData";
-import { CategorySectionHeadlineTitle } from "./CategorySectionHeadlineTitle"
+import { CategorySectionContentFallback } from '../CategorySectionContent/CategorySectionContentFallback';
+import { categorySectionContent } from '../categorySectionMockData';
+import { CategorySectionHeadlineTitle } from './CategorySectionHeadlineTitle';
 
 export const CategorySectionHeadlineDesktop = () => {
     const content = categorySectionContent;
@@ -11,12 +11,12 @@ export const CategorySectionHeadlineDesktop = () => {
                 <CategorySectionHeadlineTitle />
                 <CategorySectionContentFallback />
             </div>
-        )
+        );
     }
 
     return (
         <div className="hidden xl:block">
             <CategorySectionHeadlineTitle />
         </div>
-    )
-}
+    );
+};

@@ -4,5 +4,5 @@ export const CategorySectionMenuNavigationListDesktopSlider = () => {
             <div className="absolute w-slider-md h-slider-lg top-0 left-slider bg-mint"></div>
             <div className="w-slider-sm h-slider-2xl bg-lapis"></div>
         </div>
-    )
-}
+    );
+};

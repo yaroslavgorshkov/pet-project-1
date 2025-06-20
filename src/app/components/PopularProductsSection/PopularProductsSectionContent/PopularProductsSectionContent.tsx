@@ -1,20 +1,39 @@
-import { popularProductsSectionMockData } from "../popularProductsSectionMockData";
-import { PopularProductsSectionContentItem } from "./PopularProductsSectionContentItem";
+import { popularProductsSectionMockData } from '../popularProductsSectionMockData';
+import { PopularProductsSectionContentItem } from './PopularProductsSectionContentItem';
 
 export const PopularProductsSectionContent = () => {
-    const popularProductsList = popularProductsSectionMockData.map((
-        { href, imgRef, name, description, price, backgroundColor, alt, id }) => {
-        return (
-            <PopularProductsSectionContentItem href={href} imgRef={imgRef} name={name}
-                description={description} price={price}
-                backgroundColor={backgroundColor} alt={alt} key={id} />
-        )
-    })
+    const popularProductsList = popularProductsSectionMockData.map(
+        ({
+            href,
+            imgRef,
+            name,
+            description,
+            price,
+            backgroundColor,
+            alt,
+            id,
+        }) => {
+            return (
+                <PopularProductsSectionContentItem
+                    href={href}
+                    imgRef={imgRef}
+                    name={name}
+                    description={description}
+                    price={price}
+                    backgroundColor={backgroundColor}
+                    alt={alt}
+                    key={id}
+                />
+            );
+        }
+    );
 
     return (
-        <div className="popular-products-section-content flex gap-2xl overflow-x-scroll 
-        w-full px-el-2xl md:px-el-3xl lg:px-el-6xl xl:px-el-11xl">
+        <div
+            className="popular-products-section-content flex gap-2xl overflow-x-scroll 
+        w-full px-el-2xl md:px-el-3xl lg:px-el-6xl xl:px-el-11xl"
+        >
             {popularProductsList}
         </div>
-    )
-}
+    );
+};

@@ -1,5 +1,5 @@
-import { PopularProductsSectionSliderDesktop } from "./PopularProductsSectionSliderDesktop"
-import { PopularProductsSectionSliderMobile } from "./PopularProductsSectionSliderMobile"
+import { PopularProductsSectionSliderDesktop } from './PopularProductsSectionSliderDesktop';
+import { PopularProductsSectionSliderMobile } from './PopularProductsSectionSliderMobile';
 
 export const PopularProductsSectionSlider = () => {
     return (
@@ -7,5 +7,5 @@ export const PopularProductsSectionSlider = () => {
             <PopularProductsSectionSliderMobile />
             <PopularProductsSectionSliderDesktop />
         </>
-    )
-}
+    );
+};

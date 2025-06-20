@@ -1,5 +1,5 @@
-import { CategorySectionHeadlineDesktop } from "./CategorySectionHeadlineDesktop"
-import { CategorySectionHeadlineMobile } from "./CategorySectionHeadlineMobile"
+import { CategorySectionHeadlineDesktop } from './CategorySectionHeadlineDesktop';
+import { CategorySectionHeadlineMobile } from './CategorySectionHeadlineMobile';
 
 export const CategorySectionHeadline = () => {
     return (
@@ -7,5 +7,5 @@ export const CategorySectionHeadline = () => {
             <CategorySectionHeadlineMobile />
             <CategorySectionHeadlineDesktop />
         </>
-    )
-}
+    );
+};

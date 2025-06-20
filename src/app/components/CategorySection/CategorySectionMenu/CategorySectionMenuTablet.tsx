@@ -1,6 +1,6 @@
-import { CategorySectionMenuButton } from "./CategorySectionMenuButton"
-import { CategorySectionMenuNavigationList } from "./CategorySectionMenuNavigationList/CategorySectionMenuNavigationList"
-import { CategorySectionMenuSearch } from "./CategorySectionMenuSearch"
+import { CategorySectionMenuButton } from './CategorySectionMenuButton';
+import { CategorySectionMenuNavigationList } from './CategorySectionMenuNavigationList/CategorySectionMenuNavigationList';
+import { CategorySectionMenuSearch } from './CategorySectionMenuSearch';
 
 export const CategorySectionMenuTablet = () => {
     return (
@@ -10,5 +10,5 @@ export const CategorySectionMenuTablet = () => {
             <CategorySectionMenuButton />
             {/* <CategorySectionMenuAllCategories /> */}
         </div>
-    )
-}
+    );
+};

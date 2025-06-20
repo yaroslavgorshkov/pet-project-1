@@ -1,5 +1,3 @@
 export const CategorySectionMenuHamburgerMenuContent = () => {
-    return (
-        1
-    )
-}
+    return 1;
+};

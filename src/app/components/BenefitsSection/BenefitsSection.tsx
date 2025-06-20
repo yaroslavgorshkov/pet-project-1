@@ -1,5 +1,5 @@
-import { BenefitsSectionContent } from "./BenefitsSectionContent/BenefitsSectionContent"
-import { BenefitsSectionHeadline } from "./BenefitsSectionHeadline"
+import { BenefitsSectionContent } from './BenefitsSectionContent/BenefitsSectionContent';
+import { BenefitsSectionHeadline } from './BenefitsSectionHeadline';
 
 export const BenefitsSection = () => {
     return (
@@ -9,5 +9,5 @@ export const BenefitsSection = () => {
                 <BenefitsSectionContent />
             </div>
         </section>
-    )
-}
+    );
+};

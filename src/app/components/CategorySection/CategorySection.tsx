@@ -1,5 +1,5 @@
-import { CategorySectionContent } from "./CategorySectionContent/CategorySectionContent"
-import { CategorySectionHeadline } from "./CategorySectionHeadline/CategorySectionHeadline"
+import { CategorySectionContent } from './CategorySectionContent/CategorySectionContent';
+import { CategorySectionHeadline } from './CategorySectionHeadline/CategorySectionHeadline';
 
 export const CategorySection = () => {
     return (
@@ -9,5 +9,5 @@ export const CategorySection = () => {
                 <CategorySectionContent />
             </div>
         </section>
-    )
-}
+    );
+};

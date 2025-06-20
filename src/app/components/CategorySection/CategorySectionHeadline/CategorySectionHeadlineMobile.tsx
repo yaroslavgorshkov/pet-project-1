@@ -1,7 +1,7 @@
-import { CategorySectionHeadlineTitle } from "./CategorySectionHeadlineTitle"
-import { CategorySectionMenu } from "../CategorySectionMenu/CategorySectionMenu"
-import { categorySectionContent } from "../categorySectionMockData";
-import { CategorySectionContentFallback } from "../CategorySectionContent/CategorySectionContentFallback";
+import { CategorySectionHeadlineTitle } from './CategorySectionHeadlineTitle';
+import { CategorySectionMenu } from '../CategorySectionMenu/CategorySectionMenu';
+import { categorySectionContent } from '../categorySectionMockData';
+import { CategorySectionContentFallback } from '../CategorySectionContent/CategorySectionContentFallback';
 
 export const CategorySectionHeadlineMobile = () => {
     const content = categorySectionContent;
@@ -12,7 +12,7 @@ export const CategorySectionHeadlineMobile = () => {
                 <CategorySectionHeadlineTitle />
                 <CategorySectionContentFallback />
             </div>
-        )
+        );
     }
 
     return (
@@ -20,5 +20,5 @@ export const CategorySectionHeadlineMobile = () => {
             <CategorySectionHeadlineTitle />
             <CategorySectionMenu />
         </div>
-    )
-}
+    );
+};

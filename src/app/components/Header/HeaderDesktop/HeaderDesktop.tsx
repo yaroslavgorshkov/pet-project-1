@@ -1,6 +1,6 @@
-import { HeaderIconsBar } from "../HeaderIconsBar/HeaderIconsBar"
-import { HeaderLogo } from "../HeaderLogo"
-import { HeaderDesktopNavigationList } from "./HeaderDesktopNavigaionList/HeaderDesktopNavigationList"
+import { HeaderIconsBar } from '../HeaderIconsBar/HeaderIconsBar';
+import { HeaderLogo } from '../HeaderLogo';
+import { HeaderDesktopNavigationList } from './HeaderDesktopNavigaionList/HeaderDesktopNavigationList';
 
 export const HeaderDesktop = () => {
     return (
@@ -9,5 +9,5 @@ export const HeaderDesktop = () => {
             <HeaderDesktopNavigationList />
             <HeaderIconsBar />
         </div>
-    )
-}
+    );
+};

@@ -1,5 +1,5 @@
-import { HeroSectionTitleDescription } from "./HeroSectionTitleDescription"
-import { HeroSectionTitleText } from "./HeroSectionTitleText"
+import { HeroSectionTitleDescription } from './HeroSectionTitleDescription';
+import { HeroSectionTitleText } from './HeroSectionTitleText';
 
 export const HeroSectionTitle = () => {
     return (
@@ -7,5 +7,5 @@ export const HeroSectionTitle = () => {
             <HeroSectionTitleText />
             <HeroSectionTitleDescription />
         </div>
-    )
-}
+    );
+};

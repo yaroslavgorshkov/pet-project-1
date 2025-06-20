@@ -1,13 +1,13 @@
-import Image from "next/image"
+import Image from 'next/image';
 
 type PopularProductsSectionContentItemImageContainerProps = {
     imgRef: string;
     alt: string;
-}
+};
 
 export const PopularProductsSectionContentItemImageContainer = ({
     imgRef,
-    alt
+    alt,
 }: PopularProductsSectionContentItemImageContainerProps) => {
     return (
         <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
@@ -15,5 +15,5 @@ export const PopularProductsSectionContentItemImageContainer = ({
                 <Image src={imgRef} alt={alt} fill />
             </div>
         </div>
-    )
-}
+    );
+};

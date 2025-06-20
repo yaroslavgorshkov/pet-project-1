@@ -1,16 +1,18 @@
-import { useState } from "react";
-import { HeaderIconsBarAccountButton } from "./HeaderIconsBarAccountButton";
+import { useState } from 'react';
+import { HeaderIconsBarAccountButton } from './HeaderIconsBarAccountButton';
 
 export const HeaderIconsBarAccount = () => {
     const [isAccountDialogVisible, setIsAccountDialogVisible] = useState(false);
 
     function handleAccountDialogClick() {
-        setIsAccountDialogVisible(prev => !prev)
+        setIsAccountDialogVisible((prev) => !prev);
     }
 
     return (
         <div>
-            <HeaderIconsBarAccountButton handleClick={handleAccountDialogClick} />
+            <HeaderIconsBarAccountButton
+                handleClick={handleAccountDialogClick}
+            />
             {/* <div className={`icons-bar__account-content fixed shadow-lg border bg-darken-white
                     ${isAccountDialogVisible ? 'custom-icons-bar__account-content-visible' : 'custom-icons-bar__account-content-hidden'}`}>
                 <div className="">
@@ -46,5 +48,5 @@ export const HeaderIconsBarAccount = () => {
             </div>
             <Background isVisible={isAccountDialogVisible} handleClick={handleAccountDialogClick} /> */}
         </div>
-    )
-}
+    );
+};
