@@ -1,10 +1,10 @@
-import { PopularProductsSectionButton } from './PopularProductsSectionButton/PopularProductsSectionButton';
+import { PopularProductsSectionButton } from './PopularProductsSectionButton';
 import { PopularProductsSectionContent } from './PopularProductsSectionContent/PopularProductsSectionContent';
 import { PopularProductsSectionContentFallback } from './PopularProductsSectionContentFallback';
-import { PopularProductsSectionHeadline } from './PopularProductsSectionHeadline/PopularProductsSectionHeadline';
-import { PopularProductsSectionImage } from './PopularProductsSectionImage/PopularProductsSectionImage';
+import { PopularProductsSectionHeadline } from './PopularProductsSectionHeadline';
+import { PopularProductsSectionImage } from './PopularProductsSectionImage';
 import { popularProductsSectionMockData } from './popularProductsSectionMockData';
-import { PopularProductsSectionSlider } from './PopularProductsSectionSlider/PopularProductsSectionSlider';
+import { PopularProductsSectionSlider } from './PopularProductsSectionSlider';
 
 export const PopularProductsSection = () => {
     const content = popularProductsSectionMockData;

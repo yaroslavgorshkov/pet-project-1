@@ -1,17 +1,17 @@
 import { Text } from '@/app/components/Text/Text';
 import { twMerge } from 'tailwind-merge';
 
-type HeaderDesktopNavigationListItemProps = {
+type HeaderNavigationListItemProps = {
     text: string;
     href: string;
     isHighlighted?: boolean;
 };
 
-export const HeaderDesktopNavigationListItem = ({
+export const HeaderNavigationListItem = ({
     text,
     href,
     isHighlighted = false,
-}: HeaderDesktopNavigationListItemProps) => {
+}: HeaderNavigationListItemProps) => {
     const highlightedClass = isHighlighted
         ? 'font-bold after:top-nl-hover after:opacity-100'
         : 'hover:font-bold after:top-nl after:opacity-0 after:transition-all after:duration-200 hover:after:opacity-100 hover:after:top-nl-hover';

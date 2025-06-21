@@ -1,7 +1,7 @@
-import { Button } from '../../Button/Button';
-import { ButtonProps } from '../../Button/buttonTypes';
-import { Text } from '../../Text/Text';
-import { EndIconType } from '../../types';
+import { Button } from '../Button/Button';
+import { ButtonProps } from '../Button/buttonTypes';
+import { EndIconType } from '../types';
+import { Text } from '../Text/Text';
 
 export const PopularProductsSectionButton = () => {
     const handlePopularProductsSectionButtonClick = () => {

@@ -1,6 +1,6 @@
-import { Text } from '../../Text/Text';
+import { Text } from '../../../Text/Text';
 
-export const HeroSectionTitleDescription = () => {
+export const HeroSectionContentTitleDescription = () => {
     return (
         <>
             <div className="text-center md:hidden">

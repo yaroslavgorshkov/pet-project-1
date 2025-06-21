@@ -1,28 +1,26 @@
 import { IconButton } from '@/app/components/Button/IconButton';
 
-type HeaderIconsBarAccountButtonProps = {
-    onClick: () => void;
-};
+export const HeaderIconsBarSearchButton = () => {
+    function handleHeaderIconsBarSearchButtonClick() {
+        // TODO: add HeaderIconsBarSearchButton click function
+    }
 
-export const HeaderIconsBarAccountButton = ({
-    onClick,
-}: HeaderIconsBarAccountButtonProps) => {
     return (
         <>
             <div className="md:hidden">
                 <IconButton
-                    iconType={'account'}
+                    iconType={'search'}
                     iconFillColor={'lapis'}
                     iconSize={'3xl'}
-                    onClick={onClick}
+                    onClick={handleHeaderIconsBarSearchButtonClick}
                 />
             </div>
             <div className="hidden md:block">
                 <IconButton
-                    iconType={'account'}
+                    iconType={'search'}
                     iconFillColor={'lapis'}
                     iconSize={'5xl'}
-                    onClick={onClick}
+                    onClick={handleHeaderIconsBarSearchButtonClick}
                 />
             </div>
         </>

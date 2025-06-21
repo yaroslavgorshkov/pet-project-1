@@ -1,6 +1,6 @@
 import { IconButton } from '../../Button/IconButton';
 
-export const HeaderIconsBarShoppingCart = () => {
+export const HeaderIconsBarShoppingCartButton = () => {
     const handleHeaderIconsBarShoppingCartButtonClick = () => {
         // TODO: add HeaderIconsBarShoppingCartButton click function
     };

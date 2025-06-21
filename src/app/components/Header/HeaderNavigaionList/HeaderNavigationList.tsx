@@ -1,20 +1,20 @@
 import { NavigationList } from '@/app/components/NavigationList/NavigationList';
-import { navigationListContent } from '../../headerMockData';
-import { HeaderDesktopNavigationListItem } from './HeaderDesktopNavigationListItem';
+import { navigationListContent } from '../headerMockData';
+import { HeaderNavigationListItem } from './HeaderNavigationListItem';
 
-export const HeaderDesktopNavigationList = () => {
-    const headerDesktopNavigationListContent = navigationListContent;
+export const HeaderNavigationList = () => {
+    const headerNavigationListContent = navigationListContent;
     return (
         <>
             <NavigationList
                 renderListItem={({ href, text, isHighlighted }) => (
-                    <HeaderDesktopNavigationListItem
+                    <HeaderNavigationListItem
                         text={text}
                         href={href}
                         isHighlighted={isHighlighted}
                     />
                 )}
-                navigationListContent={headerDesktopNavigationListContent}
+                navigationListContent={headerNavigationListContent}
                 highlightedElementNumber={0}
                 ulClassName="flex gap-6xl"
             />

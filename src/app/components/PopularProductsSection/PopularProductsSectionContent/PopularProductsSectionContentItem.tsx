@@ -1,7 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import { Text } from '../../Text/Text';
-import { PopularProductsSectionContentItemImageContainer } from './PopularProductsSectionContentItemImageContainer';
-import { PopularProductsSectionContentItemName } from './PopularProductsSectionContentItemName';
+import Image from 'next/image';
 
 type PopularProductsSectionContentItemProps = {
     href: string;
@@ -30,12 +29,30 @@ export const PopularProductsSectionContentItem = ({
 
     return (
         <a href={href} className={combinedClassName}>
-            <PopularProductsSectionContentItemImageContainer
-                imgRef={imgRef}
-                alt={alt}
-            />
+            <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
+                <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
+                    <Image src={imgRef} alt={alt} fill />
+                </div>
+            </div>
             <div className="flex flex-col">
-                <PopularProductsSectionContentItemName name={name} />
+                <div className="md:hidden">
+                    <Text
+                        fontSize={'lg'}
+                        fontFamily={'opensans'}
+                        color={'mint'}
+                        content={name}
+                        fontWeight={'bold'}
+                    />
+                </div>
+                <div className="hidden md:block">
+                    <Text
+                        fontSize={'3xl'}
+                        fontFamily={'opensans'}
+                        color={'mint'}
+                        content={name}
+                        fontWeight={'bold'}
+                    />
+                </div>
                 <div className="mt-4 md:mt-6">
                     <Text
                         fontSize={'lg'}

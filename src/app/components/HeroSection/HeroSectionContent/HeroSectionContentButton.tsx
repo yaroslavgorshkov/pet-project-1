@@ -1,8 +1,8 @@
-import { Button } from '../Button/Button';
-import { ButtonProps } from '../Button/buttonTypes';
-import { Text } from '../Text/Text';
+import { Button } from '../../Button/Button';
+import { ButtonProps } from '../../Button/buttonTypes';
+import { Text } from '../../Text/Text';
 
-export const HeroSectionButton = () => {
+export const HeroSectionContentButton = () => {
     const handleHeroSectionButtonClick = () => {
         // TODO: add HeroSectionButton click function
     };
