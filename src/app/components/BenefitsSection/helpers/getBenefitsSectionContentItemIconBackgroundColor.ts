@@ -1,12 +1,18 @@
-import { BenefitsSectionContentItemIconBackgroundColor } from "../benefitsSectionMockData";
+import { BenefitsSectionContentItemIconBackgroundColor } from '../benefitsSectionMockData';
 
-const denefitsSectionContentItemIconBackgroundColorMap: Record<BenefitsSectionContentItemIconBackgroundColor, string> = {
-    purple: "bg-purple",
-    skin: "bg-skin",
-    "lazuli-green": "bg-lazuli-green"
-}
+const denefitsSectionContentItemIconBackgroundColorMap: Record<
+    BenefitsSectionContentItemIconBackgroundColor,
+    string
+> = {
+    purple: 'bg-purple',
+    skin: 'bg-skin',
+    'lazuli-green': 'bg-lazuli-green',
+};
 
-export const getBenefitsSectionContentItemIconBackgroundColor = 
-(iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor) => {
-    return denefitsSectionContentItemIconBackgroundColorMap[iconBackgroundColor];
-}
+export const getBenefitsSectionContentItemIconBackgroundColor = (
+    iconBackgroundColor: BenefitsSectionContentItemIconBackgroundColor
+) => {
+    return denefitsSectionContentItemIconBackgroundColorMap[
+        iconBackgroundColor
+    ];
+};

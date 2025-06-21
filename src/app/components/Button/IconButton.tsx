@@ -1,6 +1,6 @@
-import { getDynamicIconComponent } from "@/app/components/Icons/helpers/getIconComponent";
-import { IconFillColor, IconSize, DynamicIconType } from "../types"
-import { ButtonBase } from "./ButtonBase"
+import { getDynamicIconComponent } from '@/app/components/Icons/helpers/getIconComponent';
+import { IconFillColor, IconSize, DynamicIconType } from '../types';
+import { ButtonBase } from './ButtonBase';
 
 type IconButtonProps = {
     iconType: DynamicIconType;
@@ -8,20 +8,24 @@ type IconButtonProps = {
     iconSize: IconSize;
     className?: string;
     onClick: () => void;
-}
+};
 
 export const IconButton = ({
     iconType,
     iconFillColor,
     iconSize,
     className = '',
-    onClick
+    onClick,
 }: IconButtonProps) => {
-    const iconComponent = getDynamicIconComponent(iconType, iconFillColor, iconSize);
+    const iconComponent = getDynamicIconComponent(
+        iconType,
+        iconFillColor,
+        iconSize
+    );
 
     return (
         <ButtonBase className={className} onClick={onClick}>
             {iconComponent}
         </ButtonBase>
-    )
-}
+    );
+};

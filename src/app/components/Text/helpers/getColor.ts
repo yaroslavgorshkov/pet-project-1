@@ -1,10 +1,10 @@
-import { Color } from "../textTypes";
+import { Color } from '../textTypes';
 
 const colorMap: Record<Color, string> = {
-    lapis: "text-lapis",
-    white: "text-white",
-    mint: "text-mint",
-    "absolute-black": "text-absolute-black"
-}
+    lapis: 'text-lapis',
+    white: 'text-white',
+    mint: 'text-mint',
+    'absolute-black': 'text-absolute-black',
+};
 
 export const getColor = (color: Color) => colorMap[color];

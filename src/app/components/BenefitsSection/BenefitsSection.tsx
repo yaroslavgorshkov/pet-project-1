@@ -1,13 +1,13 @@
-import { BenefitsSectionContent } from "./BenefitsSectionContent/BenefitsSectionContent"
-import { BenefitsSectionHeadline } from "./BenefitsSectionHeadline"
+import { BenefitsSectionContent } from './BenefitsSectionContent/BenefitsSectionContent';
+import { BenefitsSectionHeadline } from './BenefitsSectionHeadline';
 
 export const BenefitsSection = () => {
     return (
-        <section className="py-[80px] px-[16px] md:py-[100px] md:px-[20px] lg:px-[40px] xl:px-[120px] 2xl:px-[286px] bg-white-blue">
-            <div className="flex flex-col gap-[104px]">
+        <section className="py-section-3xl px-section-sm md:py-section-5xl md:px-section-md lg:px-section-xl xl:px-section-6xl 2xl:px-section-8xl bg-white-blue">
+            <div className="flex flex-col gap-13xl">
                 <BenefitsSectionHeadline />
                 <BenefitsSectionContent />
             </div>
         </section>
-    )
-}
+    );
+};

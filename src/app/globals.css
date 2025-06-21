@@ -6,13 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
     height: 100dvh;
 }
 
 .category-section__menu-navigation-list-desktop,
 .popular-products-section-content,
-.own-products-section-wrapper
-{
+.own-products-section-wrapper {
     scrollbar-width: none;
 }

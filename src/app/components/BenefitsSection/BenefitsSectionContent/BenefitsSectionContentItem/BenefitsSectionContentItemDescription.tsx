@@ -1,26 +1,46 @@
-import { Text } from "@/app/components/Text/Text"
+import { Text } from '@/app/components/Text/Text';
 
 type BenefitsSectionContentItemDescriptionProps = {
     descriptionTop: string;
     descriptionBottom: string;
-}
+};
 
 export const BenefitsSectionContentItemDescription = ({
     descriptionTop,
-    descriptionBottom
+    descriptionBottom,
 }: BenefitsSectionContentItemDescriptionProps) => {
     return (
         <>
             <div className="text-center xl:hidden">
-                <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={descriptionTop} />
+                <Text
+                    fontSize={'lg'}
+                    fontFamily={'opensans'}
+                    color={'lapis'}
+                    content={descriptionTop}
+                />
                 <br />
-                <Text fontSize={"lg"} fontFamily={"opensans"} color={"lapis"} content={descriptionBottom} />
+                <Text
+                    fontSize={'lg'}
+                    fontFamily={'opensans'}
+                    color={'lapis'}
+                    content={descriptionBottom}
+                />
             </div>
             <div className="hidden text-center xl:block">
-                <Text fontSize={"3xl"} fontFamily={"opensans"} color={"lapis"} content={descriptionTop} />
+                <Text
+                    fontSize={'3xl'}
+                    fontFamily={'opensans'}
+                    color={'lapis'}
+                    content={descriptionTop}
+                />
                 <br />
-                <Text fontSize={"3xl"} fontFamily={"opensans"} color={"lapis"} content={descriptionBottom} />
+                <Text
+                    fontSize={'3xl'}
+                    fontFamily={'opensans'}
+                    color={'lapis'}
+                    content={descriptionBottom}
+                />
             </div>
         </>
-    )
-}
+    );
+};

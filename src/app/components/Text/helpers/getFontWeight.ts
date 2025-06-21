@@ -1,8 +1,9 @@
-import { FontWeight } from "../textTypes";
+import { FontWeight } from '../textTypes';
 
 const fontWeightMap: Record<FontWeight, string> = {
-    normal: "font-normal",
-    bold: "font-bold"
-}
+    normal: 'font-normal',
+    bold: 'font-bold',
+};
 
-export const getFontWeight = (fontWeight: FontWeight) => fontWeightMap[fontWeight];
+export const getFontWeight = (fontWeight: FontWeight) =>
+    fontWeightMap[fontWeight];
