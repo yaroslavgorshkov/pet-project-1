@@ -1,15 +1,13 @@
-import { HeaderIconsBarAccount } from "./HeaderIconsBarAccount/HeaderIconsBarAccount"
-import { HeaderIconsBarSearch } from "./HeaderIconsBarSearch/HeaderIconsBarSearch"
-import { HeaderIconsBarShoppingCart } from "./HeaderIconsBarShoppingCart"
-
+import { HeaderIconsBarAccountButton } from './HeaderIconsBarAccountButton';
+import { HeaderIconsBarSearchButton } from './HeaderIconsBarSearchButton';
+import { HeaderIconsBarShoppingCartButton } from './HeaderIconsBarShoppingCartButton';
 
 export const HeaderIconsBar = () => {
-
     return (
-        <div className="gap-3 flex order-2 items-center md:gap-[58px]">
-            <HeaderIconsBarSearch />
-            <HeaderIconsBarShoppingCart />
-            <HeaderIconsBarAccount />
+        <div className="gap-md flex order-2 items-center md:gap-9xl">
+            <HeaderIconsBarSearchButton />
+            <HeaderIconsBarShoppingCartButton />
+            <HeaderIconsBarAccountButton />
         </div>
-    )
-}
+    );
+};

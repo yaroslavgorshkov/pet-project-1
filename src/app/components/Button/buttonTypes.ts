@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
-import { EndIconType } from "../types";
+import { ReactNode } from 'react';
+import { EndIconType } from '../types';
 
 export type BorderRadius = 'md' | 'sm';
-export type ButtonSize = "sm" | "md" | "lg";
+export type ButtonSize = 'sm' | 'md' | 'lg';
 export type ButtonBackgroundColor = 'mint' | 'white' | 'white-blue';
 
 export type ButtonProps = {
@@ -12,6 +12,6 @@ export type ButtonProps = {
     endIcon?: EndIconType;
     className?: string;
     onClick: () => void;
-    variant: "contained" | "secondary";
+    variant: 'contained' | 'secondary';
     backgroundColor?: ButtonBackgroundColor;
-}
+};

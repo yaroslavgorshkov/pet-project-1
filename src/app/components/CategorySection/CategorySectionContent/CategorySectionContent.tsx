@@ -1,20 +1,44 @@
-import { CategorySectionContentDesktop } from "./CategorySectionContentDesktop"
-import { CategorySectionContentMobile } from "./CategorySectionContentMobile"
-import { CategorySectionContentTablet } from "./CategorySectionContentTablet"
-import { categorySectionContent } from "../CategorySectionMenu/categorySectionMockData"
+import { categorySectionContent } from '../categorySectionMockData';
+import { CategorySectionContentItem } from './CategorySectionContentItem/CategorySectionContentItem';
+import { CategorySectionMenu } from '../CategorySectionMenu/CategorySectionMenu';
 
 export const CategorySectionContent = () => {
     const content = categorySectionContent;
     const isCategorySectionContentEmpty = !content || content.length === 0;
     if (isCategorySectionContentEmpty) {
-        return
+        return;
     }
+
+    const categorySectionContentList = content.map(
+        ({ id, text, href, imgRef, alt }) => {
+            const isFirstItem = id === 0;
+            return (
+                <CategorySectionContentItem
+                    key={id}
+                    text={text}
+                    href={href}
+                    isHighlighted={isFirstItem}
+                    imgRef={imgRef}
+                    alt={alt}
+                />
+            );
+        }
+    );
 
     return (
         <>
-            <CategorySectionContentMobile />
-            <CategorySectionContentTablet />
-            <CategorySectionContentDesktop />
+            <div className="flex flex-col gap-xl w-full md:hidden">
+                {categorySectionContentList}
+            </div>
+            <div className="hidden grid-cols-2 gap-xl w-full md:grid xl:hidden">
+                {categorySectionContentList}
+            </div>
+            <div className="hidden gap-10xl w-full xl:flex">
+                <CategorySectionMenu />
+                <div className="grid grid-cols-2 gap-xl w-full">
+                    {categorySectionContentList}
+                </div>
+            </div>
         </>
-    )
-}
+    );
+};

@@ -1,7 +1,6 @@
-import { twMerge } from "tailwind-merge";
-import { Text } from "../../Text/Text";
-import { PopularProductsSectionContentItemImageContainer } from "./PopularProductsSectionContentItemImageContainer";
-import { PopularProductsSectionContentItemName } from "./PopularProductsSectionContentItemName";
+import { twMerge } from 'tailwind-merge';
+import { Text } from '../../Text/Text';
+import Image from 'next/image';
 
 type PopularProductsSectionContentItemProps = {
     href: string;
@@ -10,8 +9,8 @@ type PopularProductsSectionContentItemProps = {
     description: string;
     price: number;
     backgroundColor: string;
-    alt: string
-}
+    alt: string;
+};
 
 export const PopularProductsSectionContentItem = ({
     href,
@@ -20,24 +19,58 @@ export const PopularProductsSectionContentItem = ({
     description,
     price,
     backgroundColor,
-    alt
+    alt,
 }: PopularProductsSectionContentItemProps) => {
-    const combinedClassName = twMerge('flex flex-col gap-[40px] px-5 pt-[49px] pb-5 rounded-[16px] md:pt-[84px] md:px-10 md:pb-[60px]', backgroundColor);
+    const combinedClassName = twMerge(
+        'flex flex-col gap-3xl px-el-md pt-el-5xl pb-el-md rounded-lg md:pt-el-8xl md:px-el-3xl md:pb-el-6xl',
+        backgroundColor
+    );
     const popularProductsSectionContentItemPrice = `$${price}`;
 
     return (
         <a href={href} className={combinedClassName}>
-            <PopularProductsSectionContentItemImageContainer imgRef={imgRef} alt={alt} />
-            <div className="flex flex-col">
-                <PopularProductsSectionContentItemName name={name} />
-                <div className="mt-[14px] md:mt-[23px]">
-                    <Text fontSize={"lg"} fontFamily={"opensans"} color={"mint"} content={description} />
+            <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
+                <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
+                    <Image src={imgRef} alt={alt} fill />
                 </div>
-                <div className="mt-[20px] md:mt-[22px]">
-                    <Text fontSize={"3xl"} fontFamily={"opensans"} color={"mint"}
-                        content={popularProductsSectionContentItemPrice} fontWeight={"bold"} />
+            </div>
+            <div className="flex flex-col">
+                <div className="md:hidden">
+                    <Text
+                        fontSize={'lg'}
+                        fontFamily={'opensans'}
+                        color={'mint'}
+                        content={name}
+                        fontWeight={'bold'}
+                    />
+                </div>
+                <div className="hidden md:block">
+                    <Text
+                        fontSize={'3xl'}
+                        fontFamily={'opensans'}
+                        color={'mint'}
+                        content={name}
+                        fontWeight={'bold'}
+                    />
+                </div>
+                <div className="mt-4 md:mt-6">
+                    <Text
+                        fontSize={'lg'}
+                        fontFamily={'opensans'}
+                        color={'mint'}
+                        content={description}
+                    />
+                </div>
+                <div className="mt-5 md:mt-6">
+                    <Text
+                        fontSize={'3xl'}
+                        fontFamily={'opensans'}
+                        color={'mint'}
+                        content={popularProductsSectionContentItemPrice}
+                        fontWeight={'bold'}
+                    />
                 </div>
             </div>
         </a>
-    )
-}
+    );
+};
