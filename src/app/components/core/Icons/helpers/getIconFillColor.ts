@@ -1,4 +1,4 @@
-import { IconFillColor } from '@/app/components/types';
+import { IconFillColor } from '@/types';
 
 const iconFillColorMap: Record<IconFillColor, string> = {
     lapis: '#07484A',

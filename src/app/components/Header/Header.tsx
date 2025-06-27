@@ -1,7 +1,7 @@
-import { HeaderNavigationList } from './HeaderNavigaionList/HeaderNavigationList';
-import { HeaderIconsBar } from './HeaderIconsBar/HeaderIconsBar';
-import { HeaderLogo } from './HeaderLogo';
-import { HeaderHamburgerMenuButton } from './HeaderHamburgerMenuButton';
+import { HeaderNavigationList } from '@/Header/HeaderNavigaionList/HeaderNavigationList';
+import { HeaderIconsBar } from '@/Header/HeaderIconsBar/HeaderIconsBar';
+import { HeaderLogo } from '@/Header/HeaderLogo';
+import { HeaderHamburgerMenuButton } from '@/Header/HeaderHamburgerMenuButton';
 
 export const Header = () => {
     return (

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Text } from '../../core/Text/Text';
-import { Button } from '../../core/Button/Button';
+import { Text } from '@/core/Text/Text';
+import { Button } from '@/core/Button/Button';
 
 type OwnProductsSectionContentItemHighlightedProps = {
     href: string;

@@ -1,6 +1,6 @@
-import { HeaderIconsBarAccountButton } from './HeaderIconsBarAccountButton';
-import { HeaderIconsBarSearchButton } from './HeaderIconsBarSearchButton';
-import { HeaderIconsBarShoppingCartButton } from './HeaderIconsBarShoppingCartButton';
+import { HeaderIconsBarAccountButton } from '@/Header/HeaderIconsBar/HeaderIconsBarAccountButton';
+import { HeaderIconsBarSearchButton } from '@/Header/HeaderIconsBar/HeaderIconsBarSearchButton';
+import { HeaderIconsBarShoppingCartButton } from '@/Header/HeaderIconsBar/HeaderIconsBarShoppingCartButton';
 
 export const HeaderIconsBar = () => {
     return (

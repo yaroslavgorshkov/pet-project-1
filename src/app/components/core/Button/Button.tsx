@@ -1,11 +1,11 @@
-import { ButtonBase } from './ButtonBase';
+import { ButtonBase } from '@/core/Button/ButtonBase';
 import { twMerge } from 'tailwind-merge';
-import { getButtonSize } from './helpers/getButtonSize';
-import { ButtonProps } from './buttonTypes';
-import { getButtonVariant } from './helpers/getButtonVariant';
-import { getBorderRadius } from './helpers/getBorderRadius';
-import { getDynamicIconComponent } from '../Icons/helpers/getIconComponent';
-import { getBackgroundColor } from './helpers/getBackgroundColor';
+import { getButtonSize } from '@/core/Button/helpers/getButtonSize';
+import { ButtonProps } from '@/core/Button/buttonTypes';
+import { getButtonVariant } from '@/core/Button/helpers/getButtonVariant';
+import { getBorderRadius } from '@/core/Button/helpers/getBorderRadius';
+import { getDynamicIconComponent } from '@/core/Icons/helpers/getIconComponent';
+import { getBackgroundColor } from '@/core/Button/helpers/getBackgroundColor';
 
 export const Button = ({
     buttonSize,

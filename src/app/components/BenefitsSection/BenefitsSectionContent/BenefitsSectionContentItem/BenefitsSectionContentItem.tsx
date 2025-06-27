@@ -1,10 +1,10 @@
-import { BenefitsSectionContentItemDescription } from './BenefitsSectionContentItemDescription';
-import { BenefitsSectionContentItemText } from './BenefitsSectionContentItemText';
+import { BenefitsSectionContentItemDescription } from '@/BenefitsSection/BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItemDescription';
+import { BenefitsSectionContentItemText } from '@/BenefitsSection/BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItemText';
 import {
     BenefitsSectionContentItemIconBackgroundColor,
     BenefitsSectionContentItemIconName,
-} from '../../benefitsSectionMockData';
-import { BenefitsSectionContentItemIcon } from './BenefitsSectionContentItemIcon';
+} from '@/BenefitsSection/benefitsSectionMockData';
+import { BenefitsSectionContentItemIcon } from '@/BenefitsSection/BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItemIcon';
 
 export type BenefitsSectionContentItemProps = {
     text: string;

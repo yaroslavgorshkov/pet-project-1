@@ -1,7 +1,7 @@
-import { CategorySectionContentFallback } from '../CategorySectionContent/CategorySectionContentFallback';
-import { CategorySectionMenu } from '../CategorySectionMenu/CategorySectionMenu';
-import { categorySectionContent } from '../categorySectionMockData';
-import { CategorySectionHeadlineTitle } from './CategorySectionHeadlineTitle';
+import { CategorySectionContentFallback } from '@/CategorySection/CategorySectionContent/CategorySectionContentFallback';
+import { CategorySectionMenu } from '@/CategorySection/CategorySectionMenu/CategorySectionMenu';
+import { categorySectionContent } from '@/CategorySection/categorySectionMockData';
+import { CategorySectionHeadlineTitle } from '@/CategorySection/CategorySectionHeadline/CategorySectionHeadlineTitle';
 
 export const CategorySectionHeadline = () => {
     const content = categorySectionContent;

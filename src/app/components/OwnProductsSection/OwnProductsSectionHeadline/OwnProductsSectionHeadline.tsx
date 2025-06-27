@@ -1,6 +1,6 @@
-import { OwnProductsSectionHeadlineDescription } from './OwnProductsSectionHeadlineDescription';
-import { OwnProductsSectionHeadlineMenu } from './OwnProductsSectionHeadlineMenu/OwnProductsSectionHeadlineMenu';
-import { OwnProductsSectionHeadlineText } from './OwnProductsSectionHeadlineText';
+import { OwnProductsSectionHeadlineDescription } from '@/OwnProductsSection/OwnProductsSectionHeadline/OwnProductsSectionHeadlineDescription';
+import { OwnProductsSectionHeadlineMenu } from '@/OwnProductsSection/OwnProductsSectionHeadline/OwnProductsSectionHeadlineMenu/OwnProductsSectionHeadlineMenu';
+import { OwnProductsSectionHeadlineText } from '@/OwnProductsSection/OwnProductsSectionHeadline/OwnProductsSectionHeadlineText';
 
 export const OwnProductsSectionHeadline = () => {
     return (

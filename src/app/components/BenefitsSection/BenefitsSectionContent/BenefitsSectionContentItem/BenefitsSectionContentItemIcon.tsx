@@ -1,9 +1,9 @@
-import { getStaticIconComponent } from '@/app/components/core/Icons/helpers/getIconComponent';
+import { getStaticIconComponent } from '@/core/Icons/helpers/getIconComponent';
 import {
     BenefitsSectionContentItemIconBackgroundColor,
     BenefitsSectionContentItemIconName,
-} from '../../benefitsSectionMockData';
-import { getBenefitsSectionContentItemIconBackgroundColor } from '../../helpers/getBenefitsSectionContentItemIconBackgroundColor';
+} from '@/BenefitsSection/benefitsSectionMockData';
+import { getBenefitsSectionContentItemIconBackgroundColor } from '@/BenefitsSection/helpers/getBenefitsSectionContentItemIconBackgroundColor';
 import { twMerge } from 'tailwind-merge';
 
 type BenefitsSectionContentItemIconProps = {

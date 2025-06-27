@@ -1,6 +1,6 @@
-import { ownProductsSectionContentMockData } from '../ownProductsSectionMockData';
-import { OwnProductsSectionContentItem } from './OwnProductsSectionContentItem';
-import { OwnProductsSectionContentItemHighlighted } from './OwnProductsSectionContentItemHighlighted';
+import { ownProductsSectionContentMockData } from '@/OwnProductsSection/ownProductsSectionMockData';
+import { OwnProductsSectionContentItem } from '@/OwnProductsSection/OwnProductsSectionContent/OwnProductsSectionContentItem';
+import { OwnProductsSectionContentItemHighlighted } from '@/OwnProductsSection/OwnProductsSectionContent/OwnProductsSectionContentItemHighlighted';
 
 export const OwnProductsSectionContent = () => {
     const ownProductsSectionContentList = ownProductsSectionContentMockData.map(

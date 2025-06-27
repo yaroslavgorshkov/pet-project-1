@@ -1,4 +1,4 @@
-import { ButtonSize } from '../buttonTypes';
+import { ButtonSize } from '@/core/Button/buttonTypes';
 
 const buttonSizeMap: Record<ButtonSize, string> = {
     sm: 'py-el-sm px-el-md min-w-sm',

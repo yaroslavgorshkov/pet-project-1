@@ -1,7 +1,7 @@
 import { twMerge } from 'tailwind-merge';
 import { Fragment, ReactNode } from 'react';
 import React from 'react';
-import { NavigationListContentItem } from '../../types';
+import { NavigationListContentItem } from '@/types';
 
 type RenderListItemProps = {
     text: string;

@@ -1,5 +1,5 @@
-import { Text } from '@/app/components/core/Text/Text';
-import { OwnProductsSectionHeadlineMenuSlider } from './OwnProductsSectionHeadlineMenuSlider';
+import { Text } from '@/core/Text/Text';
+import { OwnProductsSectionHeadlineMenuSlider } from '@/OwnProductsSection/OwnProductsSectionHeadline/OwnProductsSectionHeadlineMenu/OwnProductsSectionHeadlineMenuSlider';
 
 export const OwnProductsSectionHeadlineMenu = () => {
     return (

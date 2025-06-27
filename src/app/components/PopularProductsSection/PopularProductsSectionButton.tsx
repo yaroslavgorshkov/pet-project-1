@@ -1,7 +1,7 @@
-import { EndIconType } from '../types';
-import { Text } from '../core/Text/Text';
-import { ButtonProps } from '../core/Button/buttonTypes';
-import { Button } from '../core/Button/Button';
+import { EndIconType } from '@/types';
+import { Text } from '@/core/Text/Text';
+import { ButtonProps } from '@/core/Button/buttonTypes';
+import { Button } from '@/core/Button/Button';
 
 export const PopularProductsSectionButton = () => {
     const handlePopularProductsSectionButtonClick = () => {

@@ -1,5 +1,5 @@
-import { benefitsSectionContent } from '../benefitsSectionMockData';
-import { BenefitsSectionContentItem } from './BenefitsSectionContentItem/BenefitsSectionContentItem';
+import { benefitsSectionContent } from '@/BenefitsSection/benefitsSectionMockData';
+import { BenefitsSectionContentItem } from '@/BenefitsSection/BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItem';
 
 export const BenefitsSectionContent = () => {
     const benefitsSectionContentList = benefitsSectionContent.map(

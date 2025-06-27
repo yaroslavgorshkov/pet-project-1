@@ -1,4 +1,4 @@
-import { IconButton } from '@/app/components/core/Button/IconButton';
+import { IconButton } from '@/core/Button/IconButton';
 
 export const CategorySectionMenuNavigationListSlider = () => {
     const handleCategorySectionMenuNavigationListSliderArrowsButtonClick =

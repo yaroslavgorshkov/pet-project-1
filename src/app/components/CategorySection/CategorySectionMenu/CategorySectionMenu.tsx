@@ -1,7 +1,7 @@
-import { CategorySectionMenuButton } from './CategorySectionMenuButton';
-import { CategorySectionMenuHamburgerButton } from './CategorySectionMenuHamburgerButton';
-import { CategorySectionMenuNavigationList } from './CategorySectionMenuNavigationList/CategorySectionMenuNavigationList';
-import { CategorySectionMenuSearch } from './CategorySectionMenuSearch';
+import { CategorySectionMenuButton } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuButton';
+import { CategorySectionMenuHamburgerButton } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuHamburgerButton';
+import { CategorySectionMenuNavigationList } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuNavigationList/CategorySectionMenuNavigationList';
+import { CategorySectionMenuSearch } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuSearch';
 
 export const CategorySectionMenu = () => {
     return (

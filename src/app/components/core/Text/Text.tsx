@@ -1,9 +1,9 @@
 import { twMerge } from 'tailwind-merge';
-import { getColor } from './helpers/getColor';
-import { getFontFamily } from './helpers/getFontFamily';
-import { getFontSize } from './helpers/getFontSize';
-import { getFontWeight } from './helpers/getFontWeight';
-import { Color, FontFamily, FontSize, FontWeight } from './textTypes';
+import { getColor } from '@/core/Text/helpers/getColor';
+import { getFontFamily } from '@/core/Text/helpers/getFontFamily';
+import { getFontSize } from '@/core/Text/helpers/getFontSize';
+import { getFontWeight } from '@/core/Text/helpers/getFontWeight';
+import { Color, FontFamily, FontSize, FontWeight } from '@/core/Text/textTypes';
 
 type TextProps = {
     fontSize: FontSize;

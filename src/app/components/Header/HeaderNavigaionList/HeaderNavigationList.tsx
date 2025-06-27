@@ -1,6 +1,6 @@
-import { NavigationList } from '../../core/NavigationList/NavigationList';
-import { navigationListContent } from '../headerMockData';
-import { HeaderNavigationListItem } from './HeaderNavigationListItem';
+import { NavigationList } from '@/core/NavigationList/NavigationList';
+import { navigationListContent } from '@/Header/headerMockData';
+import { HeaderNavigationListItem } from '@/Header/HeaderNavigaionList/HeaderNavigationListItem';
 
 export const HeaderNavigationList = () => {
     const headerNavigationListContent = navigationListContent;

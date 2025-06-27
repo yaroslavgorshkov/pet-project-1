@@ -1,4 +1,4 @@
-import { Text } from '../../../core/Text/Text';
+import { Text } from '@/core/Text/Text';
 
 type CategorySectionContentItemTextProps = {
     text: string;

@@ -1,4 +1,4 @@
-import { IconButton } from '../core/Button/IconButton';
+import { IconButton } from '@/core/Button/IconButton';
 
 export const PopularProductsSectionSlider = () => {
     const handlePopularProductsSectionSliderArrowButtonClick = () => {

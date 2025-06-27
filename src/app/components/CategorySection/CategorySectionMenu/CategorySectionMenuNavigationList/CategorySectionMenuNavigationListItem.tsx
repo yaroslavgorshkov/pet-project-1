@@ -1,4 +1,4 @@
-import { Text } from '@/app/components/core/Text/Text';
+import { Text } from '@/core/Text/Text';
 import { twMerge } from 'tailwind-merge';
 
 type CategorySectionMenuNavigationListItem = {

@@ -1,5 +1,5 @@
-import { HeroSectionContentTitleDescription } from './HeroSectionContentTitleDescription';
-import { HeroSectionContentTitleText } from './HeroSectionContentTitleText';
+import { HeroSectionContentTitleDescription } from '@/HeroSection/HeroSectionContent/HeroSectionContentTitle/HeroSectionContentTitleDescription';
+import { HeroSectionContentTitleText } from '@/HeroSection/HeroSectionContent/HeroSectionContentTitle/HeroSectionContentTitleText';
 
 export const HeroSectionContentTitle = () => {
     return (

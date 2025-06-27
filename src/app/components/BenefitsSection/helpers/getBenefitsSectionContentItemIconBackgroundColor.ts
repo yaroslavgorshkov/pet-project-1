@@ -1,4 +1,4 @@
-import { BenefitsSectionContentItemIconBackgroundColor } from '../benefitsSectionMockData';
+import { BenefitsSectionContentItemIconBackgroundColor } from '@/BenefitsSection/benefitsSectionMockData';
 
 const denefitsSectionContentItemIconBackgroundColorMap: Record<
     BenefitsSectionContentItemIconBackgroundColor,

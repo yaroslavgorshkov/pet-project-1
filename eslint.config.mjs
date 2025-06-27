@@ -13,6 +13,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
     {
         files: ['**/*.tsx'],
+        ignores: ['**/page.tsx', '**/layout.tsx', '**/getIconComponent.tsx'],
         plugins: {
             unicorn: pluginUnicorn,
         },
@@ -63,6 +64,9 @@ const eslintConfig = [
         settings: {
             react: {
                 version: 'detect',
+            },
+            'import/resolver': {
+                typescript: {},
             },
         },
     },

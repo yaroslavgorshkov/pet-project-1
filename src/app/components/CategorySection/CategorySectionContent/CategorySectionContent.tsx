@@ -1,6 +1,6 @@
-import { categorySectionContent } from '../categorySectionMockData';
-import { CategorySectionContentItem } from './CategorySectionContentItem/CategorySectionContentItem';
-import { CategorySectionMenu } from '../CategorySectionMenu/CategorySectionMenu';
+import { categorySectionContent } from '@/CategorySection/categorySectionMockData';
+import { CategorySectionContentItem } from '@/CategorySection/CategorySectionContent/CategorySectionContentItem/CategorySectionContentItem';
+import { CategorySectionMenu } from '@/CategorySection/CategorySectionMenu/CategorySectionMenu';
 
 export const CategorySectionContent = () => {
     const content = categorySectionContent;

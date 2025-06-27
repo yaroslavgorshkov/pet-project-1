@@ -1,4 +1,4 @@
-import { NavigationListContentItem } from '../types';
+import { NavigationListContentItem } from '@/types';
 
 type CategorySectionItem = {
     id: number;

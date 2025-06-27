@@ -1,8 +1,8 @@
-import { OwnProductsSectionContent } from './OwnProductsSectionContent/OwnProductsSectionContent';
-import { OwnProductsSectionHeadline } from './OwnProductsSectionHeadline/OwnProductsSectionHeadline';
-import { ownProductsSectionContentMockData } from './ownProductsSectionMockData';
-import { Text } from '../core/Text/Text';
-import { OwnProductsSectionContentFallback } from './OwnProductsSectionContentFallback';
+import { OwnProductsSectionContent } from '@/OwnProductsSection/OwnProductsSectionContent/OwnProductsSectionContent';
+import { OwnProductsSectionHeadline } from '@/OwnProductsSection/OwnProductsSectionHeadline/OwnProductsSectionHeadline';
+import { ownProductsSectionContentMockData } from '@/OwnProductsSection/ownProductsSectionMockData';
+import { Text } from '@/core/Text/Text';
+import { OwnProductsSectionContentFallback } from '@/OwnProductsSection/OwnProductsSectionContentFallback';
 
 export const OwnProductsSection = () => {
     const content = ownProductsSectionContentMockData;

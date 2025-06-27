@@ -1,4 +1,4 @@
-import { IconSize } from '@/app/components/types';
+import { IconSize } from '@/types';
 
 const iconSizeMap: Record<IconSize, string> = {
     sm: '10',

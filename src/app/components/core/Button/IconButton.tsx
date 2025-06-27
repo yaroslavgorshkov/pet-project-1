@@ -1,6 +1,6 @@
-import { DynamicIconType, IconFillColor, IconSize } from '../../types';
-import { getDynamicIconComponent } from '../Icons/helpers/getIconComponent';
-import { ButtonBase } from './ButtonBase';
+import { DynamicIconType, IconFillColor, IconSize } from '@/types';
+import { getDynamicIconComponent } from '@/core/Icons/helpers/getIconComponent';
+import { ButtonBase } from '@/core/Button/ButtonBase';
 
 type IconButtonProps = {
     iconType: DynamicIconType;

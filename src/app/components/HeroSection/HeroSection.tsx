@@ -1,5 +1,5 @@
-import { HeroSectionContent } from './HeroSectionContent/HeroSectionContent';
-import { HeroSectionImage } from './HeroSectionImage';
+import { HeroSectionContent } from '@/HeroSection/HeroSectionContent/HeroSectionContent';
+import { HeroSectionImage } from '@/HeroSection/HeroSectionImage';
 
 export const HeroSection = () => {
     return (

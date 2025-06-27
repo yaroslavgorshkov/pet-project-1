@@ -1,7 +1,7 @@
-import { CategorySectionMenuNavigationListItem } from './CategorySectionMenuNavigationListItem';
-import { categorySectionMenuNavigationListContent } from '../../categorySectionMockData';
-import { CategorySectionMenuNavigationListSlider } from './CategorySectionMenuNavigationListSlider';
-import { NavigationList } from '@/app/components/core/NavigationList/NavigationList';
+import { CategorySectionMenuNavigationListItem } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuNavigationList/CategorySectionMenuNavigationListItem';
+import { categorySectionMenuNavigationListContent } from '@/CategorySection/categorySectionMockData';
+import { CategorySectionMenuNavigationListSlider } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuNavigationList/CategorySectionMenuNavigationListSlider';
+import { NavigationList } from '@/core/NavigationList/NavigationList';
 
 export const CategorySectionMenuNavigationList = () => {
     return (

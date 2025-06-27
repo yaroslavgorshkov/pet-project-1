@@ -1,4 +1,4 @@
-import { NavigationListContentItem } from '../types';
+import { NavigationListContentItem } from '@/types';
 
 export const navigationListContent: NavigationListContentItem[] = [
     { id: 0, text: 'Home', href: '#home' },

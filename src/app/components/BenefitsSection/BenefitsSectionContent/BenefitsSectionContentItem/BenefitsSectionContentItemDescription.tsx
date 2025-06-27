@@ -1,4 +1,4 @@
-import { Text } from '@/app/components/core/Text/Text';
+import { Text } from '@/core/Text/Text';
 
 type BenefitsSectionContentItemDescriptionProps = {
     descriptionTop: string;

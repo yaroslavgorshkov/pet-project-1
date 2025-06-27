@@ -1,6 +1,6 @@
-import { IconProps } from '@/app/components/types';
-import { getIconFillColor } from '../helpers/getIconFillColor';
-import { getIconSize } from '../helpers/getIconSize';
+import { IconProps } from '@/types';
+import { getIconFillColor } from '@/core/Icons/helpers/getIconFillColor';
+import { getIconSize } from '@/core/Icons/helpers/getIconSize';
 
 export const ArrowDownIcon = ({ size, color }: IconProps) => {
     const iconFillColor = getIconFillColor(color);

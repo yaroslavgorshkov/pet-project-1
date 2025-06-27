@@ -1,4 +1,4 @@
-import { ButtonBackgroundColor } from '../buttonTypes';
+import { ButtonBackgroundColor } from '@/core/Button/buttonTypes';
 
 const backgroundColorMap: Record<ButtonBackgroundColor, string> = {
     mint: 'bg-mint',

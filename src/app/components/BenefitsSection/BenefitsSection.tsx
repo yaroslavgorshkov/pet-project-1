@@ -1,5 +1,5 @@
-import { BenefitsSectionContent } from './BenefitsSectionContent/BenefitsSectionContent';
-import { BenefitsSectionHeadline } from './BenefitsSectionHeadline';
+import { BenefitsSectionContent } from '@/BenefitsSection/BenefitsSectionContent/BenefitsSectionContent';
+import { BenefitsSectionHeadline } from '@/BenefitsSection/BenefitsSectionHeadline';
 
 export const BenefitsSection = () => {
     return (

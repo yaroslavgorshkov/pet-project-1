@@ -1,4 +1,4 @@
-import { FontFamily } from '../textTypes';
+import { FontFamily } from '@/core/Text/textTypes';
 
 const fontFamilyMap: Record<FontFamily, string> = {
     playfair: 'font-playfair',

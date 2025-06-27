@@ -1,4 +1,4 @@
-import { BenefitsSectionContentItemProps } from './BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItem';
+import { BenefitsSectionContentItemProps } from '@/BenefitsSection/BenefitsSectionContent/BenefitsSectionContentItem/BenefitsSectionContentItem';
 
 export type BenefitsSectionContentItemIconName =
     | 'payment-method'

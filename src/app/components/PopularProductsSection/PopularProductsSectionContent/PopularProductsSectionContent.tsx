@@ -1,5 +1,5 @@
-import { popularProductsSectionMockData } from '../popularProductsSectionMockData';
-import { PopularProductsSectionContentItem } from './PopularProductsSectionContentItem';
+import { popularProductsSectionMockData } from '@/PopularProductsSection/popularProductsSectionMockData';
+import { PopularProductsSectionContentItem } from '@/PopularProductsSection/PopularProductsSectionContent/PopularProductsSectionContentItem';
 
 export const PopularProductsSectionContent = () => {
     const popularProductsList = popularProductsSectionMockData.map(

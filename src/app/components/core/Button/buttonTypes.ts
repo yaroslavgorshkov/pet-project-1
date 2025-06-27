@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { EndIconType } from '../../types';
+import { EndIconType } from '@/types';
 
 export type BorderRadius = 'md' | 'sm';
 export type ButtonSize = 'sm' | 'md' | 'lg';
