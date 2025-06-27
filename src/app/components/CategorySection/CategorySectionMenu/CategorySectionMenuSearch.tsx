@@ -1,4 +1,4 @@
-import { IconButton } from '../../Button/IconButton';
+import { IconButton } from '../../core/Button/IconButton';
 
 export const CategorySectionMenuSearch = () => {
     const handleCategorySectionMenuSearchButtonClick = () => {

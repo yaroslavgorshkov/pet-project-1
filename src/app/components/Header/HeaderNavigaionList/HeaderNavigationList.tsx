@@ -1,4 +1,4 @@
-import { NavigationList } from '@/app/components/NavigationList/NavigationList';
+import { NavigationList } from '../../core/NavigationList/NavigationList';
 import { navigationListContent } from '../headerMockData';
 import { HeaderNavigationListItem } from './HeaderNavigationListItem';
 

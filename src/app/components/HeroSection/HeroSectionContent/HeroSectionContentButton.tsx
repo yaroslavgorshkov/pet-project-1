@@ -1,6 +1,6 @@
-import { Button } from '../../Button/Button';
-import { ButtonProps } from '../../Button/buttonTypes';
-import { Text } from '../../Text/Text';
+import { Button } from '../../core/Button/Button';
+import { ButtonProps } from '../../core/Button/buttonTypes';
+import { Text } from '../../core/Text/Text';
 
 export const HeroSectionContentButton = () => {
     const handleHeroSectionButtonClick = () => {

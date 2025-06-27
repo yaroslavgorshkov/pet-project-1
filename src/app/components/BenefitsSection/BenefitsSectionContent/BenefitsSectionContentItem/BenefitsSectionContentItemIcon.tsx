@@ -1,4 +1,4 @@
-import { getStaticIconComponent } from '@/app/components/Icons/helpers/getIconComponent';
+import { getStaticIconComponent } from '@/app/components/core/Icons/helpers/getIconComponent';
 import {
     BenefitsSectionContentItemIconBackgroundColor,
     BenefitsSectionContentItemIconName,

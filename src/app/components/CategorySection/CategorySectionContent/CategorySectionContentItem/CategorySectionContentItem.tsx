@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { CategorySectionContentItemText } from './CategorySectionContentItemText';
-import { Button } from '@/app/components/Button/Button';
-import { ButtonProps } from '@/app/components/Button/buttonTypes';
-import { Text } from '@/app/components/Text/Text';
+import { Text } from '@/app/components/core/Text/Text';
 import { twMerge } from 'tailwind-merge';
+import { ButtonProps } from '@/app/components/core/Button/buttonTypes';
+import { Button } from '@/app/components/core/Button/Button';
 
 type CategorySectionContentItemProps = {
     text: string;

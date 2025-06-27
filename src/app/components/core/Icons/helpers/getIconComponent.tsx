@@ -1,11 +1,5 @@
 import { JSX } from 'react';
-import {
-    IconFillColor,
-    IconProps,
-    IconSize,
-    DynamicIconType,
-    StaticIconType,
-} from '../../types';
+
 import { AccountIcon } from '../IconComponents/AccountIcon';
 import { ShoppingCartIcon } from '../IconComponents/ShoppingCartIcon';
 import { SearchIcon } from '../IconComponents/SearchIcon';
@@ -26,6 +20,13 @@ import { FacebookIcon } from '../IconComponents/FacebookIcon';
 import { BenefitsSectionPaymentMethodIcon } from '../IconComponents/BenefitsSectionPaymentMethodIcon';
 import { BenefitsSectionReturnPolicyIcon } from '../IconComponents/BenefitsSectionReturnPolicyIcon';
 import { BenefitsSectionCustomerSupportIcon } from '../IconComponents/BenefitsSectionCustomerSupportIcon';
+import {
+    DynamicIconType,
+    IconFillColor,
+    IconProps,
+    IconSize,
+    StaticIconType,
+} from '@/app/components/types';
 
 const dynamicIconMap: Record<
     DynamicIconType,

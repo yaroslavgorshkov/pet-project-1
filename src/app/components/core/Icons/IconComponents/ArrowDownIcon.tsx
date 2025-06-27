@@ -1,4 +1,4 @@
-import { IconProps } from '../../types';
+import { IconProps } from '@/app/components/types';
 import { getIconFillColor } from '../helpers/getIconFillColor';
 import { getIconSize } from '../helpers/getIconSize';
 

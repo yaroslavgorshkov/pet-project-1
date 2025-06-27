@@ -1,4 +1,4 @@
-import { Text } from '../Text/Text';
+import { Text } from '../core/Text/Text';
 
 export const BenefitsSectionHeadline = () => {
     return (

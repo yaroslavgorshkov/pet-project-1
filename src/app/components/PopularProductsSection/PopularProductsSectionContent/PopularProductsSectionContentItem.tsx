@@ -1,5 +1,5 @@
 import { twMerge } from 'tailwind-merge';
-import { Text } from '../../Text/Text';
+import { Text } from '../../core/Text/Text';
 import Image from 'next/image';
 
 type PopularProductsSectionContentItemProps = {

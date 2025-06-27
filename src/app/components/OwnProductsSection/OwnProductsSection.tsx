@@ -1,7 +1,7 @@
 import { OwnProductsSectionContent } from './OwnProductsSectionContent/OwnProductsSectionContent';
 import { OwnProductsSectionHeadline } from './OwnProductsSectionHeadline/OwnProductsSectionHeadline';
 import { ownProductsSectionContentMockData } from './ownProductsSectionMockData';
-import { Text } from '../Text/Text';
+import { Text } from '../core/Text/Text';
 import { OwnProductsSectionContentFallback } from './OwnProductsSectionContentFallback';
 
 export const OwnProductsSection = () => {

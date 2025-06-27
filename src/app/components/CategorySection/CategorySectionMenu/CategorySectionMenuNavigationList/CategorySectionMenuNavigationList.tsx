@@ -1,7 +1,7 @@
-import { NavigationList } from '@/app/components/NavigationList/NavigationList';
 import { CategorySectionMenuNavigationListItem } from './CategorySectionMenuNavigationListItem';
 import { categorySectionMenuNavigationListContent } from '../../categorySectionMockData';
 import { CategorySectionMenuNavigationListSlider } from './CategorySectionMenuNavigationListSlider';
+import { NavigationList } from '@/app/components/core/NavigationList/NavigationList';
 
 export const CategorySectionMenuNavigationList = () => {
     return (

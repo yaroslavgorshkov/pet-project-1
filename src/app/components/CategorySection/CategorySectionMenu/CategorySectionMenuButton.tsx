@@ -1,7 +1,7 @@
-import { Button } from '../../Button/Button';
 import { EndIconType } from '../../types';
-import { ButtonProps } from '../../Button/buttonTypes';
-import { Text } from '../../Text/Text';
+import { Text } from '../../core/Text/Text';
+import { Button } from '../../core/Button/Button';
+import { ButtonProps } from '../../core/Button/buttonTypes';
 
 export const CategorySectionMenuButton = () => {
     const handleCategorySectionMenuButtonClick = () => {

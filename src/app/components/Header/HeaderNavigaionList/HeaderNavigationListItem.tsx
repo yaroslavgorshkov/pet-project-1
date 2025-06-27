@@ -1,4 +1,4 @@
-import { Text } from '@/app/components/Text/Text';
+import { Text } from '@/app/components/core/Text/Text';
 import { twMerge } from 'tailwind-merge';
 
 type HeaderNavigationListItemProps = {

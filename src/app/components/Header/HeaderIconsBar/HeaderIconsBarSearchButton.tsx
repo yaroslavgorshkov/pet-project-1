@@ -1,4 +1,4 @@
-import { IconButton } from '@/app/components/Button/IconButton';
+import { IconButton } from '../../core/Button/IconButton';
 
 export const HeaderIconsBarSearchButton = () => {
     function handleHeaderIconsBarSearchButtonClick() {

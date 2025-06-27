@@ -1,4 +1,4 @@
-import { IconButton } from '@/app/components/Button/IconButton';
+import { IconButton } from '../core/Button/IconButton';
 
 export const HeaderHamburgerMenuButton = () => {
     const handleHeaderHamburgerMenuButtonClick = () => {
@@ -15,7 +15,7 @@ export const HeaderHamburgerMenuButton = () => {
                     onClick={handleHeaderHamburgerMenuButtonClick}
                 />
             </div>
-            <div className="hidden md:block xl:hidden">
+            <div className="hidden md:block order-1 xl:hidden">
                 <IconButton
                     iconType={'hamburger-menu'}
                     iconFillColor={'lapis'}
