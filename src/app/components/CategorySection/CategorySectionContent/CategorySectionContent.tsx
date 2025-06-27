@@ -10,7 +10,7 @@ export const CategorySectionContent = () => {
     }
 
     const categorySectionContentList = content.map(
-        ({ id, text, href, imgRef, alt }) => {
+        ({ id, text, href, imgSrc, alt }) => {
             const isFirstItem = id === 0;
             return (
                 <CategorySectionContentItem
@@ -18,7 +18,7 @@ export const CategorySectionContent = () => {
                     text={text}
                     href={href}
                     isHighlighted={isFirstItem}
-                    imgRef={imgRef}
+                    imgSrc={imgSrc}
                     alt={alt}
                 />
             );

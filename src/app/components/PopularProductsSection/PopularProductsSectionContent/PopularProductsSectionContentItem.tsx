@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 type PopularProductsSectionContentItemProps = {
     href: string;
-    imgRef: string;
+    imgSrc: string;
     name: string;
     description: string;
     price: number;
@@ -14,7 +14,7 @@ type PopularProductsSectionContentItemProps = {
 
 export const PopularProductsSectionContentItem = ({
     href,
-    imgRef,
+    imgSrc,
     name,
     description,
     price,
@@ -31,7 +31,7 @@ export const PopularProductsSectionContentItem = ({
         <a href={href} className={combinedClassName}>
             <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
                 <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
-                    <Image src={imgRef} alt={alt} fill />
+                    <Image src={imgSrc} alt={alt} fill />
                 </div>
             </div>
             <div className="flex flex-col">

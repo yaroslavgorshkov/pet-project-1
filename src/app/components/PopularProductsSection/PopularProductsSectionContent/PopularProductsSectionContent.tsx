@@ -5,7 +5,7 @@ export const PopularProductsSectionContent = () => {
     const popularProductsList = popularProductsSectionMockData.map(
         ({
             href,
-            imgRef,
+            imgSrc,
             name,
             description,
             price,
@@ -16,7 +16,7 @@ export const PopularProductsSectionContent = () => {
             return (
                 <PopularProductsSectionContentItem
                     href={href}
-                    imgRef={imgRef}
+                    imgSrc={imgSrc}
                     name={name}
                     description={description}
                     price={price}

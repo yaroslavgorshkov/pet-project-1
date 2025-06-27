@@ -8,7 +8,7 @@ import { Button } from '@/app/components/core/Button/Button';
 type CategorySectionContentItemProps = {
     text: string;
     href: string;
-    imgRef: string;
+    imgSrc: string;
     alt: string;
     isHighlighted?: boolean;
 };
@@ -16,7 +16,7 @@ type CategorySectionContentItemProps = {
 export const CategorySectionContentItem = ({
     text,
     href,
-    imgRef,
+    imgSrc,
     alt,
     isHighlighted = false,
 }: CategorySectionContentItemProps) => {
@@ -79,7 +79,7 @@ export const CategorySectionContentItem = ({
             </a>
             <div className={combinedClassNameCategorySectionContentItemImage}>
                 <Image
-                    src={imgRef}
+                    src={imgSrc}
                     alt={alt}
                     fill
                     className="rounded-md brightness-md"

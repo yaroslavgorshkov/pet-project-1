@@ -4,7 +4,7 @@ type CategorySectionItem = {
     id: number;
     text: string;
     href: string;
-    imgRef: string;
+    imgSrc: string;
     alt: string;
 };
 
@@ -13,42 +13,42 @@ export const categorySectionContent: CategorySectionItem[] = [
         id: 0,
         href: '#bedroom',
         text: 'Bedroom',
-        imgRef: '/img/categories-bedroom.jpg',
+        imgSrc: '/img/categories-bedroom.jpg',
         alt: 'Bedroom',
     },
     {
         id: 1,
         href: '#dinning-room',
         text: 'Dinning Room',
-        imgRef: '/img/categories-dinning.jpg',
+        imgSrc: '/img/categories-dinning.jpg',
         alt: 'Dinning Room',
     },
     {
         id: 2,
         href: '#meeting-room',
         text: 'Meeting Room',
-        imgRef: '/img/categories-meeting-room.jpg',
+        imgSrc: '/img/categories-meeting-room.jpg',
         alt: 'Meeting Room',
     },
     {
         id: 3,
         href: '#workspace',
         text: 'Workspace',
-        imgRef: '/img/categories-workspace-room.jpg',
+        imgSrc: '/img/categories-workspace-room.jpg',
         alt: 'Workspace',
     },
     {
         id: 4,
         href: '#living-room',
         text: 'Living Room',
-        imgRef: '/img/categories-living-room.jpg',
+        imgSrc: '/img/categories-living-room.jpg',
         alt: 'Living Room',
     },
     {
         id: 5,
         href: '#kitchen-room',
         text: 'Kitchen Room',
-        imgRef: '/img/categories-kitchen-room.jpg',
+        imgSrc: '/img/categories-kitchen-room.jpg',
         alt: 'Kitchen Room',
     },
 ];

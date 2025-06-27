@@ -20,7 +20,7 @@ export const OwnProductsSectionContent = () => {
         <div className="flex gap-xl items-center">
             <OwnProductsSectionContentItemHighlighted
                 href={'#own-living-room'}
-                imgRef={'/img/own-prod-4.jpg'}
+                imgSrc={'/img/own-prod-4.jpg'}
                 alt={'Own Living room'}
             />
             {ownProductsSectionContentList}
