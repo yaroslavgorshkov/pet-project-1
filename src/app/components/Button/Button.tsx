@@ -27,7 +27,7 @@ export const Button = ({
               endIcon.iconFillColor,
               endIcon.iconSize
           )
-        : undefined;
+        : null;
     const backgroundColorClass = backgroundColor
         ? getBackgroundColor(backgroundColor)
         : '';
