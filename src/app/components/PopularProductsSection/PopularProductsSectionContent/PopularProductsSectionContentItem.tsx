@@ -1,6 +1,7 @@
 import { twMerge } from 'tailwind-merge';
 import { Text } from '@/core/Text/Text';
 import Image from 'next/image';
+import clsx from 'clsx';
 
 type PopularProductsSectionContentItemProps = {
     href: string;
@@ -21,14 +22,25 @@ export const PopularProductsSectionContentItem = ({
     backgroundColor,
     alt,
 }: PopularProductsSectionContentItemProps) => {
-    const combinedClassName = twMerge(
-        'flex flex-col gap-3xl px-el-md pt-el-5xl pb-el-md rounded-lg md:pt-el-8xl md:px-el-3xl md:pb-el-6xl',
-        backgroundColor
+    const popularProductsSectionContentItemClass = twMerge(
+        clsx(
+            'flex',
+            'flex-col',
+            'gap-3xl',
+            'px-el-md',
+            'pt-el-5xl',
+            'pb-el-md',
+            'rounded-lg',
+            'md:pt-el-8xl',
+            'md:px-el-3xl',
+            'md:pb-el-6xl',
+            backgroundColor
+        )
     );
     const popularProductsSectionContentItemPrice = `$${price}`;
 
     return (
-        <a href={href} className={combinedClassName}>
+        <a href={href} className={popularProductsSectionContentItemClass}>
             <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
                 <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
                     <Image src={imgSrc} alt={alt} fill />

@@ -1,4 +1,6 @@
+import { createRequire } from 'module';
 import type { Config } from 'tailwindcss';
+const require = createRequire(import.meta.url);
 
 export default {
     content: [
@@ -168,5 +170,5 @@ export default {
             md: '0.6',
         },
     },
-    plugins: [],
+    plugins: [require('@designbycode/tailwindcss-text-shadow')],
 } satisfies Config;

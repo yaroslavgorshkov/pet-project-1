@@ -1,4 +1,5 @@
 import { Text } from '@/core/Text/Text';
+import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 type HeaderNavigationListItemProps = {
@@ -12,12 +13,26 @@ export const HeaderNavigationListItem = ({
     href,
     isHighlighted = false,
 }: HeaderNavigationListItemProps) => {
-    const highlightedClass = isHighlighted
-        ? 'font-bold after:top-nl-hover after:opacity-100'
-        : 'hover:font-bold after:top-nl after:opacity-0 after:transition-all after:duration-200 hover:after:opacity-100 hover:after:top-nl-hover';
-    const combinedClassName = twMerge(
-        'relative after:absolute after:left-0 after:bg-lapis after:w-full after:h-slider-sm',
-        highlightedClass
+    const headerNavigationListItemTextClass = twMerge(
+        clsx(
+            isHighlighted
+                ? ['font-bold', 'after:top-nl-hover', 'after:opacity-100']
+                : [
+                      'hover:font-bold',
+                      'after:top-nl',
+                      'after:opacity-0',
+                      'after:transition-all',
+                      'after:duration-200',
+                      'hover:after:opacity-100',
+                      'hover:after:top-nl-hover',
+                  ],
+            'relative',
+            'after:absolute',
+            'after:left-0',
+            'after:bg-lapis',
+            'after:w-full',
+            'after:h-slider-sm'
+        )
     );
 
     return (
@@ -28,7 +43,7 @@ export const HeaderNavigationListItem = ({
                     fontFamily="playfair"
                     color="lapis"
                     content={text}
-                    className={combinedClassName}
+                    className={headerNavigationListItemTextClass}
                 />
             </a>
         </li>
