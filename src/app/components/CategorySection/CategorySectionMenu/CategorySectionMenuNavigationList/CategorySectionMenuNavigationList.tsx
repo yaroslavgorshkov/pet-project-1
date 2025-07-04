@@ -28,33 +28,29 @@ export const CategorySectionMenuNavigationList = () => {
         <>
             <div className="xl:hidden">
                 <NavigationList
-                    renderListItem={({ href, text, isHighlighted }) => (
+                    renderListItem={({ href, text }) => (
                         <CategorySectionMenuNavigationListItem
                             text={text}
                             href={href}
-                            isHighlighted={isHighlighted}
                         />
                     )}
                     navigationListContent={
                         categorySectionMenuNavigationListContent
                     }
-                    highlightedElementNumber={0}
                     ulClassName={categorySectionMenuNavigationListUlClassNameSm}
                 />
             </div>
             <div className="hidden w-full xl:flex">
                 <NavigationList
-                    renderListItem={({ href, text, isHighlighted }) => (
+                    renderListItem={({ href, text }) => (
                         <CategorySectionMenuNavigationListItem
                             text={text}
                             href={href}
-                            isHighlighted={isHighlighted}
                         />
                     )}
                     navigationListContent={
                         categorySectionMenuNavigationListContent
                     }
-                    highlightedElementNumber={0}
                     ulClassName={categorySectionMenuNavigationListUlClassNameXl}
                     navClassName={
                         categorySectionMenuNavigationListNavClassNameXl

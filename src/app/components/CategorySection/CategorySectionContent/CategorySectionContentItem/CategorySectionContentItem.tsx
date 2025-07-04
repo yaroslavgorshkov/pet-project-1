@@ -96,6 +96,7 @@ export const CategorySectionContentItem = ({
             <a
                 href={href}
                 className={highlightedCategorySectionContentItemButtonClass}
+                onClick={(e) => e.preventDefault()}
             >
                 <Button {...categorySectionContentItemButtonSmProps}>
                     <Text
@@ -112,7 +113,7 @@ export const CategorySectionContentItem = ({
                     alt={alt}
                     fill
                     className="rounded-md brightness-md"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
         </article>
