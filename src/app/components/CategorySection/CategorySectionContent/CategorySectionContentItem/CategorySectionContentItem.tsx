@@ -4,6 +4,7 @@ import { Text } from '@/core/Text/Text';
 import { twMerge } from 'tailwind-merge';
 import { ButtonProps } from '@/core/Button/buttonTypes';
 import { Button } from '@/core/Button/Button';
+import clsx from 'clsx';
 
 type CategorySectionContentItemProps = {
     text: string;
@@ -35,38 +36,67 @@ export const CategorySectionContentItem = ({
         onClick: handleCategorySectionContentItemButtonClick,
     };
 
-    const highlightedCategorySectionContentItemTextClass = isHighlighted
-        ? 'top-one-third [text-shadow:none]'
-        : 'top-half [text-shadow:2px_2px_4px_rgba(0,0,0,0.7)] transition-all duration-200 group-hover:top-one-third group-hover:[text-shadow:none]';
-    const combinedClassNameCategorySectionContentItemText = twMerge(
-        'absolute left-half -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap',
-        highlightedCategorySectionContentItemTextClass
+    const highlightedCategorySectionContentItemTextClass = twMerge(
+        clsx(
+            isHighlighted
+                ? 'top-one-third'
+                : [
+                      'top-half',
+                      'text-shadow',
+                      'text-shadow-blur-2',
+                      'text-shadow-x-lg',
+                      'text-shadow-y-lg',
+                      'transition-all',
+                      'duration-200',
+                      'group-hover:top-one-third',
+                      'group-hover:text-shadow-x-0',
+                      'group-hover:text-shadow-y-0',
+                  ],
+            'absolute',
+            'left-half',
+            '-translate-x-1/2',
+            '-translate-y-1/2',
+            'z-10',
+            'whitespace-nowrap'
+        )
     );
 
-    const highlightedCategorySectionContentItemButtonClass = isHighlighted
-        ? 'block'
-        : 'hidden group-hover:block';
-    const combinedClassNameCategorySectionContentItemButton = twMerge(
-        'absolute top-two-thirds left-half -translate-x-1/2 -translate-y-1/2 z-10',
-        highlightedCategorySectionContentItemButtonClass
+    const highlightedCategorySectionContentItemButtonClass = twMerge(
+        clsx(
+            isHighlighted ? 'block' : 'hidden group-hover:block',
+            'absolute',
+            'top-two-thirds',
+            'left-half',
+            '-translate-x-1/2',
+            '-translate-y-1/2',
+            'z-10'
+        )
     );
 
-    const highlightedCategorySectionContentItemImageClass = isHighlighted
-        ? 'blur-sm contrast-md'
-        : 'transition-all duration-200 group-hover:blur-sm group-hover:contrast-md';
-    const combinedClassNameCategorySectionContentItemImage = twMerge(
-        'absolute inset-0',
-        highlightedCategorySectionContentItemImageClass
+    const highlightedCategorySectionContentItemImageClass = twMerge(
+        clsx(
+            isHighlighted
+                ? ['blur-sm', 'contrast-md']
+                : [
+                      'transition-all',
+                      'duration-200',
+                      'group-hover:blur-sm',
+                      'group-hover:contrast-md',
+                  ],
+            'absolute',
+            'inset-0'
+        )
     );
 
     return (
         <article className="group rounded-md relative h-full min-h-sm md:min-h-md xl:h-auto">
-            <div className={combinedClassNameCategorySectionContentItemText}>
+            <div className={highlightedCategorySectionContentItemTextClass}>
                 <CategorySectionContentItemText text={text} />
             </div>
             <a
                 href={href}
-                className={combinedClassNameCategorySectionContentItemButton}
+                className={highlightedCategorySectionContentItemButtonClass}
+                onClick={(e) => e.preventDefault()}
             >
                 <Button {...categorySectionContentItemButtonSmProps}>
                     <Text
@@ -77,13 +107,13 @@ export const CategorySectionContentItem = ({
                     />
                 </Button>
             </a>
-            <div className={combinedClassNameCategorySectionContentItemImage}>
+            <div className={highlightedCategorySectionContentItemImageClass}>
                 <Image
                     src={imgSrc}
                     alt={alt}
                     fill
                     className="rounded-md brightness-md"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
         </article>

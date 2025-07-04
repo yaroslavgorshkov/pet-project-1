@@ -14,6 +14,7 @@ export const CategorySectionHeadline = () => {
             </div>
         );
     }
+
     return (
         <div className="flex flex-col gap-3xl items-center w-full md:max-w-xl">
             <CategorySectionHeadlineTitle />
