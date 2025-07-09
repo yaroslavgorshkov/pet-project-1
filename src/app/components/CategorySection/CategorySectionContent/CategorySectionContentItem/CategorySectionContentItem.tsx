@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import { CategorySectionContentItemText } from '@/CategorySection/CategorySectionContent/CategorySectionContentItem/CategorySectionContentItemText';
 import { Text } from '@/core/Text/Text';
-import { twMerge } from 'tailwind-merge';
 import { ButtonProps } from '@/core/Button/buttonTypes';
 import { Button } from '@/core/Button/Button';
-import clsx from 'clsx';
+import { cn } from '@/helpers/cn';
 
 type CategorySectionContentItemProps = {
     text: string;
@@ -36,57 +35,55 @@ export const CategorySectionContentItem = ({
         onClick: handleCategorySectionContentItemButtonClick,
     };
 
-    const highlightedCategorySectionContentItemTextClass = twMerge(
-        clsx(
-            isHighlighted
-                ? 'top-one-third'
-                : [
-                      'top-half',
-                      'text-shadow',
-                      'text-shadow-blur-2',
-                      'text-shadow-x-lg',
-                      'text-shadow-y-lg',
-                      'transition-all',
-                      'duration-200',
-                      'group-hover:top-one-third',
-                      'group-hover:text-shadow-x-0',
-                      'group-hover:text-shadow-y-0',
-                  ],
-            'absolute',
-            'left-half',
-            '-translate-x-1/2',
-            '-translate-y-1/2',
-            'z-10',
-            'whitespace-nowrap'
-        )
+    const highlightedCategorySectionContentItemTextClass = cn(
+        isHighlighted
+            ? 'top-one-third'
+            : [
+                  'top-half',
+                  'text-shadow',
+                  'text-shadow-blur-2',
+                  'text-shadow-x-lg',
+                  'text-shadow-y-lg',
+                  'transition-all',
+                  'duration-200',
+                  'group-hover:top-one-third',
+                  'group-hover:text-shadow-x-0',
+                  'group-hover:text-shadow-y-0',
+              ],
+        'absolute',
+        'left-half',
+        '-translate-x-1/2',
+        '-translate-y-1/2',
+        'z-10',
+        'whitespace-nowrap'
     );
 
-    const highlightedCategorySectionContentItemButtonClass = twMerge(
-        clsx(
-            isHighlighted ? 'block' : 'hidden group-hover:block',
-            'absolute',
-            'top-two-thirds',
-            'left-half',
-            '-translate-x-1/2',
-            '-translate-y-1/2',
-            'z-10'
-        )
+    const highlightedCategorySectionContentItemButtonClass = cn(
+        isHighlighted ? 'block' : 'hidden group-hover:block',
+        'absolute',
+        'top-two-thirds',
+        'left-half',
+        '-translate-x-1/2',
+        '-translate-y-1/2',
+        'z-10'
     );
 
-    const highlightedCategorySectionContentItemImageClass = twMerge(
-        clsx(
-            isHighlighted
-                ? ['blur-sm', 'contrast-md']
-                : [
-                      'transition-all',
-                      'duration-200',
-                      'group-hover:blur-sm',
-                      'group-hover:contrast-md',
-                  ],
-            'absolute',
-            'inset-0'
-        )
+    const highlightedCategorySectionContentItemImageClass = cn(
+        isHighlighted
+            ? ['blur-sm', 'contrast-md']
+            : [
+                  'transition-all',
+                  'duration-200',
+                  'group-hover:blur-sm',
+                  'group-hover:contrast-md',
+              ],
+        'absolute',
+        'inset-0'
     );
+
+    const handleCategorySectionContentItemExploreButtonClick = (
+        e: React.MouseEvent<HTMLAnchorElement>
+    ) => e.preventDefault();
 
     return (
         <article className="group rounded-md relative h-full min-h-sm md:min-h-md xl:h-auto">
@@ -96,7 +93,7 @@ export const CategorySectionContentItem = ({
             <a
                 href={href}
                 className={highlightedCategorySectionContentItemButtonClass}
-                onClick={(e) => e.preventDefault()}
+                onClick={handleCategorySectionContentItemExploreButtonClick}
             >
                 <Button {...categorySectionContentItemButtonSmProps}>
                     <Text
@@ -112,8 +109,7 @@ export const CategorySectionContentItem = ({
                     src={imgSrc}
                     alt={alt}
                     fill
-                    className="rounded-md brightness-md"
-                    style={{ objectFit: 'cover' }}
+                    className="rounded-md brightness-md object-cover"
                 />
             </div>
         </article>

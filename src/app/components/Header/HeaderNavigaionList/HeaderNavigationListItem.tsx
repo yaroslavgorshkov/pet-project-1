@@ -1,6 +1,5 @@
 import { Text } from '@/core/Text/Text';
-import clsx from 'clsx';
-import { twMerge } from 'tailwind-merge';
+import { cn } from '@/helpers/cn';
 
 type HeaderNavigationListItemProps = {
     text: string;
@@ -13,26 +12,24 @@ export const HeaderNavigationListItem = ({
     href,
     isHighlighted = false,
 }: HeaderNavigationListItemProps) => {
-    const headerNavigationListItemTextClass = twMerge(
-        clsx(
-            isHighlighted
-                ? ['font-bold', 'after:top-nl-hover', 'after:opacity-100']
-                : [
-                      'hover:font-bold',
-                      'after:top-nl',
-                      'after:opacity-0',
-                      'after:transition-all',
-                      'after:duration-200',
-                      'hover:after:opacity-100',
-                      'hover:after:top-nl-hover',
-                  ],
-            'relative',
-            'after:absolute',
-            'after:left-0',
-            'after:bg-lapis',
-            'after:w-full',
-            'after:h-slider-sm'
-        )
+    const headerNavigationListItemTextClass = cn(
+        isHighlighted
+            ? ['font-bold', 'after:top-nl-hover', 'after:opacity-100']
+            : [
+                  'hover:font-bold',
+                  'after:top-nl',
+                  'after:opacity-0',
+                  'after:transition-all',
+                  'after:duration-200',
+                  'hover:after:opacity-100',
+                  'hover:after:top-nl-hover',
+              ],
+        'relative',
+        'after:absolute',
+        'after:left-0',
+        'after:bg-lapis',
+        'after:w-full',
+        'after:h-slider-sm'
     );
 
     return (

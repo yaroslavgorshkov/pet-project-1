@@ -17,6 +17,10 @@ export const OwnProductsSectionContentItem = ({
         // TODO: add OwnProductsSectionContentItem button click function
     };
 
+    const handleOwnProductsSectionContentItemClick = (
+        e: React.MouseEvent<HTMLAnchorElement>
+    ) => e.preventDefault();
+
     return (
         <article className="group relative w-auto min-w-md h-auto min-h-lg rounded-2xl shadow-lg md:min-w-2xl md:min-h-2xl">
             <div className="absolute inset-0 -z-10 group-hover:blur-sm group-hover:contrast-md transition-filter duration-200">
@@ -29,6 +33,7 @@ export const OwnProductsSectionContentItem = ({
                 />
             </div>
             <a
+                onClick={handleOwnProductsSectionContentItemClick}
                 href={href}
                 className="absolute bottom-el-xl left-half -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap hidden group-hover:block"
             >
