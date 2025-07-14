@@ -1,7 +1,7 @@
-import { twMerge } from 'tailwind-merge';
 import { Fragment, ReactNode } from 'react';
 import React from 'react';
 import { NavigationListContentItem } from '@/types';
+import { cn } from '@/helpers/cn';
 
 type RenderListItemProps = {
     text: string;
@@ -38,11 +38,11 @@ export const NavigationList = ({
         return <Fragment key={id}>{renderContent}</Fragment>;
     });
 
-    const combinedUlClassName = twMerge('list-none p-0 m-0', ulClassName);
+    const navigationListUlClass = cn('list-none', 'p-0', 'm-0', ulClassName);
 
     return (
         <nav className={navClassName}>
-            <ul className={combinedUlClassName}>{renderList}</ul>
+            <ul className={navigationListUlClass}>{renderList}</ul>
         </nav>
     );
 };

@@ -17,6 +17,10 @@ export const OwnProductsSectionContentItemHighlighted = ({
         // TODO: add OwnProductsSectionContentItemHighlighted button click function
     };
 
+    const handleOwnProductsSectionContentItemHighlightedClick = (
+        e: React.MouseEvent<HTMLAnchorElement>
+    ) => e.preventDefault();
+
     return (
         <article className="relative w-auto min-w-xl h-auto min-h-xl md:min-w-3xl md:min-h-3xl">
             <div className="blur-sm contrast-md absolute inset-0 -z-10">
@@ -29,6 +33,7 @@ export const OwnProductsSectionContentItemHighlighted = ({
                 />
             </div>
             <a
+                onClick={handleOwnProductsSectionContentItemHighlightedClick}
                 href={href}
                 className="absolute bottom-el-xl left-half -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap"
             >

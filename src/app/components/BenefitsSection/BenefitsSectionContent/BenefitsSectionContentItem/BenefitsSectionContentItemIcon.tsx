@@ -4,7 +4,7 @@ import {
     BenefitsSectionContentItemIconName,
 } from '@/BenefitsSection/benefitsSectionMockData';
 import { getBenefitsSectionContentItemIconBackgroundColor } from '@/BenefitsSection/helpers/getBenefitsSectionContentItemIconBackgroundColor';
-import { twMerge } from 'tailwind-merge';
+import { cn } from '@/helpers/cn';
 
 type BenefitsSectionContentItemIconProps = {
     iconName: BenefitsSectionContentItemIconName;
@@ -18,13 +18,19 @@ export const BenefitsSectionContentItemIcon = ({
     const iconComponent = getStaticIconComponent(iconName);
     const iconBackgroundColorClass =
         getBenefitsSectionContentItemIconBackgroundColor(iconBackgroundColor);
-    const benefitsSectionContentItemIconCombinedClassName = twMerge(
-        'flex justify-center items-center rounded-2xl p-el-md',
+
+    const benefitsSectionContentItemIconClass = cn(
+        'flex',
+        'flex-col',
+        'justify-center',
+        'items-center',
+        'rounded-2xl',
+        'p-el-md',
         iconBackgroundColorClass
     );
 
     return (
-        <div className={benefitsSectionContentItemIconCombinedClassName}>
+        <div className={benefitsSectionContentItemIconClass}>
             {iconComponent}
         </div>
     );
