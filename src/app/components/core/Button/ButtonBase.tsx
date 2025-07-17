@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 type ButtonBaseProps = {
     children: ReactNode;
     className: string;
-    onClick: () => void;
+    onClick?: () => void;
 };
 
 export const ButtonBase = ({

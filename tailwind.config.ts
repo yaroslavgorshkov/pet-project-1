@@ -34,6 +34,10 @@ export default {
                 roboto: ['Roboto', 'sans-serif'],
                 opensans: ['"Open Sans"', 'sans-serif'],
             },
+            fontSize: {
+                'placegolder-sm': '18px',
+                'placegolder-md': '24px',
+            },
             borderRadius: {
                 sm: '6px',
                 md: '10px',
@@ -41,6 +45,9 @@ export default {
                 xl: '20px',
                 '2xl': '24px',
                 '3xl': '50px',
+            },
+            borderWidth: {
+                sm: '1px',
             },
             minWidth: {
                 sm: '170px',
@@ -73,6 +80,7 @@ export default {
                 'responsive-md': 'calc(100% - 80px)',
                 'responsive-lg': 'calc(100% - 40px)',
                 'responsive-xl': 'calc(100% - 32px)',
+                half: '50%',
             },
             minHeight: {
                 sm: '210px',
@@ -96,6 +104,10 @@ export default {
                 'el-sm': '40px',
                 'el-md': '120px',
                 'el-lg': '268px',
+                'el-xl': '320px',
+                'el-2xl': '400px',
+                'el-3xl': '556px',
+                'el-4xl': '600px',
             },
             gap: {
                 sm: '10px',
@@ -137,6 +149,7 @@ export default {
             '2xl': '1920px',
         },
         padding: {
+            '0': '0px',
             'section-sm': '16px',
             'section-md': '20px',
             'section-lg': '26px',
@@ -162,6 +175,9 @@ export default {
             'el-9xl': '122px',
             'el-10xl': '150px',
             'el-11xl': '196px',
+        },
+        margin: {
+            'logo-sm': '-6px',
         },
         contrast: {
             md: '0.8',
