@@ -28,6 +28,7 @@ export default {
                 'bg-gray': '#888',
                 header: '#7070703e',
                 'svg-gray': '#6E757E',
+                red: '#a83234',
             },
             fontFamily: {
                 playfair: ['"Playfair Display"', 'serif'],
@@ -89,6 +90,7 @@ export default {
                 xl: '340px',
                 '2xl': '500px',
                 '3xl': '540px',
+                '4xl': '600px',
             },
             maxHeight: {
                 sm: '700px',
@@ -108,6 +110,7 @@ export default {
                 'el-2xl': '400px',
                 'el-3xl': '556px',
                 'el-4xl': '600px',
+                'el-5xl': '640px',
             },
             gap: {
                 sm: '10px',

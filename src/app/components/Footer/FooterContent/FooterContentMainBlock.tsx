@@ -19,72 +19,72 @@ export const FooterContentMainBlock = () => {
                     />
                     <div className="flex flex-col md:hidden">
                         <a
-                            href={hrefs[0]}
+                            href={hrefs.firstItem}
                             onClick={handleFooterContentMainBlockItemLinkClick}
                         >
                             <Text
                                 fontSize={'sm'}
                                 fontFamily={'opensans'}
                                 color={'lapis'}
-                                content={content[0]}
+                                content={content.firstItem}
                             />
                         </a>
                         <a
-                            href={hrefs[1]}
+                            href={hrefs.secondItem}
                             onClick={handleFooterContentMainBlockItemLinkClick}
                         >
                             <Text
                                 fontSize={'sm'}
                                 fontFamily={'opensans'}
                                 color={'lapis'}
-                                content={content[1]}
+                                content={content.secondItem}
                             />
                         </a>
                         <a
-                            href={hrefs[2]}
+                            href={hrefs.thirdItem}
                             onClick={handleFooterContentMainBlockItemLinkClick}
                         >
                             <Text
                                 fontSize={'sm'}
                                 fontFamily={'opensans'}
                                 color={'lapis'}
-                                content={content[2]}
+                                content={content.thirdItem}
                             />
                         </a>
                     </div>
 
                     <div className="hidden md:flex gap-sm flex-col">
                         <a
-                            href={hrefs[0]}
+                            href={hrefs.firstItem}
                             onClick={handleFooterContentMainBlockItemLinkClick}
                         >
                             <Text
                                 fontSize={'lg'}
                                 fontFamily={'opensans'}
                                 color={'lapis'}
-                                content={content[0]}
+                                content={content.firstItem}
                             />
                         </a>
                         <a
-                            href={hrefs[1]}
+                            href={hrefs.secondItem}
                             onClick={handleFooterContentMainBlockItemLinkClick}
                         >
                             <Text
                                 fontSize={'lg'}
                                 fontFamily={'opensans'}
                                 color={'lapis'}
-                                content={content[1]}
+                                content={content.secondItem}
                             />
                         </a>
                         <a
-                            href={hrefs[2]}
+                            href={hrefs.thirdItem}
                             onClick={handleFooterContentMainBlockItemLinkClick}
                         >
                             <Text
                                 fontSize={'lg'}
                                 fontFamily={'opensans'}
                                 color={'lapis'}
-                                content={content[2]}
+                                content={content.thirdItem}
                             />
                         </a>
                     </div>

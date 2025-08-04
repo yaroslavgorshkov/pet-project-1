@@ -1,6 +1,6 @@
 import { Text } from '@/core/Text/Text';
 
-export const NewsletterSectionContentHeadline = () => {
+export const NewsletterSectionHeadline = () => {
     return (
         <>
             <div className="flex flex-col items-center gap-xl md:hidden">

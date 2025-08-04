@@ -48,8 +48,16 @@ type FooterMainBlockContentItemLinkHref =
 type FooterMainBlockContentItem = {
     id: number;
     name: FooterMainBlockContentItemName;
-    content: FooterMainBlockContentItemLink[];
-    hrefs: FooterMainBlockContentItemLinkHref[];
+    content: {
+        firstItem: FooterMainBlockContentItemLink;
+        secondItem: FooterMainBlockContentItemLink;
+        thirdItem: FooterMainBlockContentItemLink;
+    };
+    hrefs: {
+        firstItem: FooterMainBlockContentItemLinkHref;
+        secondItem: FooterMainBlockContentItemLinkHref;
+        thirdItem: FooterMainBlockContentItemLinkHref;
+    };
 };
 
 export const footerSocialMediaContent: FooterSocialMediaContentItem[] = [
@@ -64,29 +72,57 @@ export const footerMainBlockContent: FooterMainBlockContentItem[] = [
     {
         id: 0,
         name: 'My Account',
-        hrefs: ['#sign-in', '#register', '#order-status'],
-        content: ['Sign in', 'Register', 'Order status'],
+        hrefs: {
+            firstItem: '#sign-in',
+            secondItem: '#register',
+            thirdItem: '#order-status',
+        },
+        content: {
+            firstItem: 'Sign in',
+            secondItem: 'Register',
+            thirdItem: 'Order status',
+        },
     },
     {
         id: 1,
         name: 'Help',
-        hrefs: ['#shipping', '#returns', '#sizing'],
-        content: ['Shipping', 'Returns', 'Sizing'],
+        hrefs: {
+            firstItem: '#shipping',
+            secondItem: '#returns',
+            thirdItem: '#sizing',
+        },
+        content: {
+            firstItem: 'Shipping',
+            secondItem: 'Returns',
+            thirdItem: 'Sizing',
+        },
     },
     {
         id: 2,
         name: 'Shop',
-        hrefs: ['#all-products', '#bedroom', '#dinning-room'],
-        content: ['All Products', 'Bedroom', 'Dinning Room'],
+        hrefs: {
+            firstItem: '#all-products',
+            secondItem: '#bedroom',
+            thirdItem: '#dinning-room',
+        },
+        content: {
+            firstItem: 'All Products',
+            secondItem: 'Bedroom',
+            thirdItem: 'Dinning Room',
+        },
     },
     {
         id: 3,
         name: 'Legal Stuff',
-        hrefs: ['#shipping-delivery', '#terms-conditions', '#privacy-policy'],
-        content: [
-            'Shipping & Delivery',
-            'Terms & Conditions',
-            'Privacy & Policy',
-        ],
+        hrefs: {
+            firstItem: '#shipping-delivery',
+            secondItem: '#terms-conditions',
+            thirdItem: '#privacy-policy',
+        },
+        content: {
+            firstItem: 'Shipping & Delivery',
+            secondItem: 'Terms & Conditions',
+            thirdItem: 'Privacy & Policy',
+        },
     },
 ];
