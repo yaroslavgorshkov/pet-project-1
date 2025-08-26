@@ -1,17 +1,44 @@
 import { Text } from '@/core/Text/Text';
+import clsx from 'clsx';
 
 type CategorySectionMenuNavigationListItem = {
+    id: number;
     text: string;
     href: string;
+    isHighlighted: boolean;
+    setActiveElementId: (id: number) => void;
 };
 
 export const CategorySectionMenuNavigationListItem = ({
     text,
     href,
+    id,
+    isHighlighted,
+    setActiveElementId,
 }: CategorySectionMenuNavigationListItem) => {
-    const handleCategorySectionMenuNavigationListItemClick = (
-        e: React.MouseEvent<HTMLAnchorElement>
-    ) => e.preventDefault();
+    const handleCategorySectionMenuNavigationListItemClick = () => {
+        setActiveElementId(id);
+    };
+
+    const categorySectionNavigationListItemTextClass = clsx(
+        isHighlighted
+            ? ['font-bold', 'after:top-nl-hover', 'after:opacity-100']
+            : [
+                  'hover:font-bold',
+                  'after:top-nl',
+                  'after:opacity-0',
+                  'after:transition-all',
+                  'after:duration-200',
+                  'hover:after:opacity-100',
+                  'hover:after:top-nl-hover',
+              ],
+        'relative',
+        'after:absolute',
+        'after:left-0',
+        'after:bg-lapis',
+        'after:w-full',
+        'after:h-slider-sm'
+    );
 
     return (
         <li>
@@ -24,7 +51,7 @@ export const CategorySectionMenuNavigationListItem = ({
                     fontFamily="roboto"
                     color="lapis"
                     content={text}
-                    className="xl:hover:font-bold after:top-nl after:opacity-0 after:transition-all after:duration-200 xl:hover:after:opacity-100 xl:hover:after:top-nl-hover relative after:absolute after:left-0 after:bg-lapis after:w-full after:h-slider-sm"
+                    className={categorySectionNavigationListItemTextClass}
                 />
             </a>
         </li>

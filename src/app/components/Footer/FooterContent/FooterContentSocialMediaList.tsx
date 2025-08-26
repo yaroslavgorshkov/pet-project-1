@@ -1,10 +1,10 @@
 import { IconButton } from '@/core/Button/IconButton';
-import { footerSocialMediaContent } from '@/Footer/footerMockData';
+import { footerSocialMediaContent } from '@/Footer/footerData';
 
 export const FooterContentSocialMediaList = () => {
-    const handleFooterContentSocialMediaListItemLinkClick = (
-        e: React.MouseEvent<HTMLAnchorElement>
-    ) => e.preventDefault();
+    const handleFooterContentSocialMediaListItemLinkClick = () => {
+        //TODO: add handleFooterContentSocialMediaListItemLinkClick logic
+    };
 
     const footerContentSocialMediaList = footerSocialMediaContent.map(
         ({ id, buttonType, href }) => {

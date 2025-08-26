@@ -13,7 +13,7 @@ export const NewsletterSectionForm = () => {
         formState: { errors },
     } = useForm<NewsletterSectionContentFormData>();
 
-    const handleNewsletterSectionContentFormSumbit: SubmitHandler<
+    const handleNewsletterSectionContentFormSubmit: SubmitHandler<
         NewsletterSectionContentFormData
     > = () => {};
 
@@ -45,12 +45,12 @@ export const NewsletterSectionForm = () => {
             action="/example"
             method="post"
             className="flex flex-col gap-2xl w-full items-center md:items-start"
-            onSubmit={handleSubmit(handleNewsletterSectionContentFormSumbit)}
+            onSubmit={handleSubmit(handleNewsletterSectionContentFormSubmit)}
         >
             <input
                 type="email"
                 placeholder="Enter your email"
-                className="border-b-sm border-black placeholder:text-center placeholder:text-clay placeholder:text-placegolder-sm placeholder:font-roboto bg-transparent w-full py-el-sm text-center outline-none font-roboto md:text-start md:text-placegolder-md md:placeholder:text-start md:placeholder:text-placegolder-md"
+                className="border-b-sm border-black placeholder:text-center placeholder:text-clay placeholder:text-placeholder-sm placeholder:font-roboto bg-transparent w-full py-el-sm text-center outline-none font-roboto md:text-start md:text-placeholder-md md:placeholder:text-start md:placeholder:text-placeholder-md"
                 autoComplete="email"
                 {...register('email', {
                     required: 'Required field!',

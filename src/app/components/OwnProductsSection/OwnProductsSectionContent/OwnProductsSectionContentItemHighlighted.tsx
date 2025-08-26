@@ -17,9 +17,9 @@ export const OwnProductsSectionContentItemHighlighted = ({
         // TODO: add OwnProductsSectionContentItemHighlighted button click function
     };
 
-    const handleOwnProductsSectionContentItemHighlightedClick = (
-        e: React.MouseEvent<HTMLAnchorElement>
-    ) => e.preventDefault();
+    const handleOwnProductsSectionContentItemHighlightedClick = () => {
+        //TODO: add handleOwnProductsSectionContentItemHighlightedClick logic
+    };
 
     return (
         <article className="relative w-auto min-w-xl h-auto min-h-xl md:min-w-3xl md:min-h-3xl">

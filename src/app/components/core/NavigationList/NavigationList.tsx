@@ -4,6 +4,7 @@ import { NavigationListContentItem } from '@/types';
 import { cn } from '@/helpers/cn';
 
 type RenderListItemProps = {
+    id: number;
     text: string;
     href: string;
     isHighlighted: boolean;
@@ -11,11 +12,12 @@ type RenderListItemProps = {
 
 type NavigationListProps = {
     renderListItem: ({
+        id,
         text,
         href,
         isHighlighted,
     }: RenderListItemProps) => ReactNode;
-    highlightedElementNumber?: number;
+    highlightedElementId?: number;
     navigationListContent: NavigationListContentItem[];
     navClassName?: string;
     ulClassName?: string;
@@ -23,17 +25,18 @@ type NavigationListProps = {
 
 export const NavigationList = ({
     renderListItem,
-    highlightedElementNumber,
+    highlightedElementId,
     navigationListContent,
     navClassName = '',
     ulClassName = '',
 }: NavigationListProps) => {
     const renderList = navigationListContent.map(({ id, text, href }) => {
-        const isNavigationListItemHighlighted = id === highlightedElementNumber;
+        const isNavigationListItemHighlighted = id === highlightedElementId;
         const renderContent = renderListItem({
             text,
             href,
             isHighlighted: isNavigationListItemHighlighted,
+            id,
         });
         return <Fragment key={id}>{renderContent}</Fragment>;
     });

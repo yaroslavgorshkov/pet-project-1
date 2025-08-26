@@ -81,9 +81,9 @@ export const CategorySectionContentItem = ({
         'inset-0'
     );
 
-    const handleCategorySectionContentItemExploreButtonClick = (
-        e: React.MouseEvent<HTMLAnchorElement>
-    ) => e.preventDefault();
+    const handleCategorySectionContentItemExploreButtonClick = () => {
+        //TODO: add handleCategorySectionContentItemExploreButtonClick logic
+    };
 
     return (
         <article className="group rounded-md relative h-full min-h-sm md:min-h-md xl:h-auto">

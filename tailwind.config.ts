@@ -36,8 +36,8 @@ export default {
                 opensans: ['"Open Sans"', 'sans-serif'],
             },
             fontSize: {
-                'placegolder-sm': '18px',
-                'placegolder-md': '24px',
+                'placeholder-sm': '18px',
+                'placeholder-md': '24px',
             },
             borderRadius: {
                 sm: '6px',

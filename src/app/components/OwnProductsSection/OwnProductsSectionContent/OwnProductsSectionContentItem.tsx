@@ -17,9 +17,9 @@ export const OwnProductsSectionContentItem = ({
         // TODO: add OwnProductsSectionContentItem button click function
     };
 
-    const handleOwnProductsSectionContentItemClick = (
-        e: React.MouseEvent<HTMLAnchorElement>
-    ) => e.preventDefault();
+    const handleOwnProductsSectionContentItemClick = () => {
+        //TODO: add handleOwnProductsSectionContentItemClick logic
+    };
 
     return (
         <article className="group relative w-auto min-w-md h-auto min-h-lg rounded-2xl shadow-lg md:min-w-2xl md:min-h-2xl">

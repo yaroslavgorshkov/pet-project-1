@@ -1,16 +1,13 @@
 import Image from 'next/image';
 import { Text } from '@/core/Text/Text';
-import { FooterContentMainBlock } from '@/Footer/FooterContent/FooterContentMainBlock';
+import { FooterContentMainBlock } from '@/Footer/FooterContent/FooterContentMainBlock/FooterContentMainBlock';
 import { FooterContentSocialMediaList } from '@/Footer/FooterContent/FooterContentSocialMediaList';
 
 export const FooterContent = () => {
     return (
         <div className="flex flex-col gap-12xl lg:flex-row w-full">
             <div className="flex flex-col gap-lg">
-                <a
-                    href="#home"
-                    className="w-logo-md h-logo-md relative ml-logo-sm"
-                >
+                <a href="#home" className="w-logo-md h-logo-md relative">
                     <Image src={'/img/logo.png'} alt={'InWood Logo'} fill />
                 </a>
                 <FooterContentSocialMediaList />

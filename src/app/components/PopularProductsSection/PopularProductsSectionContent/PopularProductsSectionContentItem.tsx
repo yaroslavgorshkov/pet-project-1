@@ -36,9 +36,9 @@ export const PopularProductsSectionContentItem = ({
     );
     const popularProductsSectionContentItemPrice = `$${price}`;
 
-    const handlePopularProductsSectionContentItemClick = (
-        e: React.MouseEvent<HTMLAnchorElement>
-    ) => e.preventDefault();
+    const handlePopularProductsSectionContentItemClick = () => {
+        //TODO: add handlePopularProductsSectionContentItemClick logic
+    };
 
     return (
         <a
