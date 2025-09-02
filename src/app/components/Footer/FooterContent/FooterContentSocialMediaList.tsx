@@ -2,18 +2,10 @@ import { IconButton } from '@/core/Button/IconButton';
 import { footerSocialMediaContent } from '@/Footer/footerData';
 
 export const FooterContentSocialMediaList = () => {
-    const handleFooterContentSocialMediaListItemLinkClick = () => {
-        //TODO: add handleFooterContentSocialMediaListItemLinkClick logic
-    };
-
     const footerContentSocialMediaList = footerSocialMediaContent.map(
         ({ id, buttonType, href }) => {
             return (
-                <a
-                    key={id}
-                    onClick={handleFooterContentSocialMediaListItemLinkClick}
-                    href={href}
-                >
+                <a key={id} href={href}>
                     <IconButton
                         iconType={buttonType}
                         iconFillColor={'lapis'}
