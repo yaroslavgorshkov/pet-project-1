@@ -3,8 +3,11 @@ import { categorySectionMenuNavigationListContent } from '@/CategorySection/cate
 import { CategorySectionMenuNavigationListSlider } from '@/CategorySection/CategorySectionMenu/CategorySectionMenuNavigationList/CategorySectionMenuNavigationListSlider';
 import { NavigationList } from '@/core/NavigationList/NavigationList';
 import clsx from 'clsx';
+import { useState } from 'react';
 
 export const CategorySectionMenuNavigationList = () => {
+    const [activeElementId, setActiveElementId] = useState(0);
+
     const categorySectionMenuNavigationListUlClassNameSm = clsx(
         'flex',
         'flex-wrap',
@@ -28,24 +31,31 @@ export const CategorySectionMenuNavigationList = () => {
         <>
             <div className="xl:hidden">
                 <NavigationList
-                    renderListItem={({ href, text }) => (
+                    renderListItem={({ id, href, text, isHighlighted }) => (
                         <CategorySectionMenuNavigationListItem
                             text={text}
                             href={href}
+                            id={id}
+                            setActiveElementId={setActiveElementId}
+                            isHighlighted={isHighlighted}
                         />
                     )}
                     navigationListContent={
                         categorySectionMenuNavigationListContent
                     }
                     ulClassName={categorySectionMenuNavigationListUlClassNameSm}
+                    highlightedElementId={activeElementId}
                 />
             </div>
             <div className="hidden w-full xl:flex">
                 <NavigationList
-                    renderListItem={({ href, text }) => (
+                    renderListItem={({ id, href, text, isHighlighted }) => (
                         <CategorySectionMenuNavigationListItem
                             text={text}
                             href={href}
+                            id={id}
+                            setActiveElementId={setActiveElementId}
+                            isHighlighted={isHighlighted}
                         />
                     )}
                     navigationListContent={
@@ -55,6 +65,7 @@ export const CategorySectionMenuNavigationList = () => {
                     navClassName={
                         categorySectionMenuNavigationListNavClassNameXl
                     }
+                    highlightedElementId={activeElementId}
                 />
                 <CategorySectionMenuNavigationListSlider />
             </div>

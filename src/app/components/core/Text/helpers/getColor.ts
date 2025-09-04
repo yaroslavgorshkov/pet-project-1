@@ -5,6 +5,7 @@ const colorMap: Record<Color, string> = {
     white: 'text-white',
     mint: 'text-mint',
     'absolute-black': 'text-absolute-black',
+    red: 'text-red',
 };
 
 export const getColor = (color: Color) => colorMap[color];

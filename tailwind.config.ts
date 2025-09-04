@@ -28,11 +28,16 @@ export default {
                 'bg-gray': '#888',
                 header: '#7070703e',
                 'svg-gray': '#6E757E',
+                red: '#a83234',
             },
             fontFamily: {
                 playfair: ['"Playfair Display"', 'serif'],
                 roboto: ['Roboto', 'sans-serif'],
                 opensans: ['"Open Sans"', 'sans-serif'],
+            },
+            fontSize: {
+                'placeholder-sm': '18px',
+                'placeholder-md': '24px',
             },
             borderRadius: {
                 sm: '6px',
@@ -41,6 +46,9 @@ export default {
                 xl: '20px',
                 '2xl': '24px',
                 '3xl': '50px',
+            },
+            borderWidth: {
+                sm: '1px',
             },
             minWidth: {
                 sm: '170px',
@@ -73,6 +81,7 @@ export default {
                 'responsive-md': 'calc(100% - 80px)',
                 'responsive-lg': 'calc(100% - 40px)',
                 'responsive-xl': 'calc(100% - 32px)',
+                half: '50%',
             },
             minHeight: {
                 sm: '210px',
@@ -81,6 +90,7 @@ export default {
                 xl: '340px',
                 '2xl': '500px',
                 '3xl': '540px',
+                '4xl': '600px',
             },
             maxHeight: {
                 sm: '700px',
@@ -96,6 +106,11 @@ export default {
                 'el-sm': '40px',
                 'el-md': '120px',
                 'el-lg': '268px',
+                'el-xl': '320px',
+                'el-2xl': '400px',
+                'el-3xl': '556px',
+                'el-4xl': '600px',
+                'el-5xl': '640px',
             },
             gap: {
                 sm: '10px',
@@ -137,6 +152,7 @@ export default {
             '2xl': '1920px',
         },
         padding: {
+            '0': '0px',
             'section-sm': '16px',
             'section-md': '20px',
             'section-lg': '26px',
@@ -162,6 +178,9 @@ export default {
             'el-9xl': '122px',
             'el-10xl': '150px',
             'el-11xl': '196px',
+        },
+        margin: {
+            'logo-sm': '-6px',
         },
         contrast: {
             md: '0.8',

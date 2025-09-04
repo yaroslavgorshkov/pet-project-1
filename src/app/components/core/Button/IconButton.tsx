@@ -7,7 +7,7 @@ type IconButtonProps = {
     iconFillColor: IconFillColor;
     iconSize: IconSize;
     className?: string;
-    onClick: () => void;
+    onClick?: () => void;
 };
 
 export const IconButton = ({

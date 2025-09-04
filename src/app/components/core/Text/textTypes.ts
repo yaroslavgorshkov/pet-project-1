@@ -11,5 +11,5 @@ export type FontSize =
     | '7xl'
     | '8xl';
 export type FontFamily = 'playfair' | 'opensans' | 'roboto';
-export type Color = 'lapis' | 'white' | 'mint' | 'absolute-black';
+export type Color = 'lapis' | 'white' | 'mint' | 'absolute-black' | 'red';
 export type FontWeight = 'normal' | 'bold';

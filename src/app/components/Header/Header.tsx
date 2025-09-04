@@ -1,4 +1,4 @@
-import { HeaderNavigationList } from '@/Header/HeaderNavigaionList/HeaderNavigationList';
+import { HeaderNavigationList } from '@/Header/HeaderNavigationList/HeaderNavigationList';
 import { HeaderIconsBar } from '@/Header/HeaderIconsBar/HeaderIconsBar';
 import { HeaderLogo } from '@/Header/HeaderLogo';
 import { HeaderHamburgerMenuButton } from '@/Header/HeaderHamburgerMenuButton';
