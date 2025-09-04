@@ -6,8 +6,8 @@ export type ButtonSize = 'sm' | 'md' | 'lg';
 export type ButtonBackgroundColor = 'mint' | 'white' | 'white-blue';
 
 export type ButtonProps = {
-    buttonSize: ButtonSize;
-    borderRadius: BorderRadius;
+    buttonSize?: ButtonSize;
+    borderRadius?: BorderRadius;
     children: ReactNode;
     endIcon?: EndIconType;
     className?: string;

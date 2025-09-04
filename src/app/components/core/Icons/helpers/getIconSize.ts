@@ -13,6 +13,7 @@ const iconSizeMap: Record<IconSize, string> = {
     '7xl': '32',
     '8xl': '34',
     '9xl': '36',
+    '10xl': '40',
 };
 
 export const getIconSize = (iconSize: IconSize) => iconSizeMap[iconSize];

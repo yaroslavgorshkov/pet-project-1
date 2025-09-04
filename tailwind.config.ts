@@ -29,6 +29,7 @@ export default {
                 header: '#7070703e',
                 'svg-gray': '#6E757E',
                 red: '#a83234',
+                orange: '#FFC107',
             },
             fontFamily: {
                 playfair: ['"Playfair Display"', 'serif'],
@@ -63,6 +64,7 @@ export default {
                 md: '400px',
                 lg: '578px',
                 xl: '790px',
+                '2xl': '850px',
             },
             width: {
                 'slider-sm': '4px',
@@ -77,10 +79,16 @@ export default {
                 'el-lg': '204px',
                 'el-xl': '350px',
                 'el-2xl': '460px',
+                'special-package-el-sm': '242px',
+                'special-package-el-md': '394px',
+                'special-package-sm': '288px',
+                'special-package-md': '583px',
+                'special-package-lg': '692px',
                 'responsive-sm': 'calc(100% - 300px)',
                 'responsive-md': 'calc(100% - 80px)',
                 'responsive-lg': 'calc(100% - 40px)',
                 'responsive-xl': 'calc(100% - 32px)',
+                'responsive-viewport-sm': 'calc(100vw - 32px)',
                 half: '50%',
             },
             minHeight: {
@@ -111,6 +119,8 @@ export default {
                 'el-3xl': '556px',
                 'el-4xl': '600px',
                 'el-5xl': '640px',
+                'special-package-el-sm': '149px',
+                'special-package-el-md': '332px',
             },
             gap: {
                 sm: '10px',
@@ -181,6 +191,10 @@ export default {
         },
         margin: {
             'logo-sm': '-6px',
+            'special-package-sm': '16px',
+            'special-package-md': '20px',
+            'special-package-lg': '40px',
+            'special-package-xl': '150px',
         },
         contrast: {
             md: '0.8',

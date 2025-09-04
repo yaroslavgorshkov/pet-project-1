@@ -4,7 +4,14 @@ export type NavigationListContentItem = {
     href: string;
 };
 
-export type IconFillColor = 'lapis' | 'gray' | 'white' | 'absolute-white';
+export type IconFillColor =
+    | 'lapis'
+    | 'gray'
+    | 'white'
+    | 'absolute-white'
+    | 'orange'
+    | 'black';
+
 export type IconSize =
     | 'sm'
     | 'md'
@@ -17,7 +24,9 @@ export type IconSize =
     | '6xl'
     | '7xl'
     | '8xl'
-    | '9xl';
+    | '9xl'
+    | '10xl';
+
 export type DynamicIconType =
     | 'account'
     | 'shopping-cart'
@@ -35,11 +44,14 @@ export type DynamicIconType =
     | 'basketball'
     | 'linked-in'
     | 'instagram'
-    | 'facebook';
+    | 'facebook'
+    | 'rating';
+
 export type StaticIconType =
     | 'payment-method'
     | 'return-policy'
     | 'customer-support';
+
 export type IconProps = {
     color: IconFillColor;
     size: IconSize;
