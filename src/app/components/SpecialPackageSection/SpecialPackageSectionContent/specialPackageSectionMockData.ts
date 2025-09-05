@@ -1,4 +1,4 @@
-export type SpecialPackageSectionHighlightedElementMockDataType = {
+export type SpecialPackageSectionHighlightedItemMockDataType = {
     name: string;
     price: number;
     imageSrc: string;
@@ -6,7 +6,7 @@ export type SpecialPackageSectionHighlightedElementMockDataType = {
     href: string;
 };
 
-export const specialPackageSectionHighlightedElementMockData: SpecialPackageSectionHighlightedElementMockDataType =
+export const specialPackageSectionHighlightedItemMockData: SpecialPackageSectionHighlightedItemMockDataType =
     {
         name: 'Living Room Family Set',
         price: 999.99,
@@ -15,23 +15,23 @@ export const specialPackageSectionHighlightedElementMockData: SpecialPackageSect
         href: '#living-room-family-set',
     };
 
-type SpecialPackageSectionMainElementMockDataType = Omit<
-    SpecialPackageSectionHighlightedElementMockDataType,
+type SpecialPackageSectionMainItemMockDataType = Omit<
+    SpecialPackageSectionHighlightedItemMockDataType,
     'href'
 > & { description: string };
 
-export const specialPackageSectionMainElementMockData: SpecialPackageSectionMainElementMockDataType =
+export const specialPackageSectionMainItemMockData: SpecialPackageSectionMainItemMockDataType =
     {
         name: 'Larkin Wood Full Set',
         price: 729.99,
         imageSrc: '/img/special-package-main-el.jpg',
-        alt: 'Special Package Main Element',
+        alt: 'Special Package Main Item',
         description:
             'Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor space, this cast...',
     };
 
 export type SpecialPackageSectionMockDataType = Omit<
-    SpecialPackageSectionHighlightedElementMockDataType,
+    SpecialPackageSectionHighlightedItemMockDataType,
     'href'
 > & { id: number; description: string };
 

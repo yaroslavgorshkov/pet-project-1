@@ -1,15 +1,15 @@
 import { IconButton } from '@/core/Button/IconButton';
 import Image from 'next/image';
 
-type SpecialPackageSectionContentMainElementImageProps = {
+type SpecialPackageSectionContentMainItemImageProps = {
     alt: string;
     imageSrc: string;
 };
 
-export const SpecialPackageSectionContentMainElementImage = ({
+export const SpecialPackageSectionContentMainItemImage = ({
     alt,
     imageSrc,
-}: SpecialPackageSectionContentMainElementImageProps) => {
+}: SpecialPackageSectionContentMainItemImageProps) => {
     return (
         <>
             <div className="relative rounded-2xl h-el-lg md:hidden w-responsive-viewport-sm">

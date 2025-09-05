@@ -1,28 +1,28 @@
-import { specialPackageSectionHighlightedElementMockData } from '@/SpecialPackageSection/SpecialPackageSectionContent/specialPackageSectionMockData';
-import { SpecialPackageSectionContentHighlightedElementImage } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedElement/SpecialPackageSectionContentHighlightedElementImage';
-import { SpecialPackageSectionContentHighlightedElementButton } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedElement/SpecialPackageSectionContentHighlightedElementButton';
-import { SpecialPackageSectionContentHighlightedElementDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedElement/SpecialPackageSectionContentHighlightedElementDetails';
+import { specialPackageSectionHighlightedItemMockData } from '@/SpecialPackageSection/SpecialPackageSectionContent/specialPackageSectionMockData';
+import { SpecialPackageSectionContentHighlightedItemImage } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedItem/SpecialPackageSectionContentHighlightedItemImage';
+import { SpecialPackageSectionContentHighlightedItemButton } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedItem/SpecialPackageSectionContentHighlightedItemButton';
+import { SpecialPackageSectionContentHighlightedItemDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedItem/SpecialPackageSectionContentHighlightedItemDetails';
 import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
 
-export const SpecialPackageSectionContentHighlightedElement = () => {
+export const SpecialPackageSectionContentHighlightedItem = () => {
     const { alt, href, imageSrc, name, price } =
-        specialPackageSectionHighlightedElementMockData;
+        specialPackageSectionHighlightedItemMockData;
 
     const priceText = `$${price}`;
 
-    const specialPackageSectionContentHighlightedElementRatingList =
+    const specialPackageSectionContentHighlightedItemRatingList =
         getRatingComponentList('xl');
 
     return (
         <>
             <article className="flex flex-col gap-2xl md:hidden">
-                <SpecialPackageSectionContentHighlightedElementDetails
+                <SpecialPackageSectionContentHighlightedItemDetails
                     name={name}
                     price={price}
                 />
-                <SpecialPackageSectionContentHighlightedElementButton />
-                <SpecialPackageSectionContentHighlightedElementImage
+                <SpecialPackageSectionContentHighlightedItemButton />
+                <SpecialPackageSectionContentHighlightedItemImage
                     alt={alt}
                     imageSrc={imageSrc}
                 />
@@ -45,7 +45,7 @@ export const SpecialPackageSectionContentHighlightedElement = () => {
                 </div>
             </article>
             <article className="hidden md:flex gap-sm">
-                <SpecialPackageSectionContentHighlightedElementImage
+                <SpecialPackageSectionContentHighlightedItemImage
                     alt={alt}
                     imageSrc={imageSrc}
                 />
@@ -66,9 +66,7 @@ export const SpecialPackageSectionContentHighlightedElement = () => {
                         />
                     </div>
                     <div className="flex gap-sm">
-                        {
-                            specialPackageSectionContentHighlightedElementRatingList
-                        }
+                        {specialPackageSectionContentHighlightedItemRatingList}
                     </div>
                     <a href={href} className="underline">
                         <Text
@@ -79,7 +77,7 @@ export const SpecialPackageSectionContentHighlightedElement = () => {
                         />
                     </a>
                     <div className="absolute bottom-0 right-0">
-                        <SpecialPackageSectionContentHighlightedElementButton />
+                        <SpecialPackageSectionContentHighlightedItemButton />
                     </div>
                 </div>
             </article>

@@ -1,12 +1,12 @@
 import { Text } from '@/core/Text/Text';
 
-type SpecialPackageSectionContentElementDescriptionProps = {
+type SpecialPackageSectionContentItemDescriptionProps = {
     description: string;
 };
 
-export const SpecialPackageSectionContentElementDescription = ({
+export const SpecialPackageSectionContentItemDescription = ({
     description,
-}: SpecialPackageSectionContentElementDescriptionProps) => {
+}: SpecialPackageSectionContentItemDescriptionProps) => {
     return (
         <>
             <div className="md:hidden flex flex-col gap-2xl">

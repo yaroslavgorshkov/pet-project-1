@@ -2,26 +2,26 @@ import { Button } from '@/core/Button/Button';
 import { ButtonProps } from '@/core/Button/buttonTypes';
 import { Text } from '@/core/Text/Text';
 import { EndIconType } from '@/types';
-import { SpecialPackageSectionContentElementButton } from '../SpecialPackageSectionContentElement/SpecialPackageSectionContentElementButton';
+import { SpecialPackageSectionContentItemButton } from '../SpecialPackageSectionContentItem/SpecialPackageSectionContentItemButton';
 
-export const SpecialPackageSectionContentMainElementButton = () => {
-    const handleSpecialPackageSectionContentMainElementButtonClick = () => [
-        // TODO: make handleSpecialPackageSectionContentMainElementButtonClick logic
+export const SpecialPackageSectionContentMainItemButton = () => {
+    const handleSpecialPackageSectionContentMainItemButtonClick = () => [
+        // TODO: make handleSpecialPackageSectionContentMainItemButtonClick logic
     ];
 
-    const specialPackageSectionContentMainElementButtonIconSm: EndIconType = {
+    const specialPackageSectionContentMainItemButtonIconSm: EndIconType = {
         iconType: 'shopping-cart',
         iconFillColor: 'white',
         iconSize: '2xl',
     };
 
-    const specialPackageSectionContentMainElementButtonIconXl: EndIconType = {
+    const specialPackageSectionContentMainItemButtonIconXl: EndIconType = {
         iconType: 'shopping-cart',
         iconFillColor: 'white',
         iconSize: '5xl',
     };
 
-    const specialPackageSectionContentMainElementButtonSmProps: Omit<
+    const specialPackageSectionContentMainItemButtonSmProps: Omit<
         ButtonProps,
         'children'
     > = {
@@ -29,11 +29,11 @@ export const SpecialPackageSectionContentMainElementButton = () => {
         variant: 'contained',
         backgroundColor: 'mint',
         borderRadius: 'md',
-        endIcon: specialPackageSectionContentMainElementButtonIconSm,
-        onClick: handleSpecialPackageSectionContentMainElementButtonClick,
+        endIcon: specialPackageSectionContentMainItemButtonIconSm,
+        onClick: handleSpecialPackageSectionContentMainItemButtonClick,
     };
 
-    const specialPackageSectionContentMainElementButtonXlProps: Omit<
+    const specialPackageSectionContentMainItemButtonXlProps: Omit<
         ButtonProps,
         'children'
     > = {
@@ -41,19 +41,17 @@ export const SpecialPackageSectionContentMainElementButton = () => {
         variant: 'contained',
         backgroundColor: 'mint',
         borderRadius: 'md',
-        endIcon: specialPackageSectionContentMainElementButtonIconXl,
-        onClick: handleSpecialPackageSectionContentMainElementButtonClick,
+        endIcon: specialPackageSectionContentMainItemButtonIconXl,
+        onClick: handleSpecialPackageSectionContentMainItemButtonClick,
     };
 
     return (
         <>
             <div className="md:hidden">
-                <SpecialPackageSectionContentElementButton />
+                <SpecialPackageSectionContentItemButton />
             </div>
             <div className="hidden md:block 2xl:hidden">
-                <Button
-                    {...specialPackageSectionContentMainElementButtonSmProps}
-                >
+                <Button {...specialPackageSectionContentMainItemButtonSmProps}>
                     <Text
                         fontSize={'md'}
                         fontFamily={'opensans'}
@@ -63,9 +61,7 @@ export const SpecialPackageSectionContentMainElementButton = () => {
                 </Button>
             </div>
             <div className="hidden 2xl:block">
-                <Button
-                    {...specialPackageSectionContentMainElementButtonXlProps}
-                >
+                <Button {...specialPackageSectionContentMainItemButtonXlProps}>
                     <Text
                         fontSize={'lg'}
                         fontFamily={'opensans'}

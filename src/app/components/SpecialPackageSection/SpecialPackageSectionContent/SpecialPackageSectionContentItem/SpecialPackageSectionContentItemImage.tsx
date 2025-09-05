@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
-type SpecialPackageSectionContentElementImageProps = {
+type SpecialPackageSectionContentItemImageProps = {
     alt: string;
     imageSrc: string;
 };
 
-export const SpecialPackageSectionContentElementImage = ({
+export const SpecialPackageSectionContentItemImage = ({
     alt,
     imageSrc,
-}: SpecialPackageSectionContentElementImageProps) => {
+}: SpecialPackageSectionContentItemImageProps) => {
     return (
         <>
             <div className="relative rounded-2xl h-el-lg w-responsive-viewport-sm md:hidden">

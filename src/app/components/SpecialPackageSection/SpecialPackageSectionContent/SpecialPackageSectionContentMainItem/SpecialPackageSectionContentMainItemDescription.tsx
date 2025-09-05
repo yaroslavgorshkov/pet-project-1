@@ -2,35 +2,35 @@ import { Button } from '@/core/Button/Button';
 import { ButtonProps } from '@/core/Button/buttonTypes';
 import { Text } from '@/core/Text/Text';
 import { EndIconType } from '@/types';
-import { SpecialPackageSectionContentElementDescription } from '../SpecialPackageSectionContentElement/SpecialPackageSectionContentElementDescription';
+import { SpecialPackageSectionContentItemDescription } from '../SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDescription';
 
-type SpecialPackageSectionContentMainElementDescriptionProps = {
+type SpecialPackageSectionContentMainItemDescriptionProps = {
     description: string;
 };
 
-export const SpecialPackageSectionContentMainElementDescription = ({
+export const SpecialPackageSectionContentMainItemDescription = ({
     description,
-}: SpecialPackageSectionContentMainElementDescriptionProps) => {
-    const specialPackageSectionContentMainElementDescriptionButtonEndIconProps: EndIconType =
+}: SpecialPackageSectionContentMainItemDescriptionProps) => {
+    const specialPackageSectionContentMainItemDescriptionButtonEndIconProps: EndIconType =
         {
             iconType: 'see-more',
             iconFillColor: 'black',
             iconSize: 'lg',
         };
 
-    const specialPackageSectionContentMainElementDescriptionButtonXlProps: Omit<
+    const specialPackageSectionContentMainItemDescriptionButtonXlProps: Omit<
         ButtonProps,
         'children'
     > = {
         variant: 'secondary',
         endIcon:
-            specialPackageSectionContentMainElementDescriptionButtonEndIconProps,
+            specialPackageSectionContentMainItemDescriptionButtonEndIconProps,
     };
 
     return (
         <>
             <div className="flex flex-col gap-2xl md:hidden">
-                <SpecialPackageSectionContentElementDescription
+                <SpecialPackageSectionContentItemDescription
                     description={description}
                 />
             </div>
@@ -65,7 +65,7 @@ export const SpecialPackageSectionContentMainElementDescription = ({
                 />
                 <div className="self-start">
                     <Button
-                        {...specialPackageSectionContentMainElementDescriptionButtonXlProps}
+                        {...specialPackageSectionContentMainItemDescriptionButtonXlProps}
                     >
                         <Text
                             fontSize={'lg'}

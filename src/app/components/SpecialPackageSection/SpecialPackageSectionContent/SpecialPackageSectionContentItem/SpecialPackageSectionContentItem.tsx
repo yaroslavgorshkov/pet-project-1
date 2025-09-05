@@ -1,45 +1,45 @@
-import { SpecialPackageSectionContentElementDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentElement/SpecialPackageSectionContentElementDetails';
-import { SpecialPackageSectionContentElementButton } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentElement/SpecialPackageSectionContentElementButton';
-import { SpecialPackageSectionContentElementImage } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentElement/SpecialPackageSectionContentElementImage';
-import { SpecialPackageSectionContentElementDescription } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentElement/SpecialPackageSectionContentElementDescription';
+import { SpecialPackageSectionContentItemDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDetails';
+import { SpecialPackageSectionContentItemButton } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemButton';
+import { SpecialPackageSectionContentItemImage } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemImage';
+import { SpecialPackageSectionContentItemDescription } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDescription';
 import { SpecialPackageSectionMockDataType } from '@/SpecialPackageSection/SpecialPackageSectionContent/specialPackageSectionMockData';
 import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
 
-type SpecialPackageSectionContentElementProps = Omit<
+type SpecialPackageSectionContentItemProps = Omit<
     SpecialPackageSectionMockDataType,
     'id'
 >;
-export const SpecialPackageSectionContentElement = ({
+export const SpecialPackageSectionContentItem = ({
     name,
     alt,
     description,
     imageSrc,
     price,
-}: SpecialPackageSectionContentElementProps) => {
+}: SpecialPackageSectionContentItemProps) => {
     const priceText = `$${price}`;
 
-    const specialPackageSectionContentHighlightedElementRatingList =
+    const specialPackageSectionContentHighlightedItemRatingList =
         getRatingComponentList('xl');
 
     return (
         <>
             <article className="flex flex-col gap-2xl md:hidden">
-                <SpecialPackageSectionContentElementDetails
+                <SpecialPackageSectionContentItemDetails
                     name={name}
                     price={price}
                 />
-                <SpecialPackageSectionContentElementButton />
-                <SpecialPackageSectionContentElementImage
+                <SpecialPackageSectionContentItemButton />
+                <SpecialPackageSectionContentItemImage
                     alt={alt}
                     imageSrc={imageSrc}
                 />
-                <SpecialPackageSectionContentElementDescription
+                <SpecialPackageSectionContentItemDescription
                     description={description}
                 />
             </article>
             <article className="hidden md:flex gap-sm">
-                <SpecialPackageSectionContentElementImage
+                <SpecialPackageSectionContentItemImage
                     alt={alt}
                     imageSrc={imageSrc}
                 />
@@ -70,14 +70,12 @@ export const SpecialPackageSectionContentElement = ({
                         />
                     </div>
                     <div className="flex gap-sm">
-                        {
-                            specialPackageSectionContentHighlightedElementRatingList
-                        }
+                        {specialPackageSectionContentHighlightedItemRatingList}
                     </div>
-                    <SpecialPackageSectionContentElementDescription
+                    <SpecialPackageSectionContentItemDescription
                         description={description}
                     />
-                    <SpecialPackageSectionContentElementButton />
+                    <SpecialPackageSectionContentItemButton />
                 </div>
             </article>
         </>

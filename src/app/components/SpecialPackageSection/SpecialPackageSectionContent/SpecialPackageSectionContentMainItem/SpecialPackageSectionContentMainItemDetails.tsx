@@ -1,20 +1,20 @@
 import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
-import { SpecialPackageSectionContentElementDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentElement/SpecialPackageSectionContentElementDetails';
+import { SpecialPackageSectionContentItemDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDetails';
 
-type SpecialPackageSectionContentMainElementDetailsProps = {
+type SpecialPackageSectionContentMainItemDetailsProps = {
     name: string;
     price: number;
 };
 
-export const SpecialPackageSectionContentMainElementDetails = ({
+export const SpecialPackageSectionContentMainItemDetails = ({
     name,
     price,
-}: SpecialPackageSectionContentMainElementDetailsProps) => {
-    const specialPackageSectionContentMainElementDetailsRatingIconXlList =
+}: SpecialPackageSectionContentMainItemDetailsProps) => {
+    const specialPackageSectionContentMainItemDetailsRatingIconXlList =
         getRatingComponentList('10xl');
 
-    const specialPackageSectionContentMainElementDetailsRatingIconMdList =
+    const specialPackageSectionContentMainItemDetailsRatingIconMdList =
         getRatingComponentList('6xl');
 
     const priceContent = `$${price}`;
@@ -22,7 +22,7 @@ export const SpecialPackageSectionContentMainElementDetails = ({
     return (
         <div className="flex flex-col gap-md">
             <div className="md:hidden">
-                <SpecialPackageSectionContentElementDetails
+                <SpecialPackageSectionContentItemDetails
                     name={name}
                     price={price}
                 />
@@ -36,10 +36,10 @@ export const SpecialPackageSectionContentMainElementDetails = ({
                 />
             </div>
             <div className="hidden gap-sm md:flex 2xl:hidden">
-                {specialPackageSectionContentMainElementDetailsRatingIconMdList}
+                {specialPackageSectionContentMainItemDetailsRatingIconMdList}
             </div>
             <div className="gap-md hidden 2xl:flex">
-                {specialPackageSectionContentMainElementDetailsRatingIconXlList}
+                {specialPackageSectionContentMainItemDetailsRatingIconXlList}
             </div>
             <div className="hidden md:block">
                 <Text

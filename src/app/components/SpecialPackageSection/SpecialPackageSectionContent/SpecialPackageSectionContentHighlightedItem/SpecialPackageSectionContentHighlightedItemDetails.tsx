@@ -1,16 +1,16 @@
 import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
 
-type SpecialPackageSectionContentElementDetailsProps = {
+type SpecialPackageSectionContentItemDetailsProps = {
     name: string;
     price: number;
 };
 
-export const SpecialPackageSectionContentHighlightedElementDetails = ({
+export const SpecialPackageSectionContentHighlightedItemDetails = ({
     name,
     price,
-}: SpecialPackageSectionContentElementDetailsProps) => {
-    const specialPackageSectionContentMainElementDetailsRatingIconSmList =
+}: SpecialPackageSectionContentItemDetailsProps) => {
+    const specialPackageSectionContentMainItemDetailsRatingIconSmList =
         getRatingComponentList('6xl');
 
     const priceContent = `$${price}`;
@@ -24,7 +24,7 @@ export const SpecialPackageSectionContentHighlightedElementDetails = ({
                 content={name}
             />
             <div className="flex gap-sm">
-                {specialPackageSectionContentMainElementDetailsRatingIconSmList}
+                {specialPackageSectionContentMainItemDetailsRatingIconSmList}
             </div>
             <Text
                 fontSize={'4xl'}

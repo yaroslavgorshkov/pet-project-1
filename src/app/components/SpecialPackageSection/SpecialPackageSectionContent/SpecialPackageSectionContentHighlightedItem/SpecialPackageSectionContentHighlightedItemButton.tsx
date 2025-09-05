@@ -4,9 +4,9 @@ import { IconButton } from '@/core/Button/IconButton';
 import { Text } from '@/core/Text/Text';
 import { EndIconType } from '@/types';
 
-export const SpecialPackageSectionContentHighlightedElementButton = () => {
-    const handleSpecialPackageSectionContentElementButtonClick = () => {
-        // TODO: make handleSpecialPackageSectionContentElementButtonClick logic
+export const SpecialPackageSectionContentHighlightedItemButton = () => {
+    const handleSpecialPackageSectionContentItemButtonClick = () => {
+        // TODO: make handleSpecialPackageSectionContentItemButtonClick logic
     };
 
     const specialPackageSectionContentMainItemButtonIconSm: EndIconType = {
@@ -24,7 +24,7 @@ export const SpecialPackageSectionContentHighlightedElementButton = () => {
         backgroundColor: 'mint',
         borderRadius: 'md',
         endIcon: specialPackageSectionContentMainItemButtonIconSm,
-        onClick: handleSpecialPackageSectionContentElementButtonClick,
+        onClick: handleSpecialPackageSectionContentItemButtonClick,
     };
 
     return (
@@ -44,9 +44,7 @@ export const SpecialPackageSectionContentHighlightedElementButton = () => {
                     iconType={'zoom'}
                     iconFillColor={'white'}
                     iconSize={'xl'}
-                    onClick={
-                        handleSpecialPackageSectionContentElementButtonClick
-                    }
+                    onClick={handleSpecialPackageSectionContentItemButtonClick}
                 />
             </div>
         </>
