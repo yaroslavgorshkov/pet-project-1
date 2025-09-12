@@ -32,15 +32,6 @@ export const SpecialPackageSectionContentItemButton = () => {
         onClick: handleSpecialPackageSectionContentItemButtonClick,
     };
 
-    const specialPackageSectionContentMainItemButtonMdProps: Omit<
-        ButtonProps,
-        'children'
-    > = {
-        variant: 'secondary',
-        endIcon: specialPackageSectionContentMainItemButtonIconMd,
-        onClick: handleSpecialPackageSectionContentItemButtonClick,
-    };
-
     return (
         <>
             <div className="md:hidden">
@@ -54,7 +45,11 @@ export const SpecialPackageSectionContentItemButton = () => {
                 </Button>
             </div>
             <div className="hidden md:block">
-                <Button {...specialPackageSectionContentMainItemButtonMdProps}>
+                <Button
+                    variant={'secondary'}
+                    onClick={handleSpecialPackageSectionContentItemButtonClick}
+                    endIcon={specialPackageSectionContentMainItemButtonIconMd}
+                >
                     <Text
                         fontSize={'sm'}
                         fontFamily={'opensans'}

@@ -1,21 +1,24 @@
 import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
 import { SpecialPackageSectionContentItemDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDetails';
+import { Rating } from '../specialPackageSectionMockData';
 
 type SpecialPackageSectionContentMainItemDetailsProps = {
     name: string;
     price: number;
+    rating: Rating;
 };
 
 export const SpecialPackageSectionContentMainItemDetails = ({
     name,
     price,
+    rating,
 }: SpecialPackageSectionContentMainItemDetailsProps) => {
     const specialPackageSectionContentMainItemDetailsRatingIconXlList =
-        getRatingComponentList('10xl');
+        getRatingComponentList('10xl', rating);
 
     const specialPackageSectionContentMainItemDetailsRatingIconMdList =
-        getRatingComponentList('6xl');
+        getRatingComponentList('6xl', rating);
 
     const priceContent = `$${price}`;
 
@@ -25,6 +28,7 @@ export const SpecialPackageSectionContentMainItemDetails = ({
                 <SpecialPackageSectionContentItemDetails
                     name={name}
                     price={price}
+                    rating={rating}
                 />
             </div>
             <div className="hidden md:block">

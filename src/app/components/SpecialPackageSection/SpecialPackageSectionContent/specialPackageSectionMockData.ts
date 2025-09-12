@@ -1,6 +1,9 @@
+export type Rating = 0 | 1 | 2 | 3 | 4 | 5;
+
 export type SpecialPackageSectionHighlightedItemMockDataType = {
     name: string;
     price: number;
+    rating: Rating;
     imageSrc: string;
     alt: string;
     href: string;
@@ -13,6 +16,7 @@ export const specialPackageSectionHighlightedItemMockData: SpecialPackageSection
         imageSrc: '/img/special-package-high-el.jpg',
         alt: 'Special Package Section Family Set',
         href: '#living-room-family-set',
+        rating: 4,
     };
 
 type SpecialPackageSectionMainItemMockDataType = Omit<
@@ -28,6 +32,7 @@ export const specialPackageSectionMainItemMockData: SpecialPackageSectionMainIte
         alt: 'Special Package Main Item',
         description:
             'Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor space, this cast...',
+        rating: 5,
     };
 
 export type SpecialPackageSectionMockDataType = Omit<
@@ -45,6 +50,7 @@ export const specialPackageSectionMockData: SpecialPackageSectionMockDataType[] 
             alt: 'Special Package Section 1 product',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            rating: 4,
         },
         {
             id: 1,
@@ -54,6 +60,7 @@ export const specialPackageSectionMockData: SpecialPackageSectionMockDataType[] 
             alt: 'Special Package Section 2 product',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            rating: 3,
         },
         {
             id: 2,
@@ -63,6 +70,7 @@ export const specialPackageSectionMockData: SpecialPackageSectionMockDataType[] 
             alt: 'Special Package Section 3 product',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            rating: 3,
         },
         {
             id: 3,
@@ -72,5 +80,6 @@ export const specialPackageSectionMockData: SpecialPackageSectionMockDataType[] 
             alt: 'Special Package Section 4 product',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            rating: 2,
         },
     ];

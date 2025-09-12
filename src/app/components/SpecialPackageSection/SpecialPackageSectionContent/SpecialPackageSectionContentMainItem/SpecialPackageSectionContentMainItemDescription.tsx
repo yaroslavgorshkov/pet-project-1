@@ -1,5 +1,4 @@
 import { Button } from '@/core/Button/Button';
-import { ButtonProps } from '@/core/Button/buttonTypes';
 import { Text } from '@/core/Text/Text';
 import { EndIconType } from '@/types';
 import { SpecialPackageSectionContentItemDescription } from '../SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDescription';
@@ -17,15 +16,6 @@ export const SpecialPackageSectionContentMainItemDescription = ({
             iconFillColor: 'black',
             iconSize: 'lg',
         };
-
-    const specialPackageSectionContentMainItemDescriptionButtonXlProps: Omit<
-        ButtonProps,
-        'children'
-    > = {
-        variant: 'secondary',
-        endIcon:
-            specialPackageSectionContentMainItemDescriptionButtonEndIconProps,
-    };
 
     return (
         <>
@@ -65,7 +55,10 @@ export const SpecialPackageSectionContentMainItemDescription = ({
                 />
                 <div className="self-start">
                     <Button
-                        {...specialPackageSectionContentMainItemDescriptionButtonXlProps}
+                        variant={'secondary'}
+                        endIcon={
+                            specialPackageSectionContentMainItemDescriptionButtonEndIconProps
+                        }
                     >
                         <Text
                             fontSize={'lg'}

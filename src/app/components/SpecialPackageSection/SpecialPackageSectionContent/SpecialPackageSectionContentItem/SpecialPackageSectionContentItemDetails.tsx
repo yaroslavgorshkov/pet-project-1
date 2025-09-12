@@ -1,17 +1,20 @@
 import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
+import { Rating } from '../specialPackageSectionMockData';
 
 type SpecialPackageSectionContentItemDetailsProps = {
     name: string;
     price: number;
+    rating: Rating;
 };
 
 export const SpecialPackageSectionContentItemDetails = ({
     name,
     price,
+    rating,
 }: SpecialPackageSectionContentItemDetailsProps) => {
     const specialPackageSectionContentMainItemDetailsRatingIconSmList =
-        getRatingComponentList('6xl');
+        getRatingComponentList('6xl', rating);
 
     const priceContent = `$${price}`;
 

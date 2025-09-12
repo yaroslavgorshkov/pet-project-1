@@ -16,11 +16,12 @@ export const SpecialPackageSectionContentItem = ({
     description,
     imageSrc,
     price,
+    rating,
 }: SpecialPackageSectionContentItemProps) => {
     const priceText = `$${price}`;
 
     const specialPackageSectionContentHighlightedItemRatingList =
-        getRatingComponentList('xl');
+        getRatingComponentList('xl', rating);
 
     return (
         <>
@@ -28,6 +29,7 @@ export const SpecialPackageSectionContentItem = ({
                 <SpecialPackageSectionContentItemDetails
                     name={name}
                     price={price}
+                    rating={rating}
                 />
                 <SpecialPackageSectionContentItemButton />
                 <SpecialPackageSectionContentItemImage

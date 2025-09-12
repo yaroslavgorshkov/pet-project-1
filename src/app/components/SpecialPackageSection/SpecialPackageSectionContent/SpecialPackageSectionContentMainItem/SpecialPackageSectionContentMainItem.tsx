@@ -5,7 +5,7 @@ import { SpecialPackageSectionContentMainItemDetails } from '@/SpecialPackageSec
 import { SpecialPackageSectionContentMainItemImage } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentMainItem/SpecialPackageSectionContentMainItemImage';
 
 export const SpecialPackageSectionContentMainItem = () => {
-    const { alt, description, imageSrc, name, price } =
+    const { alt, description, imageSrc, name, price, rating } =
         specialPackageSectionMainItemMockData;
 
     return (
@@ -14,6 +14,7 @@ export const SpecialPackageSectionContentMainItem = () => {
                 <SpecialPackageSectionContentMainItemDetails
                     name={name}
                     price={price}
+                    rating={rating}
                 />
                 <SpecialPackageSectionContentMainItemButton />
                 <SpecialPackageSectionContentMainItemImage
@@ -32,6 +33,7 @@ export const SpecialPackageSectionContentMainItem = () => {
                 <SpecialPackageSectionContentMainItemDetails
                     name={name}
                     price={price}
+                    rating={rating}
                 />
                 <SpecialPackageSectionContentMainItemButton />
                 <SpecialPackageSectionContentMainItemDescription
@@ -47,6 +49,7 @@ export const SpecialPackageSectionContentMainItem = () => {
                     <SpecialPackageSectionContentMainItemDetails
                         name={name}
                         price={price}
+                        rating={rating}
                     />
                     <SpecialPackageSectionContentMainItemButton />
                     <SpecialPackageSectionContentMainItemDescription

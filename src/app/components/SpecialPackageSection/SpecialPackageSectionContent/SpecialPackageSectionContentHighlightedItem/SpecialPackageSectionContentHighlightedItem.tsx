@@ -6,13 +6,13 @@ import { Text } from '@/core/Text/Text';
 import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
 
 export const SpecialPackageSectionContentHighlightedItem = () => {
-    const { alt, href, imageSrc, name, price } =
+    const { alt, href, imageSrc, name, price, rating } =
         specialPackageSectionHighlightedItemMockData;
 
     const priceText = `$${price}`;
 
     const specialPackageSectionContentHighlightedItemRatingList =
-        getRatingComponentList('xl');
+        getRatingComponentList('xl', rating);
 
     return (
         <>
@@ -20,6 +20,7 @@ export const SpecialPackageSectionContentHighlightedItem = () => {
                 <SpecialPackageSectionContentHighlightedItemDetails
                     name={name}
                     price={price}
+                    rating={rating}
                 />
                 <SpecialPackageSectionContentHighlightedItemButton />
                 <SpecialPackageSectionContentHighlightedItemImage

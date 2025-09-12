@@ -18,10 +18,11 @@ export const SpecialPackageSectionContent = () => {
         imageSrc: mainItemImageSrc,
         name: mainItemName,
         price: mainItemPrice,
+        rating: mainItemRating,
     } = specialPackageSectionMainItemMockData;
 
     const dataList = specialPackageSectionMockData.map(
-        ({ alt, description, id, imageSrc, name, price }) => {
+        ({ alt, description, id, imageSrc, name, price, rating }) => {
             return (
                 <SpecialPackageSectionContentItem
                     key={id}
@@ -30,6 +31,7 @@ export const SpecialPackageSectionContent = () => {
                     imageSrc={imageSrc}
                     alt={alt}
                     description={description}
+                    rating={rating}
                 />
             );
         }
@@ -65,6 +67,7 @@ export const SpecialPackageSectionContent = () => {
                         <SpecialPackageSectionContentMainItemDetails
                             name={mainItemName}
                             price={mainItemPrice}
+                            rating={mainItemRating}
                         />
                         <SpecialPackageSectionContentMainItemButton />
                     </div>

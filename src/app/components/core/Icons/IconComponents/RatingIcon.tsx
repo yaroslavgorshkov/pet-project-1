@@ -5,13 +5,16 @@ import { getIconSize } from '@/core/Icons/helpers/getIconSize';
 export const RatingIcon = ({ size, color }: IconProps) => {
     const iconFillColor = getIconFillColor(color);
     const iconSize = getIconSize(size);
+    const resultIconSize = parseInt(iconSize) - 2;
 
     return (
         <svg
-            width={iconSize}
-            height={iconSize}
+            width={resultIconSize}
+            height={resultIconSize}
             viewBox="0 0 29 29"
             fill="none"
+            stroke="#FFC107"
+            strokeWidth={1}
             xmlns="http://www.w3.org/2000/svg"
         >
             <path

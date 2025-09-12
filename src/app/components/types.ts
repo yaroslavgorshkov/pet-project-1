@@ -10,7 +10,8 @@ export type IconFillColor =
     | 'white'
     | 'absolute-white'
     | 'orange'
-    | 'black';
+    | 'black'
+    | 'transparent';
 
 export type IconSize =
     | 'sm'
