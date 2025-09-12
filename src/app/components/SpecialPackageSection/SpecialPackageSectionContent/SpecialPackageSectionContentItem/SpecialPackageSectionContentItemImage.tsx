@@ -16,8 +16,9 @@ export const SpecialPackageSectionContentItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="90vw"
                     className="rounded-2xl"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
             <div className="hidden md:block relative rounded-md h-slider-xl w-special-package-el-sm 2xl:h-special-package-el-sm 2xl:w-special-package-el-sm">
@@ -25,8 +26,9 @@ export const SpecialPackageSectionContentItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="30vw"
                     className="rounded-md"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
         </>

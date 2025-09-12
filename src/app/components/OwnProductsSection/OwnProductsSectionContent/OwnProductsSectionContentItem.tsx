@@ -28,7 +28,8 @@ export const OwnProductsSectionContentItem = ({
                     src={imgSrc}
                     alt={alt}
                     fill
-                    objectFit="cover"
+                    sizes="(max-width: 768px) 230px, 360px"
+                    style={{ objectFit: 'cover' }}
                     className="rounded-lg brightness-md"
                 />
             </div>

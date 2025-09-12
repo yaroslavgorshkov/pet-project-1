@@ -79,6 +79,8 @@ export default {
                 'el-lg': '204px',
                 'el-xl': '350px',
                 'el-2xl': '460px',
+                'el-3xl': '910px',
+                'el-4xl': '1100px',
                 'special-package-el-sm': '242px',
                 'special-package-el-md': '394px',
                 'special-package-sm': '288px',
@@ -153,6 +155,9 @@ export default {
                 'el-xl': '40px',
                 'el-2xl': '56px',
                 'el-3xl': '96px',
+            },
+            aspectRatio: {
+                '9/21': '0.41',
             },
         },
         screens: {

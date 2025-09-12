@@ -48,7 +48,13 @@ export const PopularProductsSectionContentItem = ({
         >
             <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
                 <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
-                    <Image src={imgSrc} alt={alt} fill />
+                    <Image
+                        src={imgSrc}
+                        alt={alt}
+                        fill
+                        sizes="(max-width: 768px) 90px, 204px,
+                    40vw"
+                    />
                 </div>
             </div>
             <div className="flex flex-col">

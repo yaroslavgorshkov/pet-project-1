@@ -17,8 +17,9 @@ export const SpecialPackageSectionContentMainItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="90vw"
                     className="rounded-2xl"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
             <div className="hidden w-full xl:max-w-2xl 2xl:max-w-none relative h-el-2xl md:block 2xl:h-el-3xl">
@@ -26,8 +27,9 @@ export const SpecialPackageSectionContentMainItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="80vw"
                     className="rounded-xl 2xl:rounded-md"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
                 <div className="flex items-center justify-center w-el-sm h-el-sm rounded-xl 2xl:rounded-md bg-lapis absolute bottom-0 right-0">
                     <IconButton

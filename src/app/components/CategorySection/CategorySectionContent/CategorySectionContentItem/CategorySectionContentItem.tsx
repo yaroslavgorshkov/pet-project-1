@@ -110,6 +110,7 @@ export const CategorySectionContentItem = ({
                     alt={alt}
                     fill
                     className="rounded-md brightness-md object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 40vw"
                 />
             </div>
         </article>

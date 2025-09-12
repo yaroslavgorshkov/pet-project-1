@@ -11,6 +11,7 @@ export const NewsletterSection = () => {
                         src={'/img/newsletter.jpg'}
                         alt={'Newsletter Section Main Image'}
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
                     />
                 </div>

@@ -2,8 +2,8 @@ import { PopularProductsSectionButton } from '@/PopularProductsSection/PopularPr
 import { PopularProductsSectionContent } from '@/PopularProductsSection/PopularProductsSectionContent/PopularProductsSectionContent';
 import { PopularProductsSectionContentFallback } from '@/PopularProductsSection/PopularProductsSectionContentFallback';
 import { PopularProductsSectionHeadline } from '@/PopularProductsSection/PopularProductsSectionHeadline';
-import { PopularProductsSectionImage } from '@/PopularProductsSection/PopularProductsSectionImage';
 import { popularProductsSectionMockData } from '@/PopularProductsSection/popularProductsSectionMockData';
+import Image from 'next/image';
 import { PopularProductsSectionSlider } from '@/PopularProductsSection/PopularProductsSectionSlider';
 
 export const PopularProductsSection = () => {
@@ -28,7 +28,14 @@ export const PopularProductsSection = () => {
                 <PopularProductsSectionContent />
                 <PopularProductsSectionSlider />
                 <PopularProductsSectionButton />
-                <PopularProductsSectionImage />
+                <div className="absolute top-el-3xl left-0 -z-10 md:top-el-2xl xl:top-el-sm w-el-lg md:w-el-xl xl:w-el-2xl aspect-9/21">
+                    <Image
+                        src={'/img/popular-products-bgi.png'}
+                        alt={'Popular Products Section image'}
+                        fill
+                        sizes="(max-width: 1440px) 50vw, 30vw"
+                    />
+                </div>
             </div>
         </section>
     );

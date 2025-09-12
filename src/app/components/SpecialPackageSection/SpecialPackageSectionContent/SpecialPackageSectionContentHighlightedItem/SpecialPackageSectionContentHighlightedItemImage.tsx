@@ -16,8 +16,9 @@ export const SpecialPackageSectionContentHighlightedItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="90vw"
                     className="rounded-2xl"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
             <div className="hidden md:block relative rounded-md xl:hidden h-slider-xl w-special-package-el-sm">
@@ -25,8 +26,9 @@ export const SpecialPackageSectionContentHighlightedItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="30vw"
                     className="rounded-md"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
             <div className="hidden xl:block relative rounded-md h-slider-xl w-special-package-sm">
@@ -34,8 +36,9 @@ export const SpecialPackageSectionContentHighlightedItemImage = ({
                     src={imageSrc}
                     alt={alt}
                     fill
+                    sizes="30vw"
                     className="rounded-md"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
         </>
