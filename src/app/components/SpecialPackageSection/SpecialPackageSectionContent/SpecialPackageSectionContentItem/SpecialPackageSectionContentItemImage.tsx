@@ -11,7 +11,7 @@ export const SpecialPackageSectionContentItemImage = ({
 }: SpecialPackageSectionContentItemImageProps) => {
     return (
         <>
-            <div className="relative rounded-2xl h-el-lg w-responsive-viewport-sm md:hidden">
+            <div className="relative rounded-2xl h-el-xl w-responsive-viewport-sm md:hidden">
                 <Image
                     src={imageSrc}
                     alt={alt}
@@ -21,7 +21,7 @@ export const SpecialPackageSectionContentItemImage = ({
                     style={{ objectFit: 'cover' }}
                 />
             </div>
-            <div className="hidden md:block relative rounded-md h-slider-xl w-special-package-el-sm 2xl:h-special-package-el-sm 2xl:w-special-package-el-sm">
+            <div className="hidden md:block relative rounded-md h-slider-xl w-el-xl 2xl:h-el-lg">
                 <Image
                     src={imageSrc}
                     alt={alt}

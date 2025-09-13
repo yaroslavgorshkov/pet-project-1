@@ -28,7 +28,7 @@ export const PopularProductsSection = () => {
                 <PopularProductsSectionContent />
                 <PopularProductsSectionSlider />
                 <PopularProductsSectionButton />
-                <div className="absolute top-el-3xl left-0 -z-10 md:top-el-2xl xl:top-el-sm w-el-lg md:w-el-xl xl:w-el-2xl aspect-9/21">
+                <div className="absolute top-el-3xl left-0 -z-10 md:top-el-2xl xl:top-el-sm w-el-lg md:w-el-3xl xl:w-el-5xl aspect-9/21">
                     <Image
                         src={'/img/popular-products-bgi.png'}
                         alt={'Popular Products Section image'}

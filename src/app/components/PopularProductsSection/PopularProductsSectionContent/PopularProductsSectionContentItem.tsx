@@ -47,7 +47,7 @@ export const PopularProductsSectionContentItem = ({
             onClick={handlePopularProductsSectionContentItemClick}
         >
             <div className="px-el-5xl md:px-el-6xl xl:px-el-7xl">
-                <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-lg">
+                <div className="relative w-el-md h-el-md md:w-el-lg md:h-el-xl">
                     <Image
                         src={imgSrc}
                         alt={alt}

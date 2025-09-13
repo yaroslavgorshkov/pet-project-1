@@ -45,7 +45,7 @@ export const SpecialPackageSectionContentItem = ({
                     alt={alt}
                     imageSrc={imageSrc}
                 />
-                <div className="flex flex-col gap-sm justify-center w-el-2xl 2xl:w-el-xl px-el-md">
+                <div className="flex flex-col gap-sm justify-center w-el-5xl 2xl:w-el-3xl px-el-md">
                     <div className="flex justify-between">
                         <div className="2xl:hidden">
                             <Text

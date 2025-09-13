@@ -40,7 +40,7 @@ export const SpecialPackageSectionContent = () => {
     return (
         <>
             <div className="flex flex-col gap-10xl md:hidden">
-                <div className="special-package-section__content flex overflow-auto gap-2xl -mx-special-package-sm px-el-sm">
+                <div className="special-package-section__content flex overflow-auto gap-2xl -mx-overflow-container-sm px-el-sm">
                     <SpecialPackageSectionContentMainItem />
                     <SpecialPackageSectionContentHighlightedItem />
                     {dataList}
@@ -49,7 +49,7 @@ export const SpecialPackageSectionContent = () => {
             </div>
             <div className="hidden md:flex flex-col gap-10xl lg:gap-12xl 2xl:hidden">
                 <SpecialPackageSectionContentMainItem />
-                <div className="special-package-section__content flex overflow-auto gap-3xl -mx-special-package-md lg:-mx-special-package-lg px-el-md lg:px-el-3xl xl:-mx-special-package-xl xl:px-el-10xl">
+                <div className="special-package-section__content flex overflow-auto gap-3xl -mx-overflow-container-md lg:-mx-overflow-container-lg px-el-md lg:px-el-3xl xl:-mx-overflow-container-xl xl:px-el-10xl">
                     <SpecialPackageSectionContentHighlightedItem />
                     {dataList}
                 </div>
@@ -72,13 +72,13 @@ export const SpecialPackageSectionContent = () => {
                         <SpecialPackageSectionContentMainItemButton />
                     </div>
                 </div>
-                <div className="flex flex-col justify-between w-special-package-lg">
+                <div className="flex flex-col justify-between w-el-6xl">
                     <SpecialPackageSectionContentMainItemDescription
                         description={mainItemDescription}
                     />
                     <SpecialPackageSectionContentHighlightedItem />
                     <div className="flex justify-between">
-                        <div className="flex flex-col gap-2xl special-package-section__content overflow-auto h-special-package-el-md">
+                        <div className="flex flex-col gap-2xl special-package-section__content overflow-auto h-el-3xl">
                             {dataList}
                         </div>
                         <SpecialPackageSectionContentSlider />

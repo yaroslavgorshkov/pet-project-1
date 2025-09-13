@@ -50,7 +50,7 @@ export const SpecialPackageSectionContentHighlightedItem = () => {
                     alt={alt}
                     imageSrc={imageSrc}
                 />
-                <div className="flex flex-col gap-lg bg-lite-green rounded-md justify-center w-el-2xl 2xl:w-special-package-el-md relative px-el-md">
+                <div className="flex flex-col gap-lg bg-lite-green rounded-md justify-center w-el-5xl 2xl:w-el-4xl relative px-el-md">
                     <div className="flex justify-between">
                         <Text
                             fontSize={'2xl'}
