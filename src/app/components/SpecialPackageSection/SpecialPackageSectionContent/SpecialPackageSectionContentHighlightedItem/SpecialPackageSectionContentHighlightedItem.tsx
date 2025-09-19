@@ -3,7 +3,7 @@ import { SpecialPackageSectionContentHighlightedItemImage } from '@/SpecialPacka
 import { SpecialPackageSectionContentHighlightedItemButton } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedItem/SpecialPackageSectionContentHighlightedItemButton';
 import { SpecialPackageSectionContentHighlightedItemDetails } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentHighlightedItem/SpecialPackageSectionContentHighlightedItemDetails';
 import { Text } from '@/core/Text/Text';
-import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
+import { RatingComponentList } from '@/SpecialPackageSection/RatingComponentList';
 
 export const SpecialPackageSectionContentHighlightedItem = () => {
     const { alt, href, imageSrc, name, price, rating } =
@@ -12,7 +12,7 @@ export const SpecialPackageSectionContentHighlightedItem = () => {
     const priceText = `$${price}`;
 
     const specialPackageSectionContentHighlightedItemRatingList =
-        getRatingComponentList('xl', rating);
+        RatingComponentList('xl', rating);
 
     return (
         <>

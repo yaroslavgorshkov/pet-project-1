@@ -4,7 +4,7 @@ import { SpecialPackageSectionContentItemImage } from '@/SpecialPackageSection/S
 import { SpecialPackageSectionContentItemDescription } from '@/SpecialPackageSection/SpecialPackageSectionContent/SpecialPackageSectionContentItem/SpecialPackageSectionContentItemDescription';
 import { SpecialPackageSectionMockDataType } from '@/SpecialPackageSection/SpecialPackageSectionContent/specialPackageSectionMockData';
 import { Text } from '@/core/Text/Text';
-import { getRatingComponentList } from '@/SpecialPackageSection/helpers/getRatingComponentList';
+import { RatingComponentList } from '@/SpecialPackageSection/RatingComponentList';
 
 type SpecialPackageSectionContentItemProps = Omit<
     SpecialPackageSectionMockDataType,
@@ -21,7 +21,7 @@ export const SpecialPackageSectionContentItem = ({
     const priceText = `$${price}`;
 
     const specialPackageSectionContentHighlightedItemRatingList =
-        getRatingComponentList('xl', rating);
+        RatingComponentList('xl', rating);
 
     return (
         <>
