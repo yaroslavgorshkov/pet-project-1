@@ -3,7 +3,15 @@ import { IconSize } from '@/types';
 import { Fragment } from 'react';
 import { Rating } from './SpecialPackageSectionContent/specialPackageSectionMockData';
 
-export const RatingComponentList = (iconSize: IconSize, rating: Rating) => {
+type RatingComponentListProps = {
+    iconSize: IconSize;
+    rating: Rating;
+};
+
+export const RatingComponentList = ({
+    iconSize,
+    rating,
+}: RatingComponentListProps) => {
     const ratingList = Array.from({ length: rating }).map((_, i) => {
         const ratingIcon = getDynamicIconComponent(
             'rating',
