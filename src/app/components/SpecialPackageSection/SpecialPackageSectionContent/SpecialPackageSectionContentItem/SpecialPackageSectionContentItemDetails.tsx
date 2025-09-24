@@ -13,9 +13,6 @@ export const SpecialPackageSectionContentItemDetails = ({
     price,
     rating,
 }: SpecialPackageSectionContentItemDetailsProps) => {
-    const specialPackageSectionContentMainItemDetailsRatingIconSmList =
-        RatingComponentList('6xl', rating);
-
     const priceContent = `$${price}`;
 
     return (
@@ -27,7 +24,7 @@ export const SpecialPackageSectionContentItemDetails = ({
                 content={name}
             />
             <div className="flex gap-sm md:hidden">
-                {specialPackageSectionContentMainItemDetailsRatingIconSmList}
+                <RatingComponentList iconSize={'6xl'} rating={rating} />
             </div>
             <Text
                 fontSize={'4xl'}

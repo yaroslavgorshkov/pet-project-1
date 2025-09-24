@@ -14,12 +14,6 @@ export const SpecialPackageSectionContentMainItemDetails = ({
     price,
     rating,
 }: SpecialPackageSectionContentMainItemDetailsProps) => {
-    const specialPackageSectionContentMainItemDetailsRatingIconXlList =
-        RatingComponentList('10xl', rating);
-
-    const specialPackageSectionContentMainItemDetailsRatingIconMdList =
-        RatingComponentList('6xl', rating);
-
     const priceContent = `$${price}`;
 
     return (
@@ -40,10 +34,10 @@ export const SpecialPackageSectionContentMainItemDetails = ({
                 />
             </div>
             <div className="hidden gap-sm md:flex 2xl:hidden">
-                {specialPackageSectionContentMainItemDetailsRatingIconMdList}
+                <RatingComponentList iconSize={'6xl'} rating={rating} />
             </div>
             <div className="gap-md hidden 2xl:flex">
-                {specialPackageSectionContentMainItemDetailsRatingIconXlList}
+                <RatingComponentList iconSize={'10xl'} rating={rating} />
             </div>
             <div className="hidden md:block">
                 <Text

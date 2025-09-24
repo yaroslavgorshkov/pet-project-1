@@ -11,9 +11,6 @@ export const SpecialPackageSectionContentHighlightedItem = () => {
 
     const priceText = `$${price}`;
 
-    const specialPackageSectionContentHighlightedItemRatingList =
-        RatingComponentList('xl', rating);
-
     return (
         <>
             <article className="flex flex-col gap-2xl md:hidden">
@@ -67,7 +64,7 @@ export const SpecialPackageSectionContentHighlightedItem = () => {
                         />
                     </div>
                     <div className="flex gap-sm">
-                        {specialPackageSectionContentHighlightedItemRatingList}
+                        <RatingComponentList iconSize={'xl'} rating={rating} />
                     </div>
                     <a href={href} className="underline">
                         <Text
