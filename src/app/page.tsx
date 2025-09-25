@@ -9,6 +9,7 @@ import { NewsletterSection } from '@/NewsletterSection/NewsletterSection';
 import { OwnProductsSection } from '@/OwnProductsSection/OwnProductsSection';
 import { PopularProductsSection } from '@/PopularProductsSection/PopularProductsSection';
 import { SpecialPackageSection } from '@/SpecialPackageSection/SpecialPackageSection';
+import { TestimonialsSection } from '@/TestimonialsSection/TestimonialsSection';
 
 export default function App() {
     return (
@@ -20,6 +21,9 @@ export default function App() {
             <SpecialPackageSection />
             <OwnProductsSection />
             <BenefitsSection />
+
+            <TestimonialsSection />
+
             <NewsletterSection />
             <Footer />
         </>

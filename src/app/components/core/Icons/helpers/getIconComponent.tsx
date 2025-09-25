@@ -29,6 +29,7 @@ import {
     IconSize,
     StaticIconType,
 } from '@/types';
+import { TestimonialsImageIcon } from '../IconComponents/TestimonialsImageIcon';
 
 const dynamicIconMap: Record<
     DynamicIconType,
@@ -53,6 +54,7 @@ const dynamicIconMap: Record<
     instagram: InstagramIcon,
     facebook: FacebookIcon,
     rating: RatingIcon,
+    'testimonials-img': TestimonialsImageIcon,
 };
 
 const staticIconMap: Record<StaticIconType, () => JSX.Element> = {

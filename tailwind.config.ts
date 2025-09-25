@@ -65,6 +65,7 @@ export default {
                 lg: '578px',
                 xl: '790px',
                 '2xl': '850px',
+                '3xl': '950px',
             },
             width: {
                 'slider-sm': '4px',
@@ -88,6 +89,9 @@ export default {
                 'responsive-lg': 'calc(100% - 40px)',
                 'responsive-xl': 'calc(100% - 32px)',
                 'responsive-viewport-sm': 'calc(100vw - 32px)',
+                'responsive-viewport-md': 'calc(100vw - 40px)',
+                'responsive-viewport-lg': 'calc(100vw - 80px)',
+                'responsive-viewport-xl': 'calc(100vw - 300px)',
                 half: '50%',
             },
             minHeight: {
@@ -192,6 +196,7 @@ export default {
             'el-11xl': '196px',
         },
         margin: {
+            none: '0',
             'logo-sm': '-6px',
             'overflow-container-sm': '16px',
             'overflow-container-md': '20px',
@@ -203,6 +208,9 @@ export default {
         },
         brightness: {
             md: '0.6',
+        },
+        flexShrink: {
+            none: '0',
         },
     },
     plugins: [require('@designbycode/tailwindcss-text-shadow')],
