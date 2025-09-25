@@ -14,6 +14,7 @@ body {
 .category-section__menu-navigation-list-desktop,
 .popular-products-section-content,
 .own-products-section-wrapper,
-.special-package-section__content {
+.special-package-section__content,
+.testimonials-section__content {
     scrollbar-width: none;
 }

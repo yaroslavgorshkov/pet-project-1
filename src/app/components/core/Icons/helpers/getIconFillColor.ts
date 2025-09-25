@@ -8,6 +8,7 @@ const iconFillColorMap: Record<IconFillColor, string> = {
     orange: '#FFC107',
     black: '#000',
     transparent: '',
+    'white-blue': '#E0EFF6',
 };
 
 export const getIconFillColor = (iconFill: IconFillColor) =>

@@ -11,7 +11,8 @@ export type IconFillColor =
     | 'absolute-white'
     | 'orange'
     | 'black'
-    | 'transparent';
+    | 'transparent'
+    | 'white-blue';
 
 export type IconSize =
     | 'sm'
@@ -26,7 +27,9 @@ export type IconSize =
     | '7xl'
     | '8xl'
     | '9xl'
-    | '10xl';
+    | '10xl'
+    | '11xl'
+    | '12xl';
 
 export type DynamicIconType =
     | 'account'
@@ -46,7 +49,8 @@ export type DynamicIconType =
     | 'linked-in'
     | 'instagram'
     | 'facebook'
-    | 'rating';
+    | 'rating'
+    | 'testimonials-img';
 
 export type StaticIconType =
     | 'payment-method'
