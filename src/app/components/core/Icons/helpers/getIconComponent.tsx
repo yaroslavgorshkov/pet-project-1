@@ -20,6 +20,8 @@ import { FacebookIcon } from '@/core/Icons/IconComponents/FacebookIcon';
 import { BenefitsSectionPaymentMethodIcon } from '@/core/Icons/IconComponents/BenefitsSectionPaymentMethodIcon';
 import { BenefitsSectionReturnPolicyIcon } from '@/core/Icons/IconComponents/BenefitsSectionReturnPolicyIcon';
 import { BenefitsSectionCustomerSupportIcon } from '@/core/Icons/IconComponents/BenefitsSectionCustomerSupportIcon';
+import { RatingIcon } from '@/core/Icons/IconComponents/RatingIcon';
+
 import {
     DynamicIconType,
     IconFillColor,
@@ -50,6 +52,7 @@ const dynamicIconMap: Record<
     'linked-in': LinkedInIcon,
     instagram: InstagramIcon,
     facebook: FacebookIcon,
+    rating: RatingIcon,
 };
 
 const staticIconMap: Record<StaticIconType, () => JSX.Element> = {

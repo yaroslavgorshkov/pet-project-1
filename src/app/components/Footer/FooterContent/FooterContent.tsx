@@ -7,8 +7,13 @@ export const FooterContent = () => {
     return (
         <div className="flex flex-col gap-12xl lg:flex-row w-full">
             <div className="flex flex-col gap-lg">
-                <a href="#home" className="w-logo-md h-logo-md relative">
-                    <Image src={'/img/logo.png'} alt={'InWood Logo'} fill />
+                <a href="#home" className="w-fit">
+                    <Image
+                        src={'/img/logo.png'}
+                        alt={'InWood Logo'}
+                        width={144}
+                        height={36}
+                    />
                 </a>
                 <FooterContentSocialMediaList />
                 <div className="flex flex-col gap-sm">

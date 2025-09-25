@@ -1,11 +1,11 @@
 import { ButtonBase } from '@/core/Button/ButtonBase';
-import { twMerge } from 'tailwind-merge';
 import { getButtonSize } from '@/core/Button/helpers/getButtonSize';
 import { ButtonProps } from '@/core/Button/buttonTypes';
 import { getButtonVariant } from '@/core/Button/helpers/getButtonVariant';
 import { getBorderRadius } from '@/core/Button/helpers/getBorderRadius';
 import { getDynamicIconComponent } from '@/core/Icons/helpers/getIconComponent';
 import { getBackgroundColor } from '@/core/Button/helpers/getBackgroundColor';
+import { cn } from '@/helpers/cn';
 
 export const Button = ({
     buttonSize,
@@ -18,8 +18,10 @@ export const Button = ({
     onClick,
 }: ButtonProps) => {
     const variantClass = getButtonVariant(variant);
-    const buttonSizeClass = getButtonSize(buttonSize);
-    const borderRadiusClass = getBorderRadius(borderRadius);
+    const buttonSizeClass = buttonSize ? getButtonSize(buttonSize) : null;
+    const borderRadiusClass = borderRadius
+        ? getBorderRadius(borderRadius)
+        : null;
 
     const endIconComponent = endIcon
         ? getDynamicIconComponent(
@@ -32,7 +34,7 @@ export const Button = ({
         ? getBackgroundColor(backgroundColor)
         : '';
 
-    const combinedButtonClassName = twMerge(
+    const combinedButtonClassName = cn(
         variantClass,
         buttonSizeClass,
         backgroundColorClass,
@@ -43,7 +45,7 @@ export const Button = ({
     if (endIcon) {
         return (
             <ButtonBase className={combinedButtonClassName} onClick={onClick}>
-                <div className="flex justify-center gap-md">
+                <div className="flex justify-center items-center gap-md">
                     {children}
                     <div className="flex justify-center items-center">
                         {endIconComponent}
